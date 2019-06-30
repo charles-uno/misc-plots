@@ -11,7 +11,7 @@ import helpers
 def main():
 
     names, polls, words = [], [], []
-    candidates = helpers.load_json("debate.json")
+    candidates = helpers.load_json("data/debate.json")
 
     plt.figure(figsize=(5.75, 6.49))
 
@@ -32,12 +32,12 @@ def main():
         label = "Wednesday" if i == 1 else "Thursday"
         polls = [ x["polls"] for x in candidates if x["night"] == i ]
         words = [ x["words"] for x in candidates if x["night"] == i ]
-        plt.scatter(polls, words, label=label, color=color, zorder=2)
+        plt.scatter(polls, words, label=label, color=color, zorder=2, alpha=0.8)
 
     plt.legend(loc="upper left")
 
     plt.xscale("log")
-    plt.minorticks_off()
+#    plt.minorticks_off()
     ticks, labels = helpers.get_log_ticks(polls, base=10)
     labels = [ x + "%" for x in labels ]
     plt.xlim(min(ticks), max(ticks))

@@ -1,0 +1,72 @@
+[
+    {
+        "city": "Minneapolis",
+        "snow_in": 54.0,
+        "precipitation_in": 30.64,
+        "temperature_f": null,
+        "latitude": 44.98
+    },
+    {
+        "city": "Atlanta",
+        "snow_in": 2.9,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Boston",
+        "snow_in": 43.8,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Chicago",
+        "snow_in": 36.7,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Nashville",
+        "snow_in": 6.3,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Denver",
+        "snow_in": 53.8,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    }
+    {
+        "city": "New York",
+        "snow_in": 25.1,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Philadelphia",
+        "snow_in": 22.4,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Seattle",
+        "snow_in": 5.0,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    },
+    {
+        "city": "Dallas",
+        "snow_in": 1.5,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "latitude": null
+    }
+]
