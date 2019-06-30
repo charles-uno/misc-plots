@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
+#plt.rcParams.update({"font.size": 22})
 
 import helpers
 
@@ -12,9 +13,10 @@ def main():
     names, polls, words = [], [], []
     candidates = helpers.load_json("debate.json")
 
-    plt.figure(figsize=(6, 6))
+    plt.figure(figsize=(5.75, 6.49))
 
-#    plt.gcf().text(0.98, 0.98, "Data per FiveThirtyEight, plot by @charles_uno", fontsize=8, rotation=90, verticalalignment="top")
+    plt.gcf().text(0.99, 0.01, "charles.uno", fontsize=8, horizontalalignment="right")
+    plt.gcf().text(0.01, 0.01, "data per FiveThirtyEight", fontsize=8, horizontalalignment="left")
 
     # Overall trend line
     polls = [ x["polls"] for x in candidates ]
@@ -66,7 +68,6 @@ def highlight(candidate):
         "Buttigieg": "left",
         "O'Rourke": "left",
         "Buttigieg": (16, 2000),
-#        "O'Rourke": (2, 1900),
         "Sanders": "top",
         "Warren": "top",
         "Klobuchar": "bottom",
