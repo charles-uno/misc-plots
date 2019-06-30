@@ -1,72 +1,301 @@
 [
     {
-        "city": "Minneapolis",
-        "snow_in": 54.0,
-        "precipitation_in": 30.64,
-        "temperature_f": null,
-        "latitude": 44.98
-    },
-    {
-        "city": "Atlanta",
+        "name": "Atlanta",
         "snow_in": 2.9,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
+        "precipitation_in": 49.7,
+        "temperature_f": 62.6,
+        "temperature_january_f": 45,
+        "temperature_july_f": 81,
+        "latitude": 33.75
     },
     {
-        "city": "Boston",
-        "snow_in": 43.8,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
-    },
-    {
-        "city": "Chicago",
+        "name": "Chicago",
         "snow_in": 36.7,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
+        "precipitation_in": 31.9,
+        "temperature_f": 51.3,
+        "temperature_january_f": 21,
+        "temperature_july_f": 73,
+        "latitude": 41.9
     },
     {
-        "city": "Nashville",
-        "snow_in": 6.3,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
-    },
-    {
-        "city": "Denver",
-        "snow_in": 53.8,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
-    }
-    {
-        "city": "New York",
+        "name": "New York",
         "snow_in": 25.1,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
+        "precipitation_in": 46.2,
+        "temperature_f": 55.2,
+        "temperature_january_f": 36,
+        "temperature_july_f": 77,
+        "latitude": 40.7
     },
     {
-        "city": "Philadelphia",
-        "snow_in": 22.4,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
-    },
-    {
-        "city": "Seattle",
+        "name": "Seattle",
         "snow_in": 5.0,
-        "precipitation_in": null,
-        "temperature_f": null,
-        "latitude": null
+        "precipitation_in": 37.1,
+        "temperature_f": 52.65,
+        "temperature_january_f": 41,
+        "temperature_july_f": 64,
+        "latitude": 47.6
     },
     {
-        "city": "Dallas",
-        "snow_in": 1.5,
+        "name": "London",
+        "snow_in": null,
         "precipitation_in": null,
         "temperature_f": null,
-        "latitude": null
+        "temperature_january_f": 41,
+        "temperature_july_f": 66,
+        "latitude": 51.5
+    },
+    {
+        "name": "Paris",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 41,
+        "temperature_july_f": 68,
+        "latitude": 48.9
+    },
+    {
+        "name": "Budapest",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 30,
+        "temperature_july_f": 70,
+        "latitude": 47.5
+    },
+    {
+        "name": "Rome",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 46,
+        "temperature_july_f": 79,
+        "latitude": 41.9
+    },
+    {
+        "name": "Mexico City",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 55,
+        "temperature_july_f": 63,
+        "latitude": 19.4
+    },
+    {
+        "name": "Anchorage",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 19,
+        "temperature_july_f": 59,
+        "latitude": 61.2
+    },
+    {
+        "name": "Oslo",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 27,
+        "temperature_july_f": 64,
+        "latitude": 59.9
+    },
+    {
+        "name": "Tokyo",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 41,
+        "temperature_july_f": 77,
+        "latitude": 35.7
+    },
+    {
+        "name": "Beijing",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 25,
+        "temperature_july_f": 81,
+        "latitude": 39.9
+    },
+    {
+        "name": "Cairo",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 57,
+        "temperature_july_f": 82,
+        "latitude": 30.0
+    },
+    {
+        "name": "Moscow",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 18,
+        "temperature_july_f": 66,
+        "latitude": 55.8
+    },
+    {
+        "name": "Toronto",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 27,
+        "temperature_july_f": 70,
+        "latitude": 43.7
+    },
+    {
+        "name": "Istanbul",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 43,
+        "temperature_july_f": 75,
+        "latitude": 41.0
+    },
+    {
+        "name": "Mumbai",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 75,
+        "temperature_july_f": 82,
+        "latitude": 19.1
+    },
+    {
+        "name": "Karachi",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 66,
+        "temperature_july_f": 86,
+        "latitude": 24.9
+    },
+    {
+        "name": "Sydney",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 73,
+        "temperature_july_f": 55,
+        "latitude": -33.9
+    },
+    {
+        "name": "Lima",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 73,
+        "temperature_july_f": 64,
+        "latitude": -12.0
+    },
+    {
+        "name": "Jakarta",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 82,
+        "temperature_july_f": 84,
+        "latitude": -6.2
+    },
+    {
+        "name": "Sao Paulo",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 77,
+        "temperature_july_f": 66,
+        "latitude": -23.6
+    },
+    {
+        "name": "Lagos",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 81,
+        "temperature_july_f": 77,
+        "latitude": 6.5
+    },
+    {
+        "name": "Kinshasa",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 81,
+        "temperature_july_f": 75,
+        "latitude": -4.4
+    },
+    {
+        "name": "Shanghai",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 39,
+        "temperature_july_f": 84,
+        "latitude": 31.2
+    },
+    {
+        "name": "Dhaka",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 64,
+        "temperature_july_f": 84,
+        "latitude": 23.8
+    },
+    {
+        "name": "Guangzhou",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 59,
+        "temperature_july_f": 84,
+        "latitude": 23.1
+    },
+    {
+        "name": "Delhi",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 59,
+        "temperature_july_f": 88,
+        "latitude": 28.7
+    },
+    {
+        "name": "Seoul",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 25,
+        "temperature_july_f": 75,
+        "latitude": 37.6
+    },
+    {
+        "name": "Baghdad",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 52,
+        "temperature_july_f": 99,
+        "latitude": 33.3
+    },
+    {
+        "name": "Tehran",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 39,
+        "temperature_july_f": 86,
+        "latitude": 35.7
+    },
+    {
+        "name": "Bangkok",
+        "snow_in": null,
+        "precipitation_in": null,
+        "temperature_f": null,
+        "temperature_january_f": 81,
+        "temperature_july_f": 86,
+        "latitude": 13.8
     }
+
+
 ]
