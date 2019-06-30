@@ -1,0 +1,213 @@
+[
+    {
+        "name": "USA",
+        "size_km2": 9147000,
+        "population": 327200000
+    },
+    {
+        "name": "China",
+        "size_km2": 9388000,
+        "population": 1386000000
+    },
+    {
+        "name": "Canada",
+        "size_km2": 9093000,
+        "population": 37060000
+    },
+
+
+    {
+        "name": "Cuba",
+        "size_km2": 106000,
+        "population": 11492000
+    },
+    {
+        "name": "Fiji",
+        "size_km2": 18270,
+        "population": 918000
+    },
+    {
+        "name": "Ghana",
+        "size_km2": 227000,
+        "population": 30096000
+    },
+    {
+        "name": "Iceland",
+        "size_km2": 100000,
+        "population": 340000
+    },
+    {
+        "name": "Indonesia",
+        "size_km2": 1811000,
+        "population": 269000000
+    },
+    {
+        "name": "Jamaica",
+        "size_km2": 10830,
+        "population": 2906000
+    },
+    {
+        "name": "Jordan",
+        "size_km2": 88780,
+        "population": 10069000
+    },
+
+
+    {
+        "name": "Belize",
+        "size_km2": 22810,
+        "population": 390000
+    },
+    {
+        "name": "Panama",
+        "size_km2": 74000,
+        "population": 4226000
+    },
+    {
+        "name": "Singapore",
+        "size_km2": 700,
+        "population": 5868000
+    },
+    {
+        "name": "Albania",
+        "size_km2": 27400,
+        "population": 2938000
+    },
+
+
+    {
+        "name": "Russia",
+        "size_km2": 16376000,
+        "population": 144500000
+    },
+    {
+        "name": "Brazil",
+        "size_km2": 8358000,
+        "population": 209300000
+    },
+    {
+        "name": "Japan",
+        "size_km2": 364555,
+        "population": 126800000
+    },
+    {
+        "name": "Germany",
+        "size_km2": 348000,
+        "population": 82790000
+    },
+    {
+        "name": "Norway",
+        "size_km2": 365000,
+        "population": 5258000
+    },
+    {
+        "name": "Mexico",
+        "size_km2": 1943000,
+        "population": 129200000
+    },
+    {
+        "name": "Nigeria",
+        "size_km2": 910000,
+        "population": 190900000
+    },
+    {
+        "name": "South Africa",
+        "size_km2": 1213000,
+        "population": 56720000
+    },
+    {
+        "name": "India",
+        "size_km2": 2973000,
+        "population": 1339000000
+    },
+    {
+        "name": "France",
+        "size_km2": 547000,
+        "population": 66990000
+    },
+    {
+        "name": "Spain",
+        "size_km2": 498000,
+        "population": 46720000
+    },
+    {
+        "name": "Saudi Arabia",
+        "size_km2": 2149000,
+        "population": 32940000
+    },
+    {
+        "name": "Egypt",
+        "size_km2": 995000,
+        "population": 97550000
+    },
+    {
+        "name": "Mongolia",
+        "size_km2": 1553000,
+        "population": 3076000
+    },
+    {
+        "name": "Australia",
+        "size_km2": 7682000,
+        "population": 24600000
+    },
+    {
+        "name": "New Zealand",
+        "size_km2": 263000,
+        "population": 4792000
+    },
+    {
+        "name": "Argentina",
+        "size_km2": 2736000,
+        "population": 45101000
+    },
+    {
+        "name": "Pakistan",
+        "size_km2": 770000,
+        "population": 204596000
+    },
+    {
+        "name": "Qatar",
+        "size_km2": 11610,
+        "population": 2743000
+    },
+    {
+        "name": "Switzerland",
+        "size_km2": 39516,
+        "population": 8608000
+    },
+    {
+        "name": "Micronesia",
+        "size_km2": 700,
+        "population": 536000
+    },
+    {
+        "name": "South Korea",
+        "size_km2": 97230,
+        "population": 51339000
+    },
+    {
+        "name": "Venezuela",
+        "size_km2": 882000,
+        "population": 32779000
+    },
+    {
+        "name": "Vietnam",
+        "size_km2": 310000,
+        "population": 97429000
+    },
+    {
+        "name": "Zimbabwe",
+        "size_km2": 386000,
+        "population": 17297000
+    },
+    {
+        "name": "Turkey",
+        "size_km2": 769000,
+        "population": 82961000
+    },
+    {
+        "name": "Madagascar",
+        "size_km2": 581000,
+        "population": 26969000
+    }
+]
