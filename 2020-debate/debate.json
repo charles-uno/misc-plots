@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Biden",
+        "words": 2475,
+        "polls": 29.9,
+        "night": 2
+    },
+    {
+        "name": "Booker",
+        "words": 2181,
+        "polls": 2.6,
+        "night": 1
+    },
+    {
+        "name": "Harris",
+        "words": 2147,
+        "polls": 7.6,
+        "night": 2
+    },
+    {
+        "name": "Buttigieg",
+        "words": 2072,
+        "polls": 5.8,
+        "night": 2
+    },
+    {
+        "name": "O'Rourke",
+        "words": 1932,
+        "polls": 5.1,
+        "night": 1
+    },
+    {
+        "name": "Sanders",
+        "words": 1676,
+        "polls": 18.3,
+        "night": 2
+    },
+    {
+        "name": "Warren",
+        "words": 1637,
+        "polls": 8.7,
+        "night": 1
+    },
+    {
+        "name": "Klobuchar",
+        "words": 1614,
+        "polls": 2.0,
+        "night": 1
+    },
+    {
+        "name": "Castro",
+        "words": 1588,
+        "polls": 0.9,
+        "night": 1
+    },
+    {
+        "name": "Bennet",
+        "words": 1462,
+        "polls": 0.3,
+        "night": 2
+    },
+    {
+        "name": "Gillibrand",
+        "words": 1421,
+        "polls": 0.5,
+        "night": 2
+    },
+    {
+        "name": "Ryan",
+        "words": 1383,
+        "polls": 0.6,
+        "night": 1
+    },
+    {
+        "name": "Gabbard",
+        "words": 1243,
+        "polls": 0.5,
+        "night": 1
+    },
+    {
+        "name": "Delaney",
+        "words": 1060,
+        "polls": 0.2,
+        "night": 1
+    },
+    {
+        "name": "Williamson",
+        "words": 983,
+        "polls": 0.2,
+        "night": 2
+    },
+    {
+        "name": "Stalwell",
+        "words": 966,
+        "polls": 0.2,
+        "night": 2
+    },
+    {
+        "name": "Hickenlooper",
+        "words": 951,
+        "polls": 0.4,
+        "night": 2
+    },
+    {
+        "name": "de Blasio",
+        "words": 881,
+        "polls": 0.4,
+        "night": 1
+    },
+    {
+        "name": "Inslee",
+        "words": 875,
+        "polls": 0.4,
+        "night": 1
+    },
+    {
+        "name": "Yang",
+        "words": 594,
+        "polls": 1.0,
+        "night": 2
+    }
+]
