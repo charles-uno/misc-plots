@@ -1,0 +1,452 @@
+[
+    {
+        "name": "AL",
+        "full_name": "Alabama",
+        "population": 4874747,
+        "pct_65plus": 13.0,
+        "avg_age": 39.0,
+        "n_legislators": 140,
+        "rain_inches": 58.3
+    },
+    {
+        "name": "AK",
+        "full_name": "Alaska",
+        "population": 739795,
+        "pct_65plus": 5.7,
+        "avg_age": 33.5,
+        "n_legislators": 60,
+        "rain_inches": 22.5
+    },
+    {
+        "name": "AZ",
+        "full_name": "Arizona",
+        "population": 7016270,
+        "pct_65plus": 13.0,
+        "avg_age": 37.5,
+        "n_legislators": 90,
+        "rain_inches": 13.6
+    },
+    {
+        "name": "AR",
+        "full_name": "Arkansas",
+        "population": 3004279,
+        "pct_65plus": 14.0,
+        "avg_age": 38.0,
+        "n_legislators": 135,
+        "rain_inches": 50.6
+    },
+    {
+        "name": "CA",
+        "full_name": "California",
+        "population": 39536653,
+        "pct_65plus": 10.6,
+        "avg_age": 36.4,
+        "n_legislators": 120,
+        "rain_inches": 22.2
+    },
+    {
+        "name": "CO",
+        "full_name": "Colorado",
+        "population": 5607154,
+        "pct_65plus": 9.7,
+        "avg_age": 36.7,
+        "n_legislators": 100,
+        "rain_inches": 15.9
+    },
+    {
+        "name": "CT",
+        "full_name": "Connecticut",
+        "population": 3588184,
+        "pct_65plus": 13.8,
+        "avg_age": 40.9,
+        "n_legislators": 187,
+        "rain_inches": 50.3
+    },
+    {
+        "name": "DE",
+        "full_name": "Delaware",
+        "population": 961939,
+        "pct_65plus": 13.0,
+        "avg_age": 40.6,
+        "n_legislators": 62,
+        "rain_inches": 45.7
+    },
+    {
+        "name": "FL",
+        "full_name": "Florida",
+        "population": 20984400,
+        "pct_65plus": 17.6,
+        "avg_age": 42.1,
+        "n_legislators": 160,
+        "rain_inches": 54.5
+    },
+    {
+        "name": "GA",
+        "full_name": "Georgia",
+        "population": 10429379,
+        "pct_65plus": 9.6,
+        "avg_age": 36.5,
+        "n_legislators": 236,
+        "rain_inches": 50.7
+    },
+    {
+        "name": "HI",
+        "full_name": "Hawaii",
+        "population": 1427538,
+        "pct_65plus": 13.3,
+        "avg_age": 38.9,
+        "n_legislators": 76,
+        "rain_inches": 63.7
+    },
+    {
+        "name": "ID",
+        "full_name": "Idaho",
+        "population": 1716943,
+        "pct_65plus": 11.3,
+        "avg_age": 36.1,
+        "n_legislators": 105,
+        "rain_inches": 18.9
+    },
+    {
+        "name": "IL",
+        "full_name": "Illinois",
+        "population": 12802023,
+        "pct_65plus": 12.1,
+        "avg_age": 37.9,
+        "n_legislators": 177,
+        "rain_inches": 39.2
+    },
+    {
+        "name": "IN",
+        "full_name": "Indiana",
+        "population": 6666818,
+        "pct_65plus": 12.4,
+        "avg_age": 37.6,
+        "n_legislators": 150,
+        "rain_inches": 41.7
+    },
+    {
+        "name": "IA",
+        "full_name": "Iowa",
+        "population": 3145711,
+        "pct_65plus": 14.9,
+        "avg_age": 38.0,
+        "n_legislators": 150,
+        "rain_inches": 34.0
+    },
+    {
+        "name": "KS",
+        "full_name": "Kansas",
+        "population": 2913123,
+        "pct_65plus": 13.3,
+        "avg_age": 36.5,
+        "n_legislators": 165,
+        "rain_inches": 28.9
+    },
+    {
+        "name": "KY",
+        "full_name": "Kentucky",
+        "population": 4454189,
+        "pct_65plus": 12.5,
+        "avg_age": 38.7,
+        "n_legislators": 138,
+        "rain_inches": 48.9
+    },
+    {
+        "name": "LA",
+        "full_name": "Louisiana",
+        "population": 4684333,
+        "pct_65plus": 11.6,
+        "avg_age": 36.5,
+        "n_legislators": 144,
+        "rain_inches": 60.1
+    },
+    {
+        "name": "ME",
+        "full_name": "Maine",
+        "population": 1335907,
+        "pct_65plus": 14.4,
+        "avg_age": 44.5,
+        "n_legislators": 186,
+        "rain_inches": 42.2
+    },
+    {
+        "name": "MD",
+        "full_name": "Maryland",
+        "population": 6052177,
+        "pct_65plus": 11.3,
+        "avg_age": 38.5,
+        "n_legislators": 188,
+        "rain_inches": 44.5
+    },
+    {
+        "name": "MA",
+        "full_name": "Massachusetts",
+        "population": 6859819,
+        "pct_65plus": 13.5,
+        "avg_age": 39.5,
+        "n_legislators": 200,
+        "rain_inches": 47.7
+    },
+    {
+        "name": "MI",
+        "full_name": "Michigan",
+        "population": 9962311,
+        "pct_65plus": 12.3,
+        "avg_age": 39.7,
+        "n_legislators": 148,
+        "rain_inches": 32.8
+    },
+    {
+        "name": "MN",
+        "full_name": "Minnesota",
+        "population": 5576606,
+        "pct_65plus": 12.1,
+        "avg_age": 37.9,
+        "n_legislators": 201,
+        "rain_inches": 27.3
+    },
+    {
+        "name": "MS",
+        "full_name": "Mississippi",
+        "population": 2984100,
+        "pct_65plus": 12.1,
+        "avg_age": 37.2,
+        "n_legislators": 174,
+        "rain_inches": 59.0
+    },
+    {
+        "name": "MO",
+        "full_name": "Missouri",
+        "population": 6113532,
+        "pct_65plus": 13.5,
+        "avg_age": 38.4,
+        "n_legislators": 197,
+        "rain_inches": 42.2
+    },
+    {
+        "name": "MT",
+        "full_name": "Montana",
+        "population": 1050493,
+        "pct_65plus": 13.4,
+        "avg_age": 40.1,
+        "n_legislators": 150,
+        "rain_inches": 15.3
+    },
+    {
+        "name": "NE",
+        "full_name": "Nebraska",
+        "population": 1920076,
+        "pct_65plus": 13.6,
+        "avg_age": 36.3,
+        "n_legislators": 49,
+        "rain_inches": 23.6
+    },
+    {
+        "name": "NV",
+        "full_name": "Nevada",
+        "population": 2998039,
+        "pct_65plus": 11.0,
+        "avg_age": 37.9,
+        "n_legislators": 63,
+        "rain_inches": 9.5
+    },
+    {
+        "name": "NH",
+        "full_name": "New Hampshire",
+        "population": 1342795,
+        "pct_65plus": 12.0,
+        "avg_age": 42.7,
+        "n_legislators": 424,
+        "rain_inches": 43.4
+    },
+    {
+        "name": "NJ",
+        "full_name": "New Jersey",
+        "population": 9005644,
+        "pct_65plus": 13.2,
+        "avg_age": 39.5,
+        "n_legislators": 120,
+        "rain_inches": 47.1
+    },
+    {
+        "name": "NM",
+        "full_name": "New Mexico",
+        "population": 2088070,
+        "pct_65plus": 11.7,
+        "avg_age": 37.7,
+        "n_legislators": 112,
+        "rain_inches": 14.6
+    },
+    {
+        "name": "NY",
+        "full_name": "New York",
+        "population": 19849399,
+        "pct_65plus": 12.9,
+        "avg_age": 38.4,
+        "n_legislators": 212,
+        "rain_inches": 41.8
+    },
+    {
+        "name": "NC",
+        "full_name": "North Carolina",
+        "population": 10273419,
+        "pct_65plus": 12.0,
+        "avg_age": 38.7,
+        "n_legislators": 170,
+        "rain_inches": 50.3
+    },
+    {
+        "name": "ND",
+        "full_name": "North Dakota",
+        "population": 755393,
+        "pct_65plus": 14.7,
+        "avg_age": 35.0,
+        "n_legislators": 141,
+        "rain_inches": 17.8
+    },
+    {
+        "name": "OH",
+        "full_name": "Ohio",
+        "population": 11658609,
+        "pct_65plus": 13.3,
+        "avg_age": 39.3,
+        "n_legislators": 132,
+        "rain_inches": 39.1
+    },
+    {
+        "name": "OK",
+        "full_name": "Oklahoma",
+        "population": 3930864,
+        "pct_65plus": 13.2,
+        "avg_age": 36.4,
+        "n_legislators": 149,
+        "rain_inches": 36.5
+    },
+    {
+        "name": "OR",
+        "full_name": "Oregon",
+        "population": 4142776,
+        "pct_65plus": 12.8,
+        "avg_age": 39.2,
+        "n_legislators": 90,
+        "rain_inches": 27.4
+    },
+    {
+        "name": "PA",
+        "full_name": "Pennsylvania",
+        "population": 12805537,
+        "pct_65plus": 15.6,
+        "avg_age": 40.6,
+        "n_legislators": 253,
+        "rain_inches": 42.9
+    },
+    {
+        "name": "RI",
+        "full_name": "Rhode Island",
+        "population": 1059639,
+        "pct_65plus": 14.5,
+        "avg_age": 40.2,
+        "n_legislators": 113,
+        "rain_inches": 47.9
+    },
+    {
+        "name": "SC",
+        "full_name": "South Carolina",
+        "population": 5024369,
+        "pct_65plus": 12.1,
+        "avg_age": 39.1,
+        "n_legislators": 170,
+        "rain_inches": 49.8
+    },
+    {
+        "name": "SD",
+        "full_name": "South Dakota",
+        "population": 869666,
+        "pct_65plus": 14.3,
+        "avg_age": 36.8,
+        "n_legislators": 105,
+        "rain_inches": 20.1
+    },
+    {
+        "name": "TN",
+        "full_name": "Tennessee",
+        "population": 6715984,
+        "pct_65plus": 12.4,
+        "avg_age": 38.6,
+        "n_legislators": 132,
+        "rain_inches": 54.2
+    },
+    {
+        "name": "TX",
+        "full_name": "Texas",
+        "population": 28304596,
+        "pct_65plus": 9.9,
+        "avg_age": 34.5,
+        "n_legislators": 181,
+        "rain_inches": 28.9
+    },
+    {
+        "name": "UT",
+        "full_name": "Utah",
+        "population": 3101833,
+        "pct_65plus": 8.5,
+        "avg_age": 30.7,
+        "n_legislators": 104,
+        "rain_inches": 12.2
+    },
+    {
+        "name": "VT",
+        "full_name": "Vermont",
+        "population": 623657,
+        "pct_65plus": 12.7,
+        "avg_age": 43.1,
+        "n_legislators": 180,
+        "rain_inches": 42.7
+    },
+    {
+        "name": "VA",
+        "full_name": "Virginia",
+        "population": 8470020,
+        "pct_65plus": 11.2,
+        "avg_age": 38.2,
+        "n_legislators": 140,
+        "rain_inches": 44.3
+    },
+    {
+        "name": "WA",
+        "full_name": "Washington",
+        "population": 7405743,
+        "pct_65plus": 11.2,
+        "avg_age": 37.7,
+        "n_legislators": 147,
+        "rain_inches": 38.4
+    },
+    {
+        "name": "WV",
+        "full_name": "West Virginia",
+        "population": 1815857,
+        "pct_65plus": 15.3,
+        "avg_age": 42.3,
+        "n_legislators": 134,
+        "rain_inches": 45.2
+    },
+    {
+        "name": "WI",
+        "full_name": "Wisconsin",
+        "population": 5795483,
+        "pct_65plus": 13.1,
+        "avg_age": 39.4,
+        "n_legislators": 132,
+        "rain_inches": 32.6
+    },
+    {
+        "name": "WY",
+        "full_name": "Wyoming",
+        "population": 579315,
+        "pct_65plus": 11.7,
+        "avg_age": 37.2,
+        "n_legislators": 90,
+        "rain_inches": 12.9
+    }
+]
