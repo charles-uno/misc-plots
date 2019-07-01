@@ -5,6 +5,8 @@ import math
 import numpy as np
 import sys
 
+plt.rcParams.update({"font.size": 16})
+
 # ----------------------------------------------------------------------
 
 def scatter(loadfile, xkey, ykey, **kwargs):
@@ -26,8 +28,9 @@ def scatter(loadfile, xkey, ykey, **kwargs):
     plt.scatter(xvals, yvals, zorder=2, alpha=0.8)
     # Trend line
     log = kwargs.get("log", "")
-    xfit, yfit = lin_fit(xvals, yvals, log=log)
-    plt.plot(xfit, yfit, color="gray", ls=":", lw=0.5, zorder=0)
+    if kwargs.get("trend", True):
+        xfit, yfit = lin_fit(xvals, yvals, log=log)
+        plt.plot(xfit, yfit, color="gray", ls=":", lw=0.5, zorder=0)
     # Title and axis labels
     plt.title(kwargs.get("title", "ADD TITLE HERE"))
     plt.xlabel(kwargs.get("xlabel", "ADD X LABEL HERE"))
@@ -73,7 +76,6 @@ def highlight(obj, xkey, ykey):
         "  " + name,
         horizontalalignment="left",
         verticalalignment="center",
-        fontsize=10,
     )
 
 # ----------------------------------------------------------------------
