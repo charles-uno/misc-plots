@@ -9,12 +9,14 @@ def main():
         xkey = "population",
         ykey = "pct_white",
         title="Larger States Are Generally More Diverse",
-        xlabel="Population",
+        xlabel="Population (millions)",
         ylabel="Non-Hispanic White Population (%)",
         namesize=10,
         ylim=[0, 100],
         log="x",
         xlim=[1e5, 1e8],
+        xticks=[1e5, 1e6, 1e7, 1e8],
+        xticklabels=[0.1, 1, 10, 100],
         savefile="example-plot-log.png"
     )
 
