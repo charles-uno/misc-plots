@@ -23,7 +23,7 @@ def scatter(loadfile, xkey, ykey, **kwargs):
         xvals.append(elt[xkey])
         yvals.append(elt[ykey])
         # Label each point
-        highlight(elt, xkey, ykey)
+        highlight(elt, xkey, ykey, **kwargs)
     # Put the data on the plot
     plt.scatter(xvals, yvals, zorder=2, alpha=0.8)
     # Trend line
@@ -68,7 +68,7 @@ def scatter(loadfile, xkey, ykey, **kwargs):
 
 # ----------------------------------------------------------------------
 
-def highlight(obj, xkey, ykey):
+def highlight(obj, xkey, ykey, **kwargs):
     name, xval, yval = obj["name"], obj[xkey], obj[ykey]
     return plt.text(
         xval,
@@ -76,6 +76,7 @@ def highlight(obj, xkey, ykey):
         "  " + name,
         horizontalalignment="left",
         verticalalignment="center",
+        fontsize=kwargs.get("namesize"),
     )
 
 # ----------------------------------------------------------------------
