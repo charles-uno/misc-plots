@@ -6,7 +6,9 @@
         "pct_65plus": 13.0,
         "avg_age": 39.0,
         "n_legislators": 140,
-        "rain_inches": 58.3
+        "rain_inches": 58.3,
+        "pct_black": 26.77,
+        "pct_white": 66.6
     },
     {
         "name": "AK",
@@ -15,7 +17,9 @@
         "pct_65plus": 5.7,
         "avg_age": 33.5,
         "n_legislators": 60,
-        "rain_inches": 22.5
+        "rain_inches": 22.5,
+        "pct_black": 3.9,
+        "pct_white": 63.0
     },
     {
         "name": "AZ",
@@ -24,7 +28,9 @@
         "pct_65plus": 13.0,
         "avg_age": 37.5,
         "n_legislators": 90,
-        "rain_inches": 13.6
+        "rain_inches": 13.6,
+        "pct_black": 4.84,
+        "pct_white": 56.9
     },
     {
         "name": "AR",
@@ -33,7 +39,9 @@
         "pct_65plus": 14.0,
         "avg_age": 38.0,
         "n_legislators": 135,
-        "rain_inches": 50.6
+        "rain_inches": 50.6,
+        "pct_black": 15.65,
+        "pct_white": 73.9
     },
     {
         "name": "CA",
@@ -42,7 +50,9 @@
         "pct_65plus": 10.6,
         "avg_age": 36.4,
         "n_legislators": 120,
-        "rain_inches": 22.2
+        "rain_inches": 22.2,
+        "pct_black": 6.52,
+        "pct_white": 39.2
     },
     {
         "name": "CO",
@@ -51,7 +61,9 @@
         "pct_65plus": 9.7,
         "avg_age": 36.7,
         "n_legislators": 100,
-        "rain_inches": 15.9
+        "rain_inches": 15.9,
+        "pct_black": 4.49,
+        "pct_white": 69.4
     },
     {
         "name": "CT",
@@ -60,7 +72,9 @@
         "pct_65plus": 13.8,
         "avg_age": 40.9,
         "n_legislators": 187,
-        "rain_inches": 50.3
+        "rain_inches": 50.3,
+        "pct_black": 11.65,
+        "pct_white": 70.0
     },
     {
         "name": "DE",
@@ -69,7 +83,9 @@
         "pct_65plus": 13.0,
         "avg_age": 40.6,
         "n_legislators": 62,
-        "rain_inches": 45.7
+        "rain_inches": 45.7,
+        "pct_black": 22.4,
+        "pct_white": 64.3
     },
     {
         "name": "FL",
@@ -78,7 +94,9 @@
         "pct_65plus": 17.6,
         "avg_age": 42.1,
         "n_legislators": 160,
-        "rain_inches": 54.5
+        "rain_inches": 54.5,
+        "pct_black": 16.82,
+        "pct_white": 56.8
     },
     {
         "name": "GA",
@@ -87,7 +105,9 @@
         "pct_65plus": 9.6,
         "avg_age": 36.5,
         "n_legislators": 236,
-        "rain_inches": 50.7
+        "rain_inches": 50.7,
+        "pct_black": 31.72,
+        "pct_white": 55.0
     },
     {
         "name": "HI",
@@ -96,7 +116,9 @@
         "pct_65plus": 13.3,
         "avg_age": 38.9,
         "n_legislators": 76,
-        "rain_inches": 63.7
+        "rain_inches": 63.7,
+        "pct_black": 2.61,
+        "pct_white": 22.8
     },
     {
         "name": "ID",
@@ -105,7 +127,9 @@
         "pct_65plus": 11.3,
         "avg_age": 36.1,
         "n_legislators": 105,
-        "rain_inches": 18.9
+        "rain_inches": 18.9,
+        "pct_black": 0.84,
+        "pct_white": 83.4
     },
     {
         "name": "IL",
@@ -114,7 +138,9 @@
         "pct_65plus": 12.1,
         "avg_age": 37.9,
         "n_legislators": 177,
-        "rain_inches": 39.2
+        "rain_inches": 39.2,
+        "pct_black": 14.68,
+        "pct_white": 62.9
     },
     {
         "name": "IN",
@@ -123,7 +149,9 @@
         "pct_65plus": 12.4,
         "avg_age": 37.6,
         "n_legislators": 150,
-        "rain_inches": 41.7
+        "rain_inches": 41.7,
+        "pct_black": 9.62,
+        "pct_white": 80.9
     },
     {
         "name": "IA",
@@ -132,7 +160,9 @@
         "pct_65plus": 14.9,
         "avg_age": 38.0,
         "n_legislators": 150,
-        "rain_inches": 34.0
+        "rain_inches": 34.0,
+        "pct_black": 3.52,
+        "pct_white": 88.0
     },
     {
         "name": "KS",
@@ -141,7 +171,9 @@
         "pct_65plus": 13.3,
         "avg_age": 36.5,
         "n_legislators": 165,
-        "rain_inches": 28.9
+        "rain_inches": 28.9,
+        "pct_black": 6.28,
+        "pct_white": 77.4
     },
     {
         "name": "KY",
@@ -150,7 +182,9 @@
         "pct_65plus": 12.5,
         "avg_age": 38.7,
         "n_legislators": 138,
-        "rain_inches": 48.9
+        "rain_inches": 48.9,
+        "pct_black": 8.28,
+        "pct_white": 85.8
     },
     {
         "name": "LA",
@@ -159,7 +193,9 @@
         "pct_65plus": 11.6,
         "avg_age": 36.5,
         "n_legislators": 144,
-        "rain_inches": 60.1
+        "rain_inches": 60.1,
+        "pct_black": 32.49,
+        "pct_white": 59.7
     },
     {
         "name": "ME",
@@ -168,7 +204,9 @@
         "pct_65plus": 14.4,
         "avg_age": 44.5,
         "n_legislators": 186,
-        "rain_inches": 42.2
+        "rain_inches": 42.2,
+        "pct_black": 1.45,
+        "pct_white": 94.1
     },
     {
         "name": "MD",
@@ -177,7 +215,9 @@
         "pct_65plus": 11.3,
         "avg_age": 38.5,
         "n_legislators": 188,
-        "rain_inches": 44.5
+        "rain_inches": 44.5,
+        "pct_black": 30.46,
+        "pct_white": 53.8
     },
     {
         "name": "MA",
@@ -186,7 +226,9 @@
         "pct_65plus": 13.5,
         "avg_age": 39.5,
         "n_legislators": 200,
-        "rain_inches": 47.7
+        "rain_inches": 47.7,
+        "pct_black": 8.45,
+        "pct_white": 75.3
     },
     {
         "name": "MI",
@@ -195,7 +237,9 @@
         "pct_65plus": 12.3,
         "avg_age": 39.7,
         "n_legislators": 148,
-        "rain_inches": 32.8
+        "rain_inches": 32.8,
+        "pct_black": 14.21,
+        "pct_white": 76.1
     },
     {
         "name": "MN",
@@ -204,7 +248,9 @@
         "pct_65plus": 12.1,
         "avg_age": 37.9,
         "n_legislators": 201,
-        "rain_inches": 27.3
+        "rain_inches": 27.3,
+        "pct_black": 5.99,
+        "pct_white": 82.3
     },
     {
         "name": "MS",
@@ -213,7 +259,9 @@
         "pct_65plus": 12.1,
         "avg_age": 37.2,
         "n_legislators": 174,
-        "rain_inches": 59.0
+        "rain_inches": 59.0,
+        "pct_black": 37.59,
+        "pct_white": 57.5
     },
     {
         "name": "MO",
@@ -222,7 +270,9 @@
         "pct_65plus": 13.5,
         "avg_age": 38.4,
         "n_legislators": 197,
-        "rain_inches": 42.2
+        "rain_inches": 42.2,
+        "pct_black": 11.81,
+        "pct_white": 80.5
     },
     {
         "name": "MT",
@@ -231,7 +281,9 @@
         "pct_65plus": 13.4,
         "avg_age": 40.1,
         "n_legislators": 150,
-        "rain_inches": 15.3
+        "rain_inches": 15.3,
+        "pct_black": 0.61,
+        "pct_white": 87.2
     },
     {
         "name": "NE",
@@ -240,7 +292,9 @@
         "pct_65plus": 13.6,
         "avg_age": 36.3,
         "n_legislators": 49,
-        "rain_inches": 23.6
+        "rain_inches": 23.6,
+        "pct_black": 4.95,
+        "pct_white": 81.3
     },
     {
         "name": "NV",
@@ -249,7 +303,9 @@
         "pct_65plus": 11.0,
         "avg_age": 37.9,
         "n_legislators": 63,
-        "rain_inches": 9.5
+        "rain_inches": 9.5,
+        "pct_black": 9.27,
+        "pct_white": 52.7
     },
     {
         "name": "NH",
@@ -258,7 +314,9 @@
         "pct_65plus": 12.0,
         "avg_age": 42.7,
         "n_legislators": 424,
-        "rain_inches": 43.4
+        "rain_inches": 43.4,
+        "pct_black": 1.49,
+        "pct_white": 91.8
     },
     {
         "name": "NJ",
@@ -267,7 +325,9 @@
         "pct_65plus": 13.2,
         "avg_age": 39.5,
         "n_legislators": 120,
-        "rain_inches": 47.1
+        "rain_inches": 47.1,
+        "pct_black": 14.85,
+        "pct_white": 57.9
     },
     {
         "name": "NM",
@@ -276,7 +336,9 @@
         "pct_65plus": 11.7,
         "avg_age": 37.7,
         "n_legislators": 112,
-        "rain_inches": 14.6
+        "rain_inches": 14.6,
+        "pct_black": 2.56,
+        "pct_white": 39.7
     },
     {
         "name": "NY",
@@ -285,7 +347,9 @@
         "pct_65plus": 12.9,
         "avg_age": 38.4,
         "n_legislators": 212,
-        "rain_inches": 41.8
+        "rain_inches": 41.8,
+        "pct_black": 17.64,
+        "pct_white": 57.4
     },
     {
         "name": "NC",
@@ -294,7 +358,9 @@
         "pct_65plus": 12.0,
         "avg_age": 38.7,
         "n_legislators": 170,
-        "rain_inches": 50.3
+        "rain_inches": 50.3,
+        "pct_black": 22.14,
+        "pct_white": 64.5
     },
     {
         "name": "ND",
@@ -303,7 +369,9 @@
         "pct_65plus": 14.7,
         "avg_age": 35.0,
         "n_legislators": 141,
-        "rain_inches": 17.8
+        "rain_inches": 17.8,
+        "pct_black": 2.43,
+        "pct_white": 88.1
     },
     {
         "name": "OH",
@@ -312,7 +380,9 @@
         "pct_65plus": 13.3,
         "avg_age": 39.3,
         "n_legislators": 132,
-        "rain_inches": 39.1
+        "rain_inches": 39.1,
+        "pct_black": 12.72,
+        "pct_white": 80.6
     },
     {
         "name": "OK",
@@ -321,7 +391,9 @@
         "pct_65plus": 13.2,
         "avg_age": 36.4,
         "n_legislators": 149,
-        "rain_inches": 36.5
+        "rain_inches": 36.5,
+        "pct_black": 7.77,
+        "pct_white": 67.8
     },
     {
         "name": "OR",
@@ -330,7 +402,9 @@
         "pct_65plus": 12.8,
         "avg_age": 39.2,
         "n_legislators": 90,
-        "rain_inches": 27.4
+        "rain_inches": 27.4,
+        "pct_black": 2.08,
+        "pct_white": 77.6
     },
     {
         "name": "PA",
@@ -339,7 +413,9 @@
         "pct_65plus": 15.6,
         "avg_age": 40.6,
         "n_legislators": 253,
-        "rain_inches": 42.9
+        "rain_inches": 42.9,
+        "pct_black": 11.7,
+        "pct_white": 78.6
     },
     {
         "name": "RI",
@@ -348,7 +424,9 @@
         "pct_65plus": 14.5,
         "avg_age": 40.2,
         "n_legislators": 113,
-        "rain_inches": 47.9
+        "rain_inches": 47.9,
+        "pct_black": 7.87,
+        "pct_white": 75.4
     },
     {
         "name": "SC",
@@ -357,7 +435,9 @@
         "pct_65plus": 12.1,
         "avg_age": 39.1,
         "n_legislators": 170,
-        "rain_inches": 49.8
+        "rain_inches": 49.8,
+        "pct_black": 27.64,
+        "pct_white": 63.9
     },
     {
         "name": "SD",
@@ -366,7 +446,9 @@
         "pct_65plus": 14.3,
         "avg_age": 36.8,
         "n_legislators": 105,
-        "rain_inches": 20.1
+        "rain_inches": 20.1,
+        "pct_black": 1.84,
+        "pct_white": 83.8
     },
     {
         "name": "TN",
@@ -375,7 +457,9 @@
         "pct_65plus": 12.4,
         "avg_age": 38.6,
         "n_legislators": 132,
-        "rain_inches": 54.2
+        "rain_inches": 54.2,
+        "pct_black": 17.12,
+        "pct_white": 75.0
     },
     {
         "name": "TX",
@@ -384,7 +468,9 @@
         "pct_65plus": 9.9,
         "avg_age": 34.5,
         "n_legislators": 181,
-        "rain_inches": 28.9
+        "rain_inches": 28.9,
+        "pct_black": 12.54,
+        "pct_white": 44.3
     },
     {
         "name": "UT",
@@ -393,7 +479,9 @@
         "pct_65plus": 8.5,
         "avg_age": 30.7,
         "n_legislators": 104,
-        "rain_inches": 12.2
+        "rain_inches": 12.2,
+        "pct_black": 1.34,
+        "pct_white": 79.8
     },
     {
         "name": "VT",
@@ -402,7 +490,9 @@
         "pct_65plus": 12.7,
         "avg_age": 43.1,
         "n_legislators": 180,
-        "rain_inches": 42.7
+        "rain_inches": 42.7,
+        "pct_black": 1.3,
+        "pct_white": 94.0
     },
     {
         "name": "VA",
@@ -411,7 +501,9 @@
         "pct_65plus": 11.2,
         "avg_age": 38.2,
         "n_legislators": 140,
-        "rain_inches": 44.3
+        "rain_inches": 44.3,
+        "pct_black": 19.73,
+        "pct_white": 63.9
     },
     {
         "name": "WA",
@@ -420,7 +512,9 @@
         "pct_65plus": 11.2,
         "avg_age": 37.7,
         "n_legislators": 147,
-        "rain_inches": 38.4
+        "rain_inches": 38.4,
+        "pct_black": 4.11,
+        "pct_white": 71.4
     },
     {
         "name": "WV",
@@ -429,7 +523,9 @@
         "pct_65plus": 15.3,
         "avg_age": 42.3,
         "n_legislators": 134,
-        "rain_inches": 45.2
+        "rain_inches": 45.2,
+        "pct_black": 3.64,
+        "pct_white": 92.8
     },
     {
         "name": "WI",
@@ -438,7 +534,9 @@
         "pct_65plus": 13.1,
         "avg_age": 39.4,
         "n_legislators": 132,
-        "rain_inches": 32.6
+        "rain_inches": 32.6,
+        "pct_black": 6.61,
+        "pct_white": 82.8
     },
     {
         "name": "WY",
@@ -447,6 +545,8 @@
         "pct_65plus": 11.7,
         "avg_age": 37.2,
         "n_legislators": 90,
-        "rain_inches": 12.9
+        "rain_inches": 12.9,
+        "pct_black": 1.41,
+        "pct_white": 84.6
     }
 ]
