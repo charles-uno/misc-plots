@@ -4,21 +4,32 @@ import helpers
 
 def main():
 
-    data = helpers.load_json("data/nations.json")
+    data = helpers.load_json("data/states.json")
 
-    key = "area_km2"
+    if not isinstance(data, dict):
+        data = { x["full_name"]:x for x in data }
+
+
+    key = "marriage_age"
 
     new = {}
     lines = helpers.read_lines("entry.txt")
-
-    lines = lines[::4]
+    lines = [ x for x in lines if x ]
+#    lines = lines[::4]
 
     for line in lines:
 
+
+        line = line.split(". ")[-1]
+        name, num = line.split(": ", 1)
+        new[name] = float(num)
+
+
+
         try:
-            name = line.split("\t")[1]
+            name = line.split("\t")[0]
             name = name.split("(")[0].strip()
-            new[name] = float(line.split("\t")[2].replace(",", ""))
+            new[name] = float(line.split("\t")[1].replace(",", ""))
         except Exception:
             pass
 
@@ -39,7 +50,6 @@ def main():
         else:
             cleaned[key] = v
         cleaned[key]["name"] = key
-
 
     return helpers.dump_json(cleaned, "foo.json")
 
