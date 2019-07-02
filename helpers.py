@@ -15,7 +15,7 @@ def scatter(loadfile, xkey, ykey, **kwargs):
     # Figure out values, skipping bad ones
     skip = kwargs.get("skip", [])
     xvals, yvals = [], []
-    for elt in load_json(loadfile):
+    for name, elt in load_json(loadfile).items():
         if not elt.get(xkey) or not elt.get(ykey):
             continue
         if elt["name"] in skip:
@@ -89,7 +89,7 @@ def read_lines(filename):
 
 def dump_json(obj, filename):
     with open(filename, "w") as handle:
-        json.dump(obj, handle, indent=4)
+        json.dump(obj, handle, indent=4, sort_keys=True)
 
 # ----------------------------------------------------------------------
 

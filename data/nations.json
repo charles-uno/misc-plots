@@ -1,248 +1,1450 @@
-[
-    {
-        "name": "USA",
-        "size_km2": 9147000,
-        "population": 327200000,
-        "density_km2": 35.77129113370504
+{
+    "Abkhazia": {
+        "area_km2": 8660.0,
+        "name": "Abkhazia"
     },
-    {
-        "name": "China",
-        "size_km2": 9388000,
-        "population": 1386000000,
-        "density_km2": 147.6352790796762
+    "Afghanistan": {
+        "gdp_ppp": 2017,
+        "name": "Afghanistan",
+        "population": 37209007.0
     },
-    {
-        "name": "Canada",
-        "size_km2": 9093000,
-        "population": 37060000,
-        "density_km2": 4.075662597602552
+    "Akrotiri and Dhekelia": {
+        "area_km2": 253.8,
+        "name": "Akrotiri and Dhekelia"
     },
-    {
-        "name": "Cuba",
-        "size_km2": 106000,
-        "population": 11492000,
-        "density_km2": 108.41509433962264
-    },
-    {
-        "name": "Fiji",
-        "size_km2": 18270,
-        "population": 918000,
-        "density_km2": 50.24630541871921
-    },
-    {
-        "name": "Ghana",
-        "size_km2": 227000,
-        "population": 30096000,
-        "density_km2": 132.58149779735683
-    },
-    {
-        "name": "Iceland",
-        "size_km2": 100000,
-        "population": 340000,
-        "density_km2": 3.4
-    },
-    {
-        "name": "Indonesia",
-        "size_km2": 1811000,
-        "population": 269000000,
-        "density_km2": 148.5367200441745
-    },
-    {
-        "name": "Jamaica",
-        "size_km2": 10830,
-        "population": 2906000,
-        "density_km2": 268.3287165281625
-    },
-    {
-        "name": "Jordan",
-        "size_km2": 88780,
-        "population": 10069000,
-        "density_km2": 113.4151835999099
-    },
-    {
-        "name": "Belize",
-        "size_km2": 22810,
-        "population": 390000,
-        "density_km2": 17.09776413853573
-    },
-    {
-        "name": "Panama",
-        "size_km2": 74000,
-        "population": 4226000,
-        "density_km2": 57.108108108108105
-    },
-    {
-        "name": "Singapore",
-        "size_km2": 700,
-        "population": 5868000,
-        "density_km2": 8382.857142857143
-    },
-    {
+    "Albania": {
+        "density_km2": 107.22627737226277,
+        "gdp_ppp": 13345,
+        "household_size": null,
         "name": "Albania",
-        "size_km2": 27400,
-        "population": 2938000,
-        "density_km2": 107.22627737226277
+        "population": 2938428.0,
+        "size_km2": 27400
     },
-    {
-        "name": "Russia",
-        "size_km2": 16376000,
-        "population": 144500000,
-        "density_km2": 8.823888617489008
+    "Algeria": {
+        "gdp_ppp": 15440,
+        "name": "Algeria",
+        "population": 42679018.0
     },
-    {
-        "name": "Brazil",
-        "size_km2": 8358000,
-        "population": 209300000,
-        "density_km2": 25.041876046901173
+    "American Samoa": {
+        "name": "American Samoa",
+        "population": 55727.0
     },
-    {
-        "name": "Japan",
-        "size_km2": 364555,
-        "population": 126800000,
-        "density_km2": 347.8213163994459
+    "Andorra": {
+        "area_km2": 468.0,
+        "name": "Andorra",
+        "population": 77072.0
     },
-    {
-        "name": "Germany",
-        "size_km2": 348000,
-        "population": 82790000,
-        "density_km2": 237.9022988505747
+    "Angola": {
+        "gdp_ppp": 6814,
+        "name": "Angola",
+        "population": 31787566.0
     },
-    {
-        "name": "Norway",
-        "size_km2": 365000,
-        "population": 5258000,
-        "density_km2": 14.405479452054795
+    "Anguilla": {
+        "name": "Anguilla",
+        "population": 15174.0
     },
-    {
-        "name": "Mexico",
-        "size_km2": 1943000,
-        "population": 129200000,
-        "density_km2": 66.49511065362842
+    "Antarctica": {
+        "area_km2": 14000000.0,
+        "name": "Antarctica"
     },
-    {
-        "name": "Nigeria",
-        "size_km2": 910000,
-        "population": 190900000,
-        "density_km2": 209.78021978021977
+    "Antigua and Barbuda": {
+        "area_km2": 442.0,
+        "gdp_ppp": 27981,
+        "name": "Antigua and Barbuda",
+        "population": 104084.0
     },
-    {
-        "name": "South Africa",
-        "size_km2": 1213000,
-        "population": 56720000,
-        "density_km2": 46.760098928276996
-    },
-    {
-        "name": "India",
-        "size_km2": 2973000,
-        "population": 1339000000,
-        "density_km2": 450.3868146653212
-    },
-    {
-        "name": "France",
-        "size_km2": 547000,
-        "population": 66990000,
-        "density_km2": 122.46800731261426
-    },
-    {
-        "name": "Spain",
-        "size_km2": 498000,
-        "population": 46720000,
-        "density_km2": 93.81526104417671
-    },
-    {
-        "name": "Saudi Arabia",
-        "size_km2": 2149000,
-        "population": 32940000,
-        "density_km2": 15.32805956258725
-    },
-    {
-        "name": "Egypt",
-        "size_km2": 995000,
-        "population": 97550000,
-        "density_km2": 98.04020100502512
-    },
-    {
-        "name": "Mongolia",
-        "size_km2": 1553000,
-        "population": 3076000,
-        "density_km2": 1.9806825499034129
-    },
-    {
-        "name": "Australia",
-        "size_km2": 7682000,
-        "population": 24600000,
-        "density_km2": 3.202291070033845
-    },
-    {
-        "name": "New Zealand",
-        "size_km2": 263000,
-        "population": 4792000,
-        "density_km2": 18.220532319391634
-    },
-    {
+    "Argentina": {
+        "density_km2": 16.484283625730995,
+        "gdp_ppp": 20537,
+        "household_size": 3.3,
         "name": "Argentina",
-        "size_km2": 2736000,
-        "population": 45101000,
-        "density_km2": 16.484283625730995
+        "population": 45101781.0,
+        "size_km2": 2736000
     },
-    {
-        "name": "Pakistan",
-        "size_km2": 770000,
-        "population": 204596000,
-        "density_km2": 265.7090909090909
+    "Armenia": {
+        "gdp_ppp": 10176,
+        "household_size": null,
+        "name": "Armenia",
+        "population": 2936706.0
     },
-    {
-        "name": "Qatar",
-        "size_km2": 11610,
-        "population": 2743000,
-        "density_km2": 236.26184323858743
+    "Aruba": {
+        "name": "Aruba",
+        "population": 106053.0
     },
-    {
-        "name": "Switzerland",
-        "size_km2": 39516,
-        "population": 8608000,
-        "density_km2": 217.83581334143133
+    "Australia": {
+        "density_km2": 3.202291070033845,
+        "gdp_ppp": 52373,
+        "household_size": 2.7,
+        "name": "Australia",
+        "population": 25088636.0,
+        "size_km2": 7682000
     },
-    {
-        "name": "Micronesia",
-        "size_km2": 700,
-        "population": 536000,
-        "density_km2": 765.7142857142857
+    "Austria": {
+        "gdp_ppp": 52137,
+        "household_size": null,
+        "name": "Austria",
+        "population": 8766201.0
     },
-    {
-        "name": "South Korea",
-        "size_km2": 97230,
-        "population": 51339000,
-        "density_km2": 528.0160444307312
+    "Azerbaijan": {
+        "gdp_ppp": 18076,
+        "household_size": null,
+        "name": "Azerbaijan",
+        "population": 10014575.0
     },
-    {
-        "name": "Venezuela",
-        "size_km2": 882000,
-        "population": 32779000,
-        "density_km2": 37.16439909297052
+    "Bahamas": {
+        "name": "Bahamas",
+        "population": 403095.0
     },
-    {
-        "name": "Vietnam",
-        "size_km2": 310000,
-        "population": 97429000,
-        "density_km2": 314.28709677419357
+    "Bahamas, The": {
+        "gdp_ppp": 33494,
+        "name": "Bahamas, The"
     },
-    {
-        "name": "Zimbabwe",
-        "size_km2": 386000,
-        "population": 17297000,
-        "density_km2": 44.810880829015545
+    "Bahrain": {
+        "gdp_ppp": 50057,
+        "name": "Bahrain",
+        "population": 1637896.0
     },
-    {
-        "name": "Turkey",
-        "size_km2": 769000,
-        "population": 82961000,
-        "density_km2": 107.88166449934981
+    "Bangladesh": {
+        "gdp_ppp": 4620,
+        "household_size": 4.4,
+        "name": "Bangladesh",
+        "population": 168065920.0
     },
-    {
+    "Barbados": {
+        "area_km2": 430.0,
+        "gdp_ppp": 18534,
+        "name": "Barbados",
+        "population": 287010.0
+    },
+    "Belarus": {
+        "area_km2": 207600.0,
+        "gdp_ppp": 20003,
+        "household_size": null,
+        "name": "Belarus",
+        "population": 9433874.0
+    },
+    "Belgium": {
+        "gdp_ppp": 48245,
+        "household_size": null,
+        "name": "Belgium",
+        "population": 11562784.0
+    },
+    "Belize": {
+        "density_km2": 17.09776413853573,
+        "gdp_ppp": 8501,
+        "household_size": null,
+        "name": "Belize",
+        "population": 390231.0,
+        "size_km2": 22810
+    },
+    "Benin": {
+        "gdp_ppp": 2426,
+        "household_size": null,
+        "name": "Benin",
+        "population": 11801595.0
+    },
+    "Bermuda": {
+        "household_size": 2.4,
+        "name": "Bermuda",
+        "population": 60833.0
+    },
+    "Bhutan": {
+        "gdp_ppp": 9540,
+        "name": "Bhutan",
+        "population": 826229.0
+    },
+    "Bir Tawil": {
+        "area_km2": 2060.0,
+        "name": "Bir Tawil"
+    },
+    "Bolivia": {
+        "gdp_ppp": 7477,
+        "household_size": 4.1,
+        "name": "Bolivia",
+        "population": 11379861.0
+    },
+    "Bonaire": {
+        "area_km2": 294.0,
+        "name": "Bonaire"
+    },
+    "Bosnia and Herzegovina": {
+        "gdp_ppp": 13491,
+        "household_size": null,
+        "name": "Bosnia and Herzegovina",
+        "population": 3501774.0
+    },
+    "Botswana": {
+        "area_km2": 581730.0,
+        "gdp_ppp": 17965,
+        "household_size": null,
+        "name": "Botswana",
+        "population": 2374636.0
+    },
+    "Brazil": {
+        "density_km2": 25.041876046901173,
+        "gdp_ppp": 16154,
+        "household_size": 3.3,
+        "name": "Brazil",
+        "population": 212392717.0,
+        "size_km2": 8358000
+    },
+    "British Virgin Islands": {
+        "name": "British Virgin Islands",
+        "population": 32206.0
+    },
+    "Brunei": {
+        "gdp_ppp": 79530,
+        "name": "Brunei",
+        "population": 439336.0
+    },
+    "Bulgaria": {
+        "gdp_ppp": 23156,
+        "household_size": 2.7,
+        "name": "Bulgaria",
+        "population": 6988739.0
+    },
+    "Burkina Faso": {
+        "gdp_ppp": 1996,
+        "household_size": 5.9,
+        "name": "Burkina Faso",
+        "population": 20321560.0
+    },
+    "Burundi": {
+        "gdp_ppp": 732,
+        "name": "Burundi",
+        "population": 11575964.0
+    },
+    "Cabo Verde": {
+        "name": "Cabo Verde",
+        "population": 560349.0
+    },
+    "Cambodia": {
+        "area_km2": 181035.0,
+        "gdp_ppp": 4335,
+        "household_size": 4.7,
+        "name": "Cambodia",
+        "population": 16482646.0
+    },
+    "Cameroon": {
+        "gdp_ppp": 3828,
+        "name": "Cameroon",
+        "population": 25312993.0
+    },
+    "Canada": {
+        "area_km2": 9984670.0,
+        "density_km2": 4.075662597602552,
+        "gdp_ppp": 49651,
+        "household_size": null,
+        "name": "Canada",
+        "population": 37279811.0,
+        "size_km2": 9093000
+    },
+    "Cape Verde": {
+        "area_km2": 4033.0,
+        "gdp_ppp": 7316,
+        "name": "Cape Verde"
+    },
+    "Caribbean Netherlands": {
+        "name": "Caribbean Netherlands",
+        "population": 25971.0
+    },
+    "Cayman Islands": {
+        "area_km2": 264.0,
+        "name": "Cayman Islands",
+        "population": 63129.0
+    },
+    "Central African Republic": {
+        "area_km2": 622984.0,
+        "gdp_ppp": 712,
+        "name": "Central African Republic",
+        "population": 4825711.0
+    },
+    "Chad": {
+        "gdp_ppp": 2415,
+        "name": "Chad",
+        "population": 15814345.0
+    },
+    "Channel Islands": {
+        "name": "Channel Islands",
+        "population": 166828.0
+    },
+    "Chile": {
+        "gdp_ppp": 25978,
+        "household_size": 3.3,
+        "name": "Chile",
+        "population": 18336653.0
+    },
+    "China": {
+        "area_km2": 9596961.0,
+        "density_km2": 147.6352790796762,
+        "gdp_ppp": 18110,
+        "household_size": 3.0,
+        "name": "China",
+        "population": 1420062022.0,
+        "size_km2": 9388000
+    },
+    "Colombia": {
+        "gdp_ppp": 14943,
+        "household_size": 3.9,
+        "name": "Colombia",
+        "population": 49849818.0
+    },
+    "Comoros": {
+        "area_km2": 1862.0,
+        "gdp_ppp": 1632,
+        "name": "Comoros",
+        "population": 850910.0
+    },
+    "Congo": {
+        "name": "Congo",
+        "population": 5542197.0
+    },
+    "Cook Islands": {
+        "name": "Cook Islands",
+        "population": 17462.0
+    },
+    "Costa Rica": {
+        "gdp_ppp": 17559,
+        "name": "Costa Rica",
+        "population": 4999384.0
+    },
+    "Croatia": {
+        "gdp_ppp": 26221,
+        "household_size": 3.0,
+        "name": "Croatia",
+        "population": 4140148.0
+    },
+    "Cuba": {
+        "density_km2": 108.41509433962264,
+        "household_size": 3.2,
+        "name": "Cuba",
+        "population": 11492046.0,
+        "size_km2": 106000
+    },
+    "Cura\u00e7ao": {
+        "area_km2": 444.0,
+        "name": "Cura\u00e7ao",
+        "population": 162547.0
+    },
+    "Cyprus": {
+        "area_km2": 9251.0,
+        "gdp_ppp": 39973,
+        "household_size": 3.1,
+        "name": "Cyprus",
+        "population": 1198427.0
+    },
+    "Czech Republic": {
+        "gdp_ppp": 37371,
+        "household_size": null,
+        "name": "Czech Republic"
+    },
+    "Czechia": {
+        "name": "Czechia",
+        "population": 10630589.0
+    },
+    "C\u00f4te d'Ivoire": {
+        "gdp_ppp": 4178,
+        "name": "C\u00f4te d'Ivoire",
+        "population": 25531083.0
+    },
+    "DR Congo": {
+        "gdp_ppp": 6799,
+        "name": "DR Congo",
+        "population": 86727573.0
+    },
+    "Denmark": {
+        "gdp_ppp": 52121,
+        "household_size": null,
+        "name": "Denmark",
+        "population": 5775224.0
+    },
+    "Djibouti": {
+        "gdp_ppp": 3786,
+        "name": "Djibouti",
+        "population": 985690.0
+    },
+    "Dominica": {
+        "gdp_ppp": 9886,
+        "name": "Dominica",
+        "population": 74679.0
+    },
+    "Dominican Republic": {
+        "gdp_ppp": 18424,
+        "household_size": 3.9,
+        "name": "Dominican Republic",
+        "population": 10996774.0
+    },
+    "Ecuador": {
+        "gdp_ppp": 11718,
+        "household_size": 4.2,
+        "name": "Ecuador",
+        "population": 17100444.0
+    },
+    "Egypt": {
+        "density_km2": 98.04020100502512,
+        "gdp_ppp": 13366,
+        "household_size": null,
+        "name": "Egypt",
+        "population": 101168745.0,
+        "size_km2": 995000
+    },
+    "El Salvador": {
+        "gdp_ppp": 8041,
+        "name": "El Salvador",
+        "population": 6445405.0
+    },
+    "Equatorial Guinea": {
+        "gdp_ppp": 22710,
+        "name": "Equatorial Guinea",
+        "population": 1360104.0
+    },
+    "Eritrea": {
+        "gdp_ppp": 1657,
+        "name": "Eritrea",
+        "population": 5309659.0
+    },
+    "Estonia": {
+        "gdp_ppp": 34096,
+        "household_size": null,
+        "name": "Estonia",
+        "population": 1303798.0
+    },
+    "Eswatini": {
+        "gdp_ppp": 11020,
+        "name": "Eswatini"
+    },
+    "Ethiopia": {
+        "gdp_ppp": 2332,
+        "household_size": 4.7,
+        "name": "Ethiopia",
+        "population": 110135635.0
+    },
+    "Faeroe Islands": {
+        "name": "Faeroe Islands",
+        "population": 49692.0
+    },
+    "Falkland Islands": {
+        "name": "Falkland Islands",
+        "population": 2921.0
+    },
+    "Fiji": {
+        "density_km2": 50.24630541871921,
+        "gdp_ppp": 10234,
+        "household_size": null,
+        "name": "Fiji",
+        "population": 918757.0,
+        "size_km2": 18270
+    },
+    "Finland": {
+        "gdp_ppp": 46430,
+        "household_size": null,
+        "name": "Finland",
+        "population": 5561389.0
+    },
+    "France": {
+        "area_km2": 640679.0,
+        "density_km2": 122.46800731261426,
+        "gdp_ppp": 45775,
+        "household_size": null,
+        "name": "France",
+        "population": 65480710.0,
+        "size_km2": 547000
+    },
+    "French Guiana": {
+        "name": "French Guiana",
+        "population": 296847.0
+    },
+    "French Polynesia": {
+        "name": "French Polynesia",
+        "population": 288506.0
+    },
+    "Gabon": {
+        "gdp_ppp": 18496,
+        "name": "Gabon",
+        "population": 2109099.0
+    },
+    "Gambia": {
+        "gdp_ppp": 2792,
+        "name": "Gambia",
+        "population": 2228075.0
+    },
+    "Georgia": {
+        "gdp_ppp": 11485,
+        "household_size": 3.4,
+        "name": "Georgia",
+        "population": 3904204.0
+    },
+    "Germany": {
+        "density_km2": 237.9022988505747,
+        "gdp_ppp": 52559,
+        "household_size": 2.1,
+        "name": "Germany",
+        "population": 82438639.0,
+        "size_km2": 348000
+    },
+    "Ghana": {
+        "area_km2": 238533.0,
+        "density_km2": 132.58149779735683,
+        "gdp_ppp": 6452,
+        "household_size": null,
+        "name": "Ghana",
+        "population": 30096970.0,
+        "size_km2": 227000
+    },
+    "Gibraltar": {
+        "name": "Gibraltar",
+        "population": 34879.0
+    },
+    "Greece": {
+        "gdp_ppp": 29123,
+        "household_size": 2.8,
+        "name": "Greece",
+        "population": 11124603.0
+    },
+    "Greenland": {
+        "name": "Greenland",
+        "population": 56673.0
+    },
+    "Grenada": {
+        "area_km2": 344.0,
+        "gdp_ppp": 16167,
+        "name": "Grenada",
+        "population": 108825.0
+    },
+    "Guadeloupe": {
+        "name": "Guadeloupe",
+        "population": 448798.0
+    },
+    "Guam": {
+        "area_km2": 549.0,
+        "name": "Guam",
+        "population": 167245.0
+    },
+    "Guatemala": {
+        "gdp_ppp": 8436,
+        "name": "Guatemala",
+        "population": 17577842.0
+    },
+    "Guinea": {
+        "gdp_ppp": 2310,
+        "name": "Guinea",
+        "population": 13398180.0
+    },
+    "Guinea-Bissau": {
+        "gdp_ppp": 1937,
+        "name": "Guinea-Bissau",
+        "population": 1953723.0
+    },
+    "Guyana": {
+        "area_km2": 214969.0,
+        "gdp_ppp": 8519,
+        "name": "Guyana",
+        "population": 786508.0
+    },
+    "Haiti": {
+        "gdp_ppp": 1864,
+        "name": "Haiti",
+        "population": 11242856.0
+    },
+    "Heard Island and McDonald Islands": {
+        "area_km2": 412.0,
+        "name": "Heard Island and McDonald Islands"
+    },
+    "Holy See": {
+        "name": "Holy See",
+        "population": 799.0
+    },
+    "Honduras": {
+        "gdp_ppp": 5212,
+        "name": "Honduras",
+        "population": 9568688.0
+    },
+    "Hong Kong": {
+        "area_km2": 2755.0,
+        "gdp_ppp": 64216,
+        "name": "Hong Kong",
+        "population": 7490776.0
+    },
+    "Hungary": {
+        "gdp_ppp": 31903,
+        "household_size": null,
+        "name": "Hungary",
+        "population": 9655361.0
+    },
+    "Iceland": {
+        "density_km2": 3.4,
+        "gdp_ppp": 55917,
+        "household_size": null,
+        "name": "Iceland",
+        "population": 340566.0,
+        "size_km2": 100000
+    },
+    "India": {
+        "density_km2": 450.3868146653212,
+        "gdp_ppp": 7874,
+        "household_size": 4.8,
+        "name": "India",
+        "population": 1368737513.0,
+        "size_km2": 2973000
+    },
+    "Indonesia": {
+        "density_km2": 148.5367200441745,
+        "gdp_ppp": 13230,
+        "household_size": 3.9,
+        "name": "Indonesia",
+        "population": 269536482.0,
+        "size_km2": 1811000
+    },
+    "Iran": {
+        "gdp_ppp": 19557,
+        "household_size": null,
+        "name": "Iran",
+        "population": 82820766.0
+    },
+    "Iraq": {
+        "gdp_ppp": 17659,
+        "name": "Iraq",
+        "population": 40412299.0
+    },
+    "Ireland": {
+        "gdp_ppp": 78785,
+        "household_size": null,
+        "name": "Ireland",
+        "population": 4847139.0
+    },
+    "Isle of Man": {
+        "area_km2": 572.0,
+        "name": "Isle of Man",
+        "population": 85369.0
+    },
+    "Israel": {
+        "gdp_ppp": 37972,
+        "household_size": 3.3,
+        "name": "Israel",
+        "population": 8583916.0
+    },
+    "Italy": {
+        "gdp_ppp": 39637,
+        "household_size": null,
+        "name": "Italy",
+        "population": 59216525.0
+    },
+    "Jamaica": {
+        "density_km2": 268.3287165281625,
+        "gdp_ppp": 9447,
+        "household_size": null,
+        "name": "Jamaica",
+        "population": 2906339.0,
+        "size_km2": 10830
+    },
+    "Jan Mayen": {
+        "area_km2": 377.0,
+        "name": "Jan Mayen"
+    },
+    "Japan": {
+        "density_km2": 347.8213163994459,
+        "gdp_ppp": 44227,
+        "household_size": 2.5,
+        "name": "Japan",
+        "population": 126854745.0,
+        "size_km2": 364555
+    },
+    "Jordan": {
+        "density_km2": 113.4151835999099,
+        "gdp_ppp": 9433,
+        "household_size": null,
+        "name": "Jordan",
+        "population": 10069794.0,
+        "size_km2": 88780
+    },
+    "Kazakhstan": {
+        "gdp_ppp": 27550,
+        "household_size": null,
+        "name": "Kazakhstan",
+        "population": 18592970.0
+    },
+    "Kenya": {
+        "area_km2": 580367.0,
+        "gdp_ppp": 3691,
+        "name": "Kenya",
+        "population": 52214791.0
+    },
+    "Kiribati": {
+        "gdp_ppp": 2086,
+        "name": "Kiribati",
+        "population": 120428.0
+    },
+    "Kosovo": {
+        "gdp_ppp": 11552,
+        "name": "Kosovo"
+    },
+    "Kuwait": {
+        "gdp_ppp": 67000,
+        "name": "Kuwait",
+        "population": 4248974.0
+    },
+    "Kyrgyzstan": {
+        "area_km2": 199951.0,
+        "gdp_ppp": 3844,
+        "household_size": null,
+        "name": "Kyrgyzstan",
+        "population": 6218616.0
+    },
+    "Laos": {
+        "area_km2": 236800.0,
+        "gdp_ppp": 7925,
+        "name": "Laos",
+        "population": 7064242.0
+    },
+    "Latvia": {
+        "gdp_ppp": 29901,
+        "household_size": 2.9,
+        "name": "Latvia",
+        "population": 1911108.0
+    },
+    "Lebanon": {
+        "area_km2": 10452.0,
+        "gdp_ppp": 14684,
+        "name": "Lebanon",
+        "population": 6065922.0
+    },
+    "Lesotho": {
+        "gdp_ppp": 3494,
+        "household_size": 4.4,
+        "name": "Lesotho",
+        "population": 2292682.0
+    },
+    "Liberia": {
+        "gdp_ppp": 1418,
+        "name": "Liberia",
+        "population": 4977720.0
+    },
+    "Libya": {
+        "gdp_ppp": 11469,
+        "name": "Libya",
+        "population": 6569864.0
+    },
+    "Liechtenstein": {
+        "name": "Liechtenstein",
+        "population": 38404.0
+    },
+    "Lithuania": {
+        "gdp_ppp": 34826,
+        "household_size": 2.5,
+        "name": "Lithuania",
+        "population": 2864459.0
+    },
+    "Luxembourg": {
+        "area_km2": 2586.0,
+        "gdp_ppp": 106705,
+        "household_size": 2.5,
+        "name": "Luxembourg",
+        "population": 596992.0
+    },
+    "Macao": {
+        "name": "Macao",
+        "population": 642090.0
+    },
+    "Macau": {
+        "gdp_ppp": 116808,
+        "name": "Macau"
+    },
+    "Macedonia, Republic of": {
+        "household_size": null,
+        "name": "Macedonia, Republic of"
+    },
+    "Madagascar": {
+        "area_km2": 587041.0,
+        "density_km2": 46.418244406196216,
+        "gdp_ppp": 1630,
+        "household_size": null,
         "name": "Madagascar",
-        "size_km2": 581000,
-        "population": 26969000,
-        "density_km2": 46.418244406196216
+        "population": 26969642.0,
+        "size_km2": 581000
+    },
+    "Malawi": {
+        "gdp_ppp": 1199,
+        "name": "Malawi",
+        "population": 19718743.0
+    },
+    "Malaysia": {
+        "gdp_ppp": 30860,
+        "household_size": 4.2,
+        "name": "Malaysia",
+        "population": 32454455.0
+    },
+    "Maldives": {
+        "area_km2": 300.0,
+        "gdp_ppp": 21760,
+        "name": "Maldives",
+        "population": 451738.0
+    },
+    "Mali": {
+        "gdp_ppp": 2384,
+        "household_size": null,
+        "name": "Mali",
+        "population": 19689140.0
+    },
+    "Malta": {
+        "area_km2": 316.0,
+        "gdp_ppp": 45606,
+        "household_size": 2.9,
+        "name": "Malta",
+        "population": 433245.0
+    },
+    "Marshall Islands": {
+        "gdp_ppp": 3697,
+        "name": "Marshall Islands",
+        "population": 53211.0
+    },
+    "Martinique": {
+        "name": "Martinique",
+        "population": 385320.0
+    },
+    "Mauritania": {
+        "gdp_ppp": 3990,
+        "name": "Mauritania",
+        "population": 4661149.0
+    },
+    "Mauritius": {
+        "area_km2": 2040.0,
+        "gdp_ppp": 23699,
+        "household_size": 2.3,
+        "name": "Mauritius",
+        "population": 1271368.0
+    },
+    "Mayotte": {
+        "name": "Mayotte",
+        "population": 266380.0
+    },
+    "Mexico": {
+        "density_km2": 66.49511065362842,
+        "gdp_ppp": 20602,
+        "household_size": 4.3,
+        "name": "Mexico",
+        "population": 132328035.0,
+        "size_km2": 1943000
+    },
+    "Micronesia": {
+        "density_km2": 765.7142857142857,
+        "gdp_ppp": 3482,
+        "household_size": null,
+        "name": "Micronesia",
+        "population": 536579.0,
+        "size_km2": 700
+    },
+    "Moldova": {
+        "gdp_ppp": 7305,
+        "household_size": 3.0,
+        "name": "Moldova",
+        "population": 4029750.0
+    },
+    "Monaco": {
+        "name": "Monaco",
+        "population": 39102.0
+    },
+    "Mongolia": {
+        "density_km2": 1.9806825499034129,
+        "gdp_ppp": 13447,
+        "household_size": null,
+        "name": "Mongolia",
+        "population": 3166244.0,
+        "size_km2": 1553000
+    },
+    "Montenegro": {
+        "gdp_ppp": 19043,
+        "household_size": null,
+        "name": "Montenegro",
+        "population": 629355.0
+    },
+    "Montserrat": {
+        "name": "Montserrat",
+        "population": 5220.0
+    },
+    "Morocco": {
+        "gdp_ppp": 8933,
+        "name": "Morocco",
+        "population": 36635156.0
+    },
+    "Mozambique": {
+        "gdp_ppp": 1291,
+        "name": "Mozambique",
+        "population": 31408823.0
+    },
+    "Myanmar": {
+        "gdp_ppp": 6511,
+        "name": "Myanmar",
+        "population": 54336138.0
+    },
+    "Namibia": {
+        "gdp_ppp": 11229,
+        "name": "Namibia",
+        "population": 2641996.0
+    },
+    "Nauru": {
+        "gdp_ppp": 12326,
+        "name": "Nauru",
+        "population": 11260.0
+    },
+    "Nepal": {
+        "gdp_ppp": 2905,
+        "household_size": 4.7,
+        "name": "Nepal",
+        "population": 29942018.0
+    },
+    "Netherlands": {
+        "gdp_ppp": 56383,
+        "household_size": null,
+        "name": "Netherlands",
+        "population": 17132908.0
+    },
+    "New Caledonia": {
+        "household_size": null,
+        "name": "New Caledonia",
+        "population": 283376.0
+    },
+    "New Zealand": {
+        "density_km2": 18.220532319391634,
+        "gdp_ppp": 40135,
+        "household_size": 2.7,
+        "name": "New Zealand",
+        "population": 4792409.0,
+        "size_km2": 263000
+    },
+    "Nicaragua": {
+        "gdp_ppp": 5683,
+        "name": "Nicaragua",
+        "population": 6351157.0
+    },
+    "Niger": {
+        "gdp_ppp": 1217,
+        "name": "Niger",
+        "population": 23176691.0
+    },
+    "Nigeria": {
+        "density_km2": 209.78021978021977,
+        "gdp_ppp": 6027,
+        "household_size": null,
+        "name": "Nigeria",
+        "population": 200962417.0,
+        "size_km2": 910000
+    },
+    "Niue": {
+        "area_km2": 260.0,
+        "name": "Niue",
+        "population": 1628.0
+    },
+    "North Korea": {
+        "household_size": 3.9,
+        "name": "North Korea",
+        "population": 25727408.0
+    },
+    "North Macedonia": {
+        "gdp_ppp": 15709,
+        "name": "North Macedonia",
+        "population": 2086720.0
+    },
+    "Northern Mariana Islands": {
+        "area_km2": 464.0,
+        "name": "Northern Mariana Islands",
+        "population": 55246.0
+    },
+    "Norway": {
+        "density_km2": 14.405479452054795,
+        "gdp_ppp": 74356,
+        "household_size": 2.2,
+        "name": "Norway",
+        "population": 5400916.0,
+        "size_km2": 365000
+    },
+    "Oman": {
+        "gdp_ppp": 46584,
+        "name": "Oman",
+        "population": 5001875.0
+    },
+    "Pakistan": {
+        "density_km2": 265.7090909090909,
+        "gdp_ppp": 5680,
+        "household_size": null,
+        "name": "Pakistan",
+        "population": 204596442.0,
+        "size_km2": 770000
+    },
+    "Palau": {
+        "area_km2": 459.0,
+        "gdp_ppp": 14952,
+        "household_size": null,
+        "name": "Palau",
+        "population": 22206.0
+    },
+    "Palestinian Territory": {
+        "household_size": 5.8,
+        "name": "Palestinian Territory"
+    },
+    "Panama": {
+        "density_km2": 57.108108108108105,
+        "gdp_ppp": 25674,
+        "household_size": null,
+        "name": "Panama",
+        "population": 4226197.0,
+        "size_km2": 74000
+    },
+    "Papua New Guinea": {
+        "gdp_ppp": 3662,
+        "name": "Papua New Guinea",
+        "population": 8586525.0
+    },
+    "Paraguay": {
+        "gdp_ppp": 13395,
+        "name": "Paraguay",
+        "population": 6981981.0
+    },
+    "Peru": {
+        "gdp_ppp": 14224,
+        "household_size": 4.0,
+        "name": "Peru",
+        "population": 32933835.0
+    },
+    "Philippines": {
+        "gdp_ppp": 8936,
+        "household_size": null,
+        "name": "Philippines",
+        "population": 108106310.0
+    },
+    "Poland": {
+        "gdp_ppp": 31939,
+        "household_size": 2.8,
+        "name": "Poland",
+        "population": 38028278.0
+    },
+    "Portugal": {
+        "gdp_ppp": 32006,
+        "household_size": 2.8,
+        "name": "Portugal",
+        "population": 10254666.0
+    },
+    "Puerto Rico": {
+        "area_km2": 9104.0,
+        "gdp_ppp": 39737,
+        "household_size": 3.0,
+        "name": "Puerto Rico",
+        "population": 3654978.0
+    },
+    "Qatar": {
+        "density_km2": 236.26184323858743,
+        "gdp_ppp": 130475,
+        "household_size": null,
+        "name": "Qatar",
+        "population": 2743901.0,
+        "size_km2": 11610
+    },
+    "Romania": {
+        "area_km2": 238397.0,
+        "gdp_ppp": 26447,
+        "household_size": 2.9,
+        "name": "Romania",
+        "population": 19483360.0
+    },
+    "Russia": {
+        "area_km2": 17098246.0,
+        "density_km2": 8.823888617489008,
+        "gdp_ppp": 29267,
+        "household_size": 2.7,
+        "name": "Russia",
+        "population": 143895551.0,
+        "size_km2": 16376000
+    },
+    "Rwanda": {
+        "gdp_ppp": 2280,
+        "household_size": 4.5,
+        "name": "Rwanda",
+        "population": 12794412.0
+    },
+    "R\u00e9union": {
+        "name": "R\u00e9union",
+        "population": 889918.0
+    },
+    "Samoa": {
+        "area_km2": 2842.0,
+        "gdp_ppp": 5890,
+        "name": "Samoa",
+        "population": 198909.0
+    },
+    "San Marino": {
+        "gdp_ppp": 60313,
+        "name": "San Marino",
+        "population": 33683.0
+    },
+    "Sao Tome & Principe": {
+        "name": "Sao Tome & Principe",
+        "population": 213379.0
+    },
+    "Saudi Arabia": {
+        "density_km2": 15.32805956258725,
+        "gdp_ppp": 55944,
+        "household_size": null,
+        "name": "Saudi Arabia",
+        "population": 34140662.0,
+        "size_km2": 2149000
+    },
+    "Senegal": {
+        "area_km2": 196722.0,
+        "gdp_ppp": 3651,
+        "household_size": null,
+        "name": "Senegal",
+        "population": 16743859.0
+    },
+    "Serbia": {
+        "gdp_ppp": 17555,
+        "household_size": 3.0,
+        "name": "Serbia",
+        "population": 8733407.0
+    },
+    "Seychelles": {
+        "area_km2": 452.0,
+        "gdp_ppp": 30505,
+        "household_size": 3.8,
+        "name": "Seychelles",
+        "population": 95702.0
+    },
+    "Sierra Leone": {
+        "gdp_ppp": 1620,
+        "name": "Sierra Leone",
+        "population": 7883123.0
+    },
+    "Singapore": {
+        "density_km2": 8382.857142857143,
+        "gdp_ppp": 100345,
+        "household_size": 3.6,
+        "name": "Singapore",
+        "population": 5868104.0,
+        "size_km2": 700
+    },
+    "Sint Maarten": {
+        "name": "Sint Maarten",
+        "population": 40939.0
+    },
+    "Slovakia": {
+        "gdp_ppp": 35130,
+        "household_size": null,
+        "name": "Slovakia",
+        "population": 5450987.0
+    },
+    "Slovenia": {
+        "gdp_ppp": 36746,
+        "household_size": 2.8,
+        "name": "Slovenia",
+        "population": 2081900.0
+    },
+    "Solomon Islands": {
+        "gdp_ppp": 2242,
+        "name": "Solomon Islands",
+        "population": 635254.0
+    },
+    "Somalia": {
+        "area_km2": 637657.0,
+        "name": "Somalia",
+        "population": 15636171.0
+    },
+    "Somaliland": {
+        "area_km2": 176120.0,
+        "name": "Somaliland"
+    },
+    "South Africa": {
+        "density_km2": 46.760098928276996,
+        "gdp_ppp": 13675,
+        "household_size": null,
+        "name": "South Africa",
+        "population": 58065097.0,
+        "size_km2": 1213000
+    },
+    "South Georgia and the South Sandwich Islands": {
+        "area_km2": 3903.0,
+        "name": "South Georgia and the South Sandwich Islands"
+    },
+    "South Korea": {
+        "density_km2": 528.0160444307312,
+        "gdp_ppp": 41351,
+        "household_size": 2.9,
+        "name": "South Korea",
+        "population": 51339238.0,
+        "size_km2": 97230
+    },
+    "South Ossetia": {
+        "area_km2": 3900.0,
+        "name": "South Ossetia"
+    },
+    "South Sudan": {
+        "gdp_ppp": 1502,
+        "name": "South Sudan",
+        "population": 13263184.0
+    },
+    "Spain": {
+        "area_km2": 505992.0,
+        "density_km2": 93.81526104417671,
+        "gdp_ppp": 40139,
+        "household_size": null,
+        "name": "Spain",
+        "population": 46441049.0,
+        "size_km2": 498000
+    },
+    "Sri Lanka": {
+        "gdp_ppp": 13397,
+        "name": "Sri Lanka",
+        "population": 21018859.0
+    },
+    "St Helena": {
+        "name": "St Helena",
+        "population": 4096.0
+    },
+    "St Helena, Ascension and Tristan da Cunha": {
+        "area_km2": 308.0,
+        "name": "St Helena, Ascension and Tristan da Cunha"
+    },
+    "St Kitts & Nevis": {
+        "name": "St Kitts & Nevis",
+        "population": 56345.0
+    },
+    "St Kitts and Nevis": {
+        "area_km2": 261.0,
+        "gdp_ppp": 29820,
+        "name": "St Kitts and Nevis"
+    },
+    "St Lucia": {
+        "area_km2": 616.0,
+        "gdp_ppp": 14355,
+        "name": "St Lucia",
+        "population": 180454.0
+    },
+    "St Pierre & Miquelon": {
+        "name": "St Pierre & Miquelon",
+        "population": 6375.0
+    },
+    "St Vincent & Grenadines": {
+        "name": "St Vincent & Grenadines",
+        "population": 110488.0
+    },
+    "St Vincent and the Grenadines": {
+        "area_km2": 389.0,
+        "gdp_ppp": 11956,
+        "name": "St Vincent and the Grenadines"
+    },
+    "State of Palestine": {
+        "name": "State of Palestine",
+        "population": 5186790.0
+    },
+    "Sudan": {
+        "gdp_ppp": 4232,
+        "name": "Sudan",
+        "population": 42514094.0
+    },
+    "Suriname": {
+        "gdp_ppp": 15105,
+        "name": "Suriname",
+        "population": 573085.0
+    },
+    "Swaziland": {
+        "household_size": 4.7,
+        "name": "Swaziland",
+        "population": 1415414.0
+    },
+    "Sweden": {
+        "gdp_ppp": 52984,
+        "household_size": null,
+        "name": "Sweden",
+        "population": 10053135.0
+    },
+    "Switzerland": {
+        "density_km2": 217.83581334143133,
+        "gdp_ppp": 64649,
+        "household_size": null,
+        "name": "Switzerland",
+        "population": 8608259.0,
+        "size_km2": 39516
+    },
+    "Syria": {
+        "area_km2": 185180.0,
+        "name": "Syria",
+        "population": 18499181.0
+    },
+    "S\u00e3o Tom\u00e9 and Pr\u00edncipe": {
+        "gdp_ppp": 3324,
+        "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe"
+    },
+    "Taiwan": {
+        "gdp_ppp": 53023,
+        "name": "Taiwan",
+        "population": 23758247.0
+    },
+    "Tajikistan": {
+        "gdp_ppp": 3416,
+        "household_size": null,
+        "name": "Tajikistan",
+        "population": 9292000.0
+    },
+    "Tanzania": {
+        "gdp_ppp": 3444,
+        "name": "Tanzania",
+        "population": 60913557.0
+    },
+    "Thailand": {
+        "area_km2": 513120.0,
+        "gdp_ppp": 19476,
+        "name": "Thailand",
+        "population": 69306160.0
+    },
+    "Timor-Leste": {
+        "gdp_ppp": 5242,
+        "household_size": 4.7,
+        "name": "Timor-Leste",
+        "population": 1352360.0
+    },
+    "Togo": {
+        "gdp_ppp": 1746,
+        "name": "Togo",
+        "population": 8186384.0
+    },
+    "Tokelau": {
+        "name": "Tokelau",
+        "population": 1340.0
+    },
+    "Tonga": {
+        "gdp_ppp": 6111,
+        "name": "Tonga",
+        "population": 110041.0
+    },
+    "Trinidad and Tobago": {
+        "gdp_ppp": 32254,
+        "name": "Trinidad and Tobago",
+        "population": 1375443.0
+    },
+    "Tunisia": {
+        "gdp_ppp": 12372,
+        "name": "Tunisia",
+        "population": 11783168.0
+    },
+    "Turkey": {
+        "density_km2": 107.88166449934981,
+        "gdp_ppp": 27956,
+        "household_size": null,
+        "name": "Turkey",
+        "population": 82961805.0,
+        "size_km2": 769000
+    },
+    "Turkmenistan": {
+        "gdp_ppp": 19527,
+        "name": "Turkmenistan",
+        "population": 5942561.0
+    },
+    "Turks and Caicos": {
+        "name": "Turks and Caicos",
+        "population": 36461.0
+    },
+    "Tuvalu": {
+        "gdp_ppp": 4052,
+        "name": "Tuvalu",
+        "population": 11393.0
+    },
+    "US Virgin Islands": {
+        "area_km2": 347.0,
+        "name": "US Virgin Islands",
+        "population": 104909.0
+    },
+    "Uganda": {
+        "area_km2": 241550.0,
+        "gdp_ppp": 2498,
+        "household_size": null,
+        "name": "Uganda",
+        "population": 45711874.0
+    },
+    "Ukraine": {
+        "area_km2": 603500.0,
+        "gdp_ppp": 9283,
+        "household_size": null,
+        "name": "Ukraine",
+        "population": 43795220.0
+    },
+    "United Arab Emirates": {
+        "gdp_ppp": 69382,
+        "name": "United Arab Emirates",
+        "population": 9682088.0
+    },
+    "United Kingdom": {
+        "gdp_ppp": 45705,
+        "household_size": 2.1,
+        "name": "United Kingdom",
+        "population": 66959016.0
+    },
+    "United States": {
+        "area_km2": 9525067.0,
+        "density_km2": 35.77129113370504,
+        "gdp_ppp": 62606,
+        "household_size": null,
+        "name": "United States",
+        "population": 327200000,
+        "size_km2": 9147000
+    },
+    "Uruguay": {
+        "area_km2": 176215.0,
+        "gdp_ppp": 23274,
+        "name": "Uruguay",
+        "population": 3482156.0
+    },
+    "Uzbekistan": {
+        "gdp_ppp": 7665,
+        "name": "Uzbekistan",
+        "population": 32807368.0
+    },
+    "Vanuatu": {
+        "gdp_ppp": 2862,
+        "name": "Vanuatu",
+        "population": 288017.0
+    },
+    "Venezuela": {
+        "density_km2": 37.16439909297052,
+        "household_size": null,
+        "name": "Venezuela",
+        "population": 32779868.0,
+        "size_km2": 882000
+    },
+    "Vietnam": {
+        "density_km2": 314.28709677419357,
+        "gdp_ppp": 7510,
+        "household_size": null,
+        "name": "Vietnam",
+        "population": 97429061.0,
+        "size_km2": 310000
+    },
+    "Wallis & Futuna": {
+        "name": "Wallis & Futuna",
+        "population": 11617.0
+    },
+    "Western Sahara": {
+        "name": "Western Sahara",
+        "population": 582478.0
+    },
+    "Yemen": {
+        "area_km2": 527968.0,
+        "gdp_ppp": 2377,
+        "name": "Yemen",
+        "population": 29579986.0
+    },
+    "Zambia": {
+        "gdp_ppp": 4104,
+        "name": "Zambia",
+        "population": 18137369.0
+    },
+    "Zimbabwe": {
+        "density_km2": 44.810880829015545,
+        "gdp_ppp": 2788,
+        "household_size": null,
+        "name": "Zimbabwe",
+        "population": 17297495.0,
+        "size_km2": 386000
+    },
+    "\u00c5land Islands": {
+        "area_km2": 1580.0,
+        "household_size": 2.3,
+        "name": "\u00c5land Islands"
     }
-]
+}
