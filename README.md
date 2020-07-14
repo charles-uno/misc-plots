@@ -1,2 +1,3 @@
-# log-scales
-Plots redone with log scales
+# Miscellaneous Figures
+
+Largely for articles on charles.uno
