@@ -4,7 +4,7 @@ import math
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import seaborn
-import enum
+import sys
 
 
 class PokemonType(object):
@@ -13,33 +13,48 @@ class PokemonType(object):
         self.color = color
 
 
-COSMIC = PokemonType("Cosmic", seaborn.color_palette("Paired")[5])
-FIRE = PokemonType("Fire", seaborn.color_palette("Paired")[7])
-HEART = PokemonType("Heart", seaborn.color_palette("tab10")[6])
-LIGHTNING = PokemonType("Lightning", seaborn.color_palette("Set2")[5])
-PLANT = PokemonType("Plant", seaborn.color_palette("Paired")[3])
-ROCK = PokemonType("Rock", seaborn.color_palette("tab10")[5])
-SHADOW = PokemonType("Shadow", seaborn.color_palette("Paired")[9])
-WATER = PokemonType("Water", seaborn.color_palette("Paired")[1])
-WIND = PokemonType("Wind", seaborn.color_palette("Set2")[2])
+MODE = 0
+
+YELLOW = seaborn.color_palette("Set2")[5]
+GREEN = seaborn.color_palette("Paired")[3]
+BLUE = seaborn.color_palette("Paired")[1]
+GRAY = seaborn.color_palette("Set2")[7]
+BROWN = seaborn.color_palette("tab10")[5]
+PURPLE = seaborn.color_palette("Paired")[9]
+PINK = seaborn.color_palette("tab10")[6]
+ORANGE = seaborn.color_palette("Paired")[7]
+RED = seaborn.color_palette("Paired")[5]
+CYAN = seaborn.color_palette("Paired")[0]
+
+COSMIC = PokemonType("Cosmic", RED)
+FIRE = PokemonType("Fire", ORANGE)
+HEART = PokemonType("Heart", PINK)
+ICE = PokemonType("Ice", CYAN)
+LIGHTNING = PokemonType("Lightning", YELLOW)
+PLANT = PokemonType("Plant", GREEN)
+ROCK = PokemonType("Rock", BROWN)
+SHADOW = PokemonType("Shadow", PURPLE)
+TECH = PokemonType("Tech", GRAY)
+WATER = PokemonType("Water", BLUE)
+WIND = PokemonType("Wind", GRAY)
 
 
 TYPES_ORDERED = (
-    FIRE,
-    SHADOW,
-    WIND,
+    WATER,
+    TECH,
     PLANT,
     ROCK,
+    FIRE,
+    WIND,
+    SHADOW,
     LIGHTNING,
-    WATER,
     HEART,
-    COSMIC,
 )
 
 
-RADIUS_WHEEL = 0.7
+RADIUS_WHEEL = 0.8
 RADIUS_RING = 0.15
-THICKNESS = 0.025
+THICKNESS = 0.02
 RADIUS_CAPTION = RADIUS_RING - THICKNESS
 ARROW_TAIL_PAD = 0.02
 ARROW_HEAD_PAD = 0.015
@@ -60,36 +75,43 @@ def main():
     # Draw a circle for each type
     for i, t in enumerate(TYPES_ORDERED):
         draw_ring(i, t)
+
     # Draw the interactions
-
-    draw_arrow(COSMIC, FIRE)
-    draw_arrow(COSMIC, LIGHTNING)
-
     draw_arrow(FIRE, PLANT)
     draw_arrow(FIRE, SHADOW)
 
-    draw_arrow(HEART, COSMIC)
-    draw_arrow(HEART, SHADOW)
+    draw_arrow(WATER, FIRE)
+    draw_arrow(WATER, TECH)
+
+    draw_arrow(PLANT, WATER)
+    draw_arrow(PLANT, ROCK)
+
+#    draw_arrow(TECH, PLANT)
+    draw_arrow(TECH, HEART)
 
     draw_arrow(LIGHTNING, WATER)
     draw_arrow(LIGHTNING, WIND)
 
-    draw_arrow(PLANT, ROCK)
-    draw_arrow(PLANT, WATER)
+    draw_arrow(HEART, SHADOW)
 
-    draw_arrow(ROCK, HEART)
+    draw_arrow(SHADOW, LIGHTNING)
+    draw_arrow(SHADOW, TECH)
+
+    draw_arrow(WIND, ROCK)
+
     draw_arrow(ROCK, LIGHTNING)
 
-    draw_arrow(SHADOW, ROCK)
-    draw_arrow(SHADOW, WIND)
+    if "--save" in sys.argv:
+        return plt.savefig("pokemon-types.png")
+    else:
+        return plt.show()
 
-    draw_arrow(WATER, FIRE)
-    draw_arrow(WATER, HEART)
 
-    draw_arrow(WIND, COSMIC)
-    draw_arrow(WIND, PLANT)
-
-    return plt.show()
+def draw_arrows(*tarr):
+    for i, t1 in enumerate(tarr):
+        t2 = tarr[(i+1)%len(tarr)]
+        draw_arrow(t1, t2)
+    return
 
 
 def draw_arrow(t1, t2):
