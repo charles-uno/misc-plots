@@ -1,7 +1,14 @@
 import pytest
 
-from solver import Clues, BLACK, YELLOW, GREEN
+from solver import Clues, Constraints, BLACK, YELLOW, GREEN, WORDS, SOLUTIONS, LENGTH
 
+def test_all_words_correct_length():
+    for word in WORDS:
+        assert len(word) == LENGTH
+
+def test_all_solutions_correct_length():
+    for solution in SOLUTIONS:
+        assert len(solution) == LENGTH
 
 def test_three_guess_two_match():
     solution = 'event'

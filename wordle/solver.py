@@ -19,40 +19,46 @@ with open('solutions.txt', 'r') as handle:
 
 
 def main():
+    histogram = {i: 0 for i in range(7)}
+    for _ in range(100):
+        n_guesses = run()
+        histogram[n_guesses] += 1
+    for i in range(7):
+        print(i, histogram[i])
+
+    whiffs = histogram[0]
+    total = sum(histogram.values())
+
+    num = sum(n*histogram[n] for n in range(1, 7))
+    denom = sum(histogram[n] for n in range(1, 7))
+    avg = "%.2f" % (num/denom)
+
+    print("success rate:", pct(total - whiffs, total))
+    print("average guesses:", avg)
+
+    return
+
+
+def pct(num, denom):
+    return "%.0f%%" % (num*100./denom)
+
+
+
+
+
+def run():
     allowed_guesses = WORDS
     constraints = Constraints()
     solution = random.choice(SOLUTIONS)
-    while True:
+    for n_guess in range(1, 7):
         allowed_guesses = [x for x in allowed_guesses if constraints.check(x)]
         guess = random.choice(allowed_guesses)
         clues = Clues(guess, solution)
         print(clues)
         constraints.update(clues)
         if guess == solution:
-            break
-
-    return
-
-
-
-
-    print('solution:', solution)
-    print('guess:', guess)
-
-    assert len(solution) == LENGTH
-    assert len(guess) == LENGTH
-
-    clues = Clues(guess, solution)
-    print(clues)
-
-    constraints.update(clues)
-
-    guess = random.choice(WORDS)
-    print("next guess:", guess)
-
-    constraints.check(guess)
-
-
+            return n_guess
+    return 0
 
 
 class Constraints(list):
