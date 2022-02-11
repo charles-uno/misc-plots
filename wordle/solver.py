@@ -18,16 +18,23 @@ with open('solutions.txt', 'r') as handle:
     SOLUTIONS = [line.strip() for line in handle]
 
 
-
-
 def main():
-    constraints = {c: Constraint(c) for c in ALPHABET}
-
+    allowed_guesses = WORDS
+    constraints = Constraints()
     solution = random.choice(SOLUTIONS)
-    guess = random.choice(WORDS)
+    while True:
+        allowed_guesses = [x for x in allowed_guesses if constraints.check(x)]
+        guess = random.choice(allowed_guesses)
+        clues = Clues(guess, solution)
+        print(clues)
+        constraints.update(clues)
+        if guess == solution:
+            break
 
-    solution = 'event'
-    guess = 'geese'
+    return
+
+
+
 
     print('solution:', solution)
     print('guess:', guess)
@@ -36,8 +43,32 @@ def main():
     assert len(guess) == LENGTH
 
     clues = Clues(guess, solution)
-
     print(clues)
+
+    constraints.update(clues)
+
+    guess = random.choice(WORDS)
+    print("next guess:", guess)
+
+    constraints.check(guess)
+
+
+
+
+class Constraints(list):
+
+    def __init__(self):
+        elts = [Constraint(c) for c in ALPHABET]
+        return list.__init__(self, elts)
+
+    def update(self, clues):
+        [c.update(clues) for c in self]
+
+    def check(self, guess):
+        for constraint in self:
+            if not constraint.check(guess):
+                return False
+        return True
 
 
 class Constraint(object):
@@ -45,8 +76,8 @@ class Constraint(object):
     def __init__(self, letter):
         assert letter in ALPHABET
         self.letter = letter
-        self.hits = {}
-        self.misses = {}
+        self.hits = set()
+        self.misses = set()
         self.min_count = 0
         self.max_count = LENGTH
 
