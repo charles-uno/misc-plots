@@ -2,7 +2,10 @@
 
 import random
 
+N = 10
+
 LENGTH = 5
+MAX_GUESSES = 6
 
 GREEN = '\033[92m'
 RESET = '\033[0m'
@@ -19,18 +22,25 @@ with open('solutions.txt', 'r') as handle:
 
 
 def main():
-    histogram = {i: 0 for i in range(7)}
-    for _ in range(100):
-        n_guesses = run()
-        histogram[n_guesses] += 1
-    for i in range(7):
+    histogram = {i: 0 for i in range(MAX_GUESSES+1)}
+    results = []
+    for _ in range(N):
+        lines = run()
+        results.append(lines)
+        histogram[len(lines)] += 1
+
+    print()
+    for i in range(0, N, 5):
+        print_across(results[i:i+5])
+
+    for i in range(MAX_GUESSES+1):
         print(i, histogram[i])
 
     whiffs = histogram[0]
     total = sum(histogram.values())
 
-    num = sum(n*histogram[n] for n in range(1, 7))
-    denom = sum(histogram[n] for n in range(1, 7))
+    num = sum(n*histogram[n] for n in range(1, MAX_GUESSES+1))
+    denom = sum(histogram[n] for n in range(1, MAX_GUESSES+1))
     avg = "%.2f" % (num/denom)
 
     print("success rate:", pct(total - whiffs, total))
@@ -38,27 +48,32 @@ def main():
 
     return
 
-
 def pct(num, denom):
     return "%.0f%%" % (num*100./denom)
 
-
-
-
+def print_across(results):
+    padding = ' '*3
+    for i in range(MAX_GUESSES):
+        for lines in results:
+            line = lines[i] if len(lines) > i else ' '*LENGTH
+            print(padding, line, end='')
+        print()
+    print()
 
 def run():
-    allowed_guesses = WORDS
-    constraints = Constraints()
     solution = random.choice(SOLUTIONS)
-    for n_guess in range(1, 7):
+    lines = []
+    allowed_guesses = SOLUTIONS
+    constraints = Constraints()
+    for n_guess in range(1, MAX_GUESSES+1):
         allowed_guesses = [x for x in allowed_guesses if constraints.check(x)]
         guess = random.choice(allowed_guesses)
         clues = Clues(guess, solution)
-        print(clues)
+        lines.append(clues)
         constraints.update(clues)
         if guess == solution:
-            return n_guess
-    return 0
+            return lines
+    return []
 
 
 class Constraints(list):
@@ -71,10 +86,7 @@ class Constraints(list):
         [c.update(clues) for c in self]
 
     def check(self, guess):
-        for constraint in self:
-            if not constraint.check(guess):
-                return False
-        return True
+        return all(c.check(guess) for c in self)
 
 
 class Constraint(object):
