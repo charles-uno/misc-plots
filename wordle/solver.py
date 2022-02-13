@@ -2,7 +2,9 @@
 
 import random
 
-N = 10
+N_COLS = 5
+N_ROWS = 3
+N = N_ROWS*N_COLS
 
 LENGTH = 5
 MAX_GUESSES = 6
@@ -24,36 +26,36 @@ with open('solutions.txt', 'r') as handle:
 def main():
     histogram = {i: 0 for i in range(MAX_GUESSES+1)}
     results = []
-    for _ in range(N):
+    while len(results) < N:
         lines = run()
-        results.append(lines)
         histogram[len(lines)] += 1
-
+        if all(x.color == GREEN for x in lines[-1]):
+            results.append(lines)
     print()
-    for i in range(0, N, 5):
-        print_across(results[i:i+5])
+    print()
+    for i in range(0, N, N_COLS):
+        print_across(results[i:i+N_COLS])
+    print()
 
-    for i in range(MAX_GUESSES+1):
-        print(i, histogram[i])
+    return
 
     whiffs = histogram[0]
     total = sum(histogram.values())
-
     num = sum(n*histogram[n] for n in range(1, MAX_GUESSES+1))
     denom = sum(histogram[n] for n in range(1, MAX_GUESSES+1))
     avg = "%.2f" % (num/denom)
-
+    [print(i, histogram[i]) for i in range(MAX_GUESSES+1)]
     print("success rate:", pct(total - whiffs, total))
     print("average guesses:", avg)
-
     return
 
 def pct(num, denom):
     return "%.0f%%" % (num*100./denom)
 
 def print_across(results):
-    padding = ' '*3
+    padding = ' '*2
     for i in range(MAX_GUESSES):
+        print('   ', end='')
         for lines in results:
             line = lines[i] if len(lines) > i else ' '*LENGTH
             print(padding, line, end='')
@@ -63,17 +65,18 @@ def print_across(results):
 def run():
     solution = random.choice(SOLUTIONS)
     lines = []
-    allowed_guesses = SOLUTIONS
+    allowed_guesses = WORDS
     constraints = Constraints()
     for n_guess in range(1, MAX_GUESSES+1):
+        # Note: more efficient to shuffle the list then take the first match?
         allowed_guesses = [x for x in allowed_guesses if constraints.check(x)]
         guess = random.choice(allowed_guesses)
         clues = Clues(guess, solution)
         lines.append(clues)
         constraints.update(clues)
         if guess == solution:
-            return lines
-    return []
+            break
+    return lines
 
 
 class Constraints(list):
