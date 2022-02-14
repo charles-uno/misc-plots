@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import random
+import sys
 
-N_COLS = 5
-N_ROWS = 3
-N = N_ROWS*N_COLS
+OPENING_GUESS = 'crane'
+
+N = 1000
+N_COLS = 10
 
 LENGTH = 5
 MAX_GUESSES = 6
@@ -25,58 +27,71 @@ with open('solutions.txt', 'r') as handle:
 
 def main():
     histogram = {i: 0 for i in range(MAX_GUESSES+1)}
-    results = []
-    while len(results) < N:
-        lines = run()
-        histogram[len(lines)] += 1
-        if all(x.color == GREEN for x in lines[-1]):
-            results.append(lines)
-    print()
-    print()
-    for i in range(0, N, N_COLS):
-        print_across(results[i:i+N_COLS])
-    print()
+    for _ in range(N):
+        result = Result()
+        histogram[result.turns] += 1
+        print_across(result)
+    print_stats(histogram)
 
-    return
 
+def print_stats(histogram):
     whiffs = histogram[0]
     total = sum(histogram.values())
     num = sum(n*histogram[n] for n in range(1, MAX_GUESSES+1))
     denom = sum(histogram[n] for n in range(1, MAX_GUESSES+1))
     avg = "%.2f" % (num/denom)
+    print()
     [print(i, histogram[i]) for i in range(MAX_GUESSES+1)]
-    print("success rate:", pct(total - whiffs, total))
+    print("success rate:", fmt(total - whiffs, total))
     print("average guesses:", avg)
+
+
+def fmt(num, denom):
+    p = (num*100./denom)
+    dp = 100./(denom)**0.5
+    return "%.0f%% ± %.0f%%" % (p, dp)
+
+
+PRINT_CACHE = []
+
+
+def print_across(result):
+    global PRINT_CACHE
+    PRINT_CACHE.append(result)
+    if len(PRINT_CACHE) == N_COLS:
+        padding = ' '*2
+        for i in range(MAX_GUESSES):
+            print('   ', end='')
+            for result in PRINT_CACHE:
+                line = result[i] if len(result) > i else ' '*LENGTH
+                print(padding, line, end='')
+            print()
+        print()
+        PRINT_CACHE = []
     return
 
-def pct(num, denom):
-    return "%.0f%%" % (num*100./denom)
 
-def print_across(results):
-    padding = ' '*2
-    for i in range(MAX_GUESSES):
-        print('   ', end='')
-        for lines in results:
-            line = lines[i] if len(lines) > i else ' '*LENGTH
-            print(padding, line, end='')
-        print()
-    print()
+class Result(list):
 
-def run():
-    solution = random.choice(SOLUTIONS)
-    lines = []
-    allowed_guesses = WORDS
-    constraints = Constraints()
-    for n_guess in range(1, MAX_GUESSES+1):
-        # Note: more efficient to shuffle the list then take the first match?
-        allowed_guesses = [x for x in allowed_guesses if constraints.check(x)]
-        guess = random.choice(allowed_guesses)
-        clues = Clues(guess, solution)
-        lines.append(clues)
-        constraints.update(clues)
-        if guess == solution:
-            break
-    return lines
+    def __init__(self):
+        self.solution = random.choice(SOLUTIONS)
+        self.turns = 0
+        lines = []
+        allowed = SOLUTIONS
+        constraints = Constraints()
+        for i in range(1, MAX_GUESSES+1):
+            # More efficient to shuffle the list then take the first match?
+            allowed = [x for x in allowed if constraints.check(x)]
+            guess = random.choice(allowed)
+            if OPENING_GUESS and not lines:
+                guess = OPENING_GUESS
+            clues = Clues(guess, self.solution)
+            lines.append(clues)
+            constraints.update(clues)
+            if guess == self.solution:
+                self.turns = i
+                break
+        return list.__init__(self, lines)
 
 
 class Constraints(list):
