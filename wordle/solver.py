@@ -4,9 +4,8 @@ import os
 import random
 import sys
 
-N = 50
+N = 1000
 N_COLS = 10
-OUT_DIR = 'out'
 
 LENGTH = 5
 MAX_GUESSES = 6
@@ -25,6 +24,16 @@ with open('words.txt', 'r') as handle:
 
 with open('solutions.txt', 'r') as handle:
     SOLUTIONS = [line.strip() for line in handle]
+
+
+# Default to the list that uses actual words
+if False:
+    ALLOWED_GUESSES = SOLUTIONS
+    OUT_DIR = 'out'
+# Keep this option in case we want it for comparison
+else:
+    ALLOWED_GUESSES = WORDS
+    OUT_DIR = 'out-all'
 
 
 def main():
@@ -78,7 +87,7 @@ class Result(list):
         self.opener = opener
         solution = random.choice(SOLUTIONS)
         lines = []
-        allowed = SOLUTIONS
+        allowed = ALLOWED_GUESSES
         constraints = Constraints()
         for i in range(1, MAX_GUESSES+1):
             # More efficient to shuffle the list then take the first match?
