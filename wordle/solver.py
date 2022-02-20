@@ -27,7 +27,7 @@ with open('solutions.txt', 'r') as handle:
 
 
 # Default to the list that uses actual words
-if False:
+if True:
     ALLOWED_GUESSES = SOLUTIONS
     OUT_DIR = 'out'
 # Keep this option in case we want it for comparison
@@ -37,11 +37,13 @@ else:
 
 
 def main():
+    if '--results' in ' '.join(sys.argv):
+        return print_stats()
     openers = get_openers()
     for _ in range(N):
         opener = random.choice(openers) if openers else None
         Result(opener).dump()
-    print_stats()
+    return print_stats()
 
 
 def get_openers():
