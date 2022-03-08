@@ -6,16 +6,16 @@ import sys
 TEXT_COLOR = 'white'
 BAR_COLOR = 'green'
 
-N_TARGET = 365
+N_TARGET = 31
 X_MAX = N_TARGET*0.5
-X_PAD = N_TARGET*(0.07 if N_TARGET > 100 else 0.05)
+X_PAD = N_TARGET*0.07
 
 
 def main():
-    fig, axes = plt.subplots(4, 3)
-    fig.set_size_inches(8, 8)
+    fig, axes = plt.subplots(3, 4)
+    fig.set_size_inches(8, 6)
 
-    plt.suptitle('A Year of Wordles by Opening Guess\n', fontsize=16)
+    plt.suptitle('A Month of Wordles by Opening Guess\n', fontsize=16)
 
     words = [
         'adept',
@@ -82,7 +82,7 @@ def draw_panel(ax, word):
 
     win_rate_label = '%.0f%%-%.0f%% Win Rate' % (rmin, rmax)
     label = word.upper() + '\n' + win_rate_label
-    ax.text(X_MAX/2, 0, label, ha='center', va='center', linespacing=1.3)
+    ax.text(X_MAX/2, 0, label, ha='center', va='center', linespacing=1.1)
 
 
 if __name__ == '__main__':
