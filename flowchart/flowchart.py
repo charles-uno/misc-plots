@@ -22,14 +22,17 @@ MASS_SHOOTINGS = "mass\nshootings"
 MASS_TRANSIT = "mass\ntransit"
 MILITARIZED_POLICE = "militarized\npolice"
 OIL_WARS = "oil\nwars"
+OUTSOURCING = "outsourcing"
 RACISM = "racism"
 REGIONAL_INSTABILITY = "regional\ninstability"
 RESTRICTIVE_ZONING = "restrictive\nzoning"
 SEX_EDUCATION = "sex\neducation"
 SUBSTANCE_ADDICTION = "substance\naddiction"
+TRADE_DEALS = "trade\ndeals"
 URBAN_SPRAWL = "urban\nsprawl"
 WIDESPREAD_CARS = "widespread\ncars"
 WIDESPREAD_GUNS = "widespread\nguns"
+WORKER_PROTECTIONS = "worker\nprotections"
 
 
 # strict (no parallel edges), digraph, with attribute rankdir set to 'LR'
