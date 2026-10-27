@@ -132,6 +132,21 @@ For example, for UBR, we have a discard theme. Our skeleton could look like:
 - R payoffs: [[Marauding Mako]], [[Fiery Temper]], [[Raging Goblinoids]]
 - Two-color payoffs: [[Terminal Agony]], [[Lazotep Chancellor]] (also relevant to Zombies), [[Izzet Charm]]
 
+### Theme-Aware Card Choices
+
+We want the themes to be prominent, but we also want to make sure that each color is doing the stuff that it's supposed to do. For example, B is supposed to get creatures back from the graveyard. 
+
+If ETB value shenanigans are on-theme for B, we may include [[Graveshifter]]. If not, we should try to avoid easily-blinked ETB abilities in B; something like [[Gathering Darkness]] might be a better fit for that slot.
+
+### Respect the Card Pool
+
+We can, without too much trouble, assemble a BRG Goblins theme. We can also easily assemble a +1/+1 Counters theme in BGU. However, if we do, we'll have trouble finding things to do with W. A large portion of the W cards we would play, especially at high mana value, are about +1/+1 counters and/or 1/1 tokens!
+
+Here are a few of the constraints I have run into. These are not hard limits, but they issues to flag and avoid if possible:
+
+- W really likes to do 1/1 tokens and +1/+1 counters
+- U really likes to do stuff with noncreature spells. We lose a lot of fun U cards if our spellslinger theme is RGW Heroic
+
 ## Fixing
 
 Each theme is three colors. However, we are *not* trying to push players into three-color decks. The reason for the three-color themes is to muddy the waters and ensure that two-color decks don't get repetitive. 
