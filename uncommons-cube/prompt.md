@@ -142,9 +142,9 @@ For example, for UBR, we have a discard theme. Our skeleton could look like:
 
 ### Theme-Aware Card Choices
 
-We want the themes to be prominent, but we also want to make sure that each color is doing the stuff that it's supposed to do. For example, B is supposed to get creatures back from the graveyard. 
+We want the themes to be prominent, but we also want to make sure that each color is doing the stuff that it's supposed to do. 
 
-If ETB value shenanigans are on-theme for B, we may include [[Graveshifter]]. If not, we should try to avoid easily-blinked ETB abilities in B; something like [[Gathering Darkness]] might be a better fit for that slot.
+For example, B is supposed to get creatures back from the graveyard. If ETB value shenanigans are on-theme for B, we may include [[Graveshifter]]. If not, we should try to avoid easily-blinked ETB abilities in B; something like [[Gathering Darkness]] might be a better fit for that slot.
 
 ### Respect the Card Pool
 
@@ -187,4 +187,4 @@ Please be concise and direct.
 
 Sometimes I will ask you to output a bunch of data at once -- for example, a configuration of ten themes with a skeleton for each. That's a lot, especially when it includes cards I'm not familiar with!
 
-For big dumps like that, please follow `template.html` for formatting. It also includes handling for autocards on hover. 
+For big dumps like that, please follow `template.html` for formatting. It also includes handling for autocards on hover. Do not overwrite the template -- create a new file that follows the rules.
