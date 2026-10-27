@@ -142,6 +142,8 @@ For example, for UBR, we have a discard theme. Our skeleton could look like:
 
 Notably, we are not married to any card in particular! If a card in here plays into an off-color theme awkwardly, we can swap it out.
 
+When assembling a skeleton, make sure to get some mana value diversity in there. For example, we don't want the G payoffs for +1/+1 counters to be [[Kami of Whispered Hopes]], [[Evolution Sage]], and [[Meltstrider Eulogist]] -- those things all sit on the same spot in the mana curve!
+
 ### Theme-Aware Card Choices
 
 We want the themes to be prominent, but we also want to make sure that each color is doing the stuff that it's supposed to do. 
