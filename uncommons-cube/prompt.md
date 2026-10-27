@@ -105,9 +105,9 @@ We have a few easy ones to get us started. Mechanically novel, well supported, a
 - GUR Multicolor (Domain/Converge/Vivid). Notably: SOS archaics are batched together with ECL elementals for the sake of [[Risen Reef]], [[Twinflame Travelers]], etc
 - UBR Discard (Madness/Mayhem)
 
-### Likely Themes
+### Possible Themes
 
-These ones are likely, but not set in stone:
+These ones are at least plausible. None are set in stone.
 
 - Thopters. We don't have any noncreature artifacts, so "artifact" is a de facto creature type. Affinity is mechanically novel as a kindred payoff
 - Goblins or some other type that uses 1/1 tokens
@@ -182,3 +182,9 @@ To reduce duplicate queries, you may cache data locally in `cache/`. Details are
 ## Communication Style
 
 Please be concise and direct. 
+
+### HTML Demos
+
+Sometimes I will ask you to output a bunch of data at once -- for example, a configuration of ten themes with a skeleton for each. That's a lot, especially when it includes cards I'm not familiar with!
+
+For big dumps like that, please follow `template.html` for formatting. It also includes handling for autocards on hover. 
