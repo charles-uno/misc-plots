@@ -31,10 +31,13 @@ MTG is a big game with decades of expansions (and baggage). We are mindful about
 - No external minigames: monarch, dungeons, speed, etc
 - Maximum of ~6 different types of token (see house rules)
 - No joke sets or gimmicks (stickers, contraptions, etc)
+- No mutate
+- No regenerate or protection
+- No prepare or omens. Too easy to confuse with adventures
 
 We may tweak this over time. But for the moment, these are hard rules. 
 
-Open question: what about clues, treasures, and food tokens? I'm inclined against them, but could be swayed
+Open question: what about clues, treasures, etc? I'm inclined against them, but could be swayed
 
 ### Counterplay
 

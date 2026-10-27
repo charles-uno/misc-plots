@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uncommons Cube — 10-Theme Configuration v2</title>
+  <title>Uncommons Cube — Ten-Theme Configuration (v3)</title>
   <style>
     :root {
       --bg: #121418;
@@ -65,12 +65,6 @@
       display: flex;
       align-items: center;
       gap: 8px;
-    }
-
-    .theme-note {
-      font-size: 0.78rem;
-      color: var(--muted);
-      font-weight: 400;
     }
 
     /* Always 4 columns side-by-side */
@@ -172,13 +166,12 @@
 </head>
 <body>
 
-  <h1>Uncommons Cube — 10-Theme Configuration (v2)</h1>
+  <h1>Uncommons Cube — Ten-Theme Configuration (v3)</h1>
   <p class="subtitle">
-    Validated against Scryfall bulk data: 119/120 cards printed at Uncommon (only <code>Terminal Agony</code> from the prompt example is common), strict color identity, zero library searching, zero extra token/counter types, and no off-theme ETB bombs.
+    Hover any card name to display its card image (loads locally from <code>cache/images/</code> when cached, or falls back to Scryfall).
   </p>
 
-  <!-- 1. WBG: Lifegain (Fixed) -->
-  <div class="theme-card">
+    <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
         <span class="pips">
@@ -188,33 +181,36 @@
         </span>
         <span>Lifegain (Infusion &amp; Drain)</span>
       </h2>
-      <span class="theme-note">Fixed Theme • Incremental lifegain payoffs, +1/+1 counters &amp; drain</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Ajani's Pridemate">Ajani's Pridemate</span></li>
+          <li><span class="autocard" data-card="Ajani&#x27;s Pridemate">Ajani&#x27;s Pridemate</span></li>
+          <li><span class="autocard" data-card="MJ, Rising Star">MJ, Rising Star</span></li>
           <li><span class="autocard" data-card="Attended Healer">Attended Healer</span></li>
-          <li><span class="autocard" data-card="Twinblade Paladin">Twinblade Paladin</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}"> Payoffs</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Starscape Cleric">Starscape Cleric</span></li>
           <li><span class="autocard" data-card="Bloodthirsty Aerialist">Bloodthirsty Aerialist</span></li>
-          <li><span class="autocard" data-card="Oathsworn Vampire">Oathsworn Vampire</span></li>
-          <li><span class="autocard" data-card="Silversmote Ghoul">Silversmote Ghoul</span></li>
+          <li><span class="autocard" data-card="Nazar, the Velvet Fang">Nazar, the Velvet Fang</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Thornfist Striker">Thornfist Striker</span></li>
-          <li><span class="autocard" data-card="Voracious Wurm">Voracious Wurm</span></li>
           <li><span class="autocard" data-card="Fortifying Draught">Fortifying Draught</span></li>
+          <li><span class="autocard" data-card="Voracious Wurm">Voracious Wurm</span></li>
+          <li><span class="autocard" data-card="Thornfist Striker">Thornfist Striker</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
@@ -226,7 +222,6 @@
     </div>
   </div>
 
-  <!-- 2. GUR: Multicolor & Primordials (Fixed) -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -237,8 +232,8 @@
         </span>
         <span>Multicolor &amp; Primordials (Domain / Converge / Vivid)</span>
       </h2>
-      <span class="theme-note">Fixed Theme • Basic land types, colors spent &amp; Primordials (Elementals/Avatars/Archaics)</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}"> Payoffs</h3>
@@ -248,22 +243,25 @@
           <li><span class="autocard" data-card="Prismabasher">Prismabasher</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/U.svg" alt="{U}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Shinestriker">Shinestriker</span></li>
-          <li><span class="autocard" data-card="Sweep the Skies">Sweep the Skies</span></li>
           <li><span class="autocard" data-card="Evasive Action">Evasive Action</span></li>
+          <li><span class="autocard" data-card="Allied Strategies">Allied Strategies</span></li>
+          <li><span class="autocard" data-card="Shinestriker">Shinestriker</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Explosive Prodigy">Explosive Prodigy</span></li>
           <li><span class="autocard" data-card="Incandescent Soulstoke">Incandescent Soulstoke</span></li>
-          <li><span class="autocard" data-card="Kaleidoscorch">Kaleidoscorch</span></li>
+          <li><span class="autocard" data-card="Squawkroaster">Squawkroaster</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
@@ -275,7 +273,6 @@
     </div>
   </div>
 
-  <!-- 3. UBR: Discard (Fixed) -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -286,8 +283,8 @@
         </span>
         <span>Discard (Madness / Mayhem / Cycling)</span>
       </h2>
-      <span class="theme-note">Fixed Theme • Prompt skeleton (Asylum Visitor &amp; Fiery Temper printed at Uncommon in INR)</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/U.svg" alt="{U}"> Payoffs</h3>
@@ -297,14 +294,16 @@
           <li><span class="autocard" data-card="Ominous Sphinx">Ominous Sphinx</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Asylum Visitor">Asylum Visitor</span></li>
-          <li><span class="autocard" data-card="Gisa's Bidding">Gisa's Bidding</span></li>
           <li><span class="autocard" data-card="Big Game Hunter">Big Game Hunter</span></li>
+          <li><span class="autocard" data-card="Gisa&#x27;s Bidding">Gisa&#x27;s Bidding</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}"> Payoffs</h3>
         <ul class="card-list">
@@ -313,18 +312,18 @@
           <li><span class="autocard" data-card="Raging Goblinoids">Raging Goblinoids</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Terminal Agony">Terminal Agony</span></li>
           <li><span class="autocard" data-card="Lazotep Chancellor">Lazotep Chancellor</span></li>
           <li><span class="autocard" data-card="Izzet Charm">Izzet Charm</span></li>
+          <li><span class="autocard" data-card="Terminal Agony">Terminal Agony</span></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 4. URW: Spellslinger (Prowess / Flurry / 2nd Spell) -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -335,33 +334,36 @@
         </span>
         <span>Spellslinger (Prowess &amp; Second Spell)</span>
       </h2>
-      <span class="theme-note">Keeps U in Spellslinger • Token payoffs make consolidated 1/1 Goblins &amp; 1/1 flying Thopters</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/U.svg" alt="{U}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Wingblade Disciple">Wingblade Disciple</span></li>
+          <li><span class="autocard" data-card="Whispering Wizard">Whispering Wizard</span></li>
           <li><span class="autocard" data-card="Eddymurk Crab">Eddymurk Crab</span></li>
-          <li><span class="autocard" data-card="Uthros Psionicist">Uthros Psionicist</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Young Pyromancer">Young Pyromancer</span></li>
           <li><span class="autocard" data-card="Guttersnipe">Guttersnipe</span></li>
-          <li><span class="autocard" data-card="Heartfire Immolator">Heartfire Immolator</span></li>
+          <li><span class="autocard" data-card="Longshot, Rebel Bowman">Longshot, Rebel Bowman</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}"> Payoffs</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Clever Lumimancer">Clever Lumimancer</span></li>
           <li><span class="autocard" data-card="Clarion Spirit">Clarion Spirit</span></li>
           <li><span class="autocard" data-card="Sunstar Lightsmith">Sunstar Lightsmith</span></li>
-          <li><span class="autocard" data-card="Clever Lumimancer">Clever Lumimancer</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
@@ -373,7 +375,6 @@
     </div>
   </div>
 
-  <!-- 5. WUB: Thopters & Artifact Creatures (Affinity) -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -384,45 +385,47 @@
         </span>
         <span>Thopters &amp; Artifact Creatures (Affinity)</span>
       </h2>
-      <span class="theme-note">All 1/1 flying tokens are Blue Artifact Thopters • Artifacts act as a kindred batch</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}"> Payoffs</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Ingenious Smith">Ingenious Smith</span></li>
+          <li><span class="autocard" data-card="Losheel, Clockwork Scholar">Losheel, Clockwork Scholar</span></li>
           <li><span class="autocard" data-card="Guidelight Synergist">Guidelight Synergist</span></li>
-          <li><span class="autocard" data-card="Plated Onslaught">Plated Onslaught</span></li>
-          <li><span class="autocard" data-card="Thopter Architect">Thopter Architect</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/U.svg" alt="{U}"> Payoffs</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Shuri, Wakandan Inventor">Shuri, Wakandan Inventor</span></li>
           <li><span class="autocard" data-card="Whirler Rogue">Whirler Rogue</span></li>
-          <li><span class="autocard" data-card="Memory Guardian">Memory Guardian</span></li>
           <li><span class="autocard" data-card="Cerebral Download">Cerebral Download</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Marionette Apprentice">Marionette Apprentice</span></li>
-          <li><span class="autocard" data-card="Monoist Circuit-Feeder">Monoist Circuit-Feeder</span></li>
           <li><span class="autocard" data-card="Armix, Filigree Thrasher">Armix, Filigree Thrasher</span></li>
+          <li><span class="autocard" data-card="Monoist Circuit-Feeder">Monoist Circuit-Feeder</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Voyage Home">Voyage Home</span></li>
-          <li><span class="autocard" data-card="Haunt the Network">Haunt the Network</span></li>
           <li><span class="autocard" data-card="Bartolomé del Presidio">Bartolomé del Presidio</span></li>
+          <li><span class="autocard" data-card="Haunt the Network">Haunt the Network</span></li>
+          <li><span class="autocard" data-card="Voyage Home">Voyage Home</span></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 6. RWB: 1/1 Goblin Swarm & Aristocrats -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -431,35 +434,38 @@
           <img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}">
           <img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}">
         </span>
-        <span>1/1 Goblin Swarm &amp; Aristocrats (Fey / Mobilize)</span>
+        <span>1/1 Goblin Swarm (Fey / Mobilize / Go-Wide)</span>
       </h2>
-      <span class="theme-note">All vanilla 1/1 tokens are Red Goblins (Fey) • Bridges W go-wide &amp; BR sacrifice</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Battle Cry Goblin">Battle Cry Goblin</span></li>
-          <li><span class="autocard" data-card="Volley Veteran">Volley Veteran</span></li>
           <li><span class="autocard" data-card="General Kreat, the Boltbringer">General Kreat, the Boltbringer</span></li>
+          <li><span class="autocard" data-card="Volley Veteran">Volley Veteran</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Goldnight Commander">Goldnight Commander</span></li>
           <li><span class="autocard" data-card="Dauntless Veteran">Dauntless Veteran</span></li>
-          <li><span class="autocard" data-card="Devouring Light">Devouring Light</span></li>
+          <li><span class="autocard" data-card="Goldnight Commander">Goldnight Commander</span></li>
+          <li><span class="autocard" data-card="Cloudgoat Ranger">Cloudgoat Ranger</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}"> Payoffs</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Mudbutton Cursetosser">Mudbutton Cursetosser</span></li>
+          <li><span class="autocard" data-card="Mad Auntie">Mad Auntie</span></li>
           <li><span class="autocard" data-card="Sling-Gang Lieutenant">Sling-Gang Lieutenant</span></li>
-          <li><span class="autocard" data-card="Zulaport Cutthroat">Zulaport Cutthroat</span></li>
-          <li><span class="autocard" data-card="Venerated Stormsinger">Venerated Stormsinger</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
@@ -471,7 +477,6 @@
     </div>
   </div>
 
-  <!-- 7. GWU: +1/+1 Counters & Proliferate -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -482,45 +487,47 @@
         </span>
         <span>+1/+1 Counters &amp; Proliferate</span>
       </h2>
-      <span class="theme-note">Gives W &amp; G their natural +1/+1 counter payoffs alongside U proliferate &amp; evasion</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}"> Payoffs</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Wildwood Scourge">Wildwood Scourge</span></li>
           <li><span class="autocard" data-card="Kami of Whispered Hopes">Kami of Whispered Hopes</span></li>
-          <li><span class="autocard" data-card="Evolution Sage">Evolution Sage</span></li>
-          <li><span class="autocard" data-card="Meltstrider Eulogist">Meltstrider Eulogist</span></li>
+          <li><span class="autocard" data-card="Michelangelo, Mutant BFF">Michelangelo, Mutant BFF</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Abzan Falconer">Abzan Falconer</span></li>
-          <li><span class="autocard" data-card="Envoy of the Ancestors">Envoy of the Ancestors</span></li>
           <li><span class="autocard" data-card="Metastatic Evangel">Metastatic Evangel</span></li>
+          <li><span class="autocard" data-card="Abzan Falconer">Abzan Falconer</span></li>
+          <li><span class="autocard" data-card="Dr. McCoy, Surly Surgeon">Dr. McCoy, Surly Surgeon</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/U.svg" alt="{U}"> Payoffs</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Thrummingbird">Thrummingbird</span></li>
-          <li><span class="autocard" data-card="Skatewing Spy">Skatewing Spy</span></li>
           <li><span class="autocard" data-card="Flux Channeler">Flux Channeler</span></li>
+          <li><span class="autocard" data-card="Skatewing Spy">Skatewing Spy</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Conclave Mentor">Conclave Mentor</span></li>
-          <li><span class="autocard" data-card="Sharktocrab">Sharktocrab</span></li>
           <li><span class="autocard" data-card="Plumecreed Mentor">Plumecreed Mentor</span></li>
+          <li><span class="autocard" data-card="Sharktocrab">Sharktocrab</span></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 8. RGW: Behemoths & Power 4+ -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -529,47 +536,49 @@
           <img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}">
           <img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}">
         </span>
-        <span>Behemoths &amp; Power 4+ (3/3 Dinosaur Tokens)</span>
+        <span>Behemoths &amp; Power 4+ (Dinosaurs, Dragons &amp; Wurms)</span>
       </h2>
-      <span class="theme-note">Dinosaurs, Dragons &amp; Wurms batched as Behemoths • Zero blinkable ETB bombs in R or W</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Otepec Huntmaster">Otepec Huntmaster</span></li>
-          <li><span class="autocard" data-card="Belligerent Yearling">Belligerent Yearling</span></li>
           <li><span class="autocard" data-card="Triumphant Chomp">Triumphant Chomp</span></li>
+          <li><span class="autocard" data-card="Otepec Huntmaster">Otepec Huntmaster</span></li>
+          <li><span class="autocard" data-card="Kolaghan Warmonger">Kolaghan Warmonger</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Goreclaw, Terror of Qal Sisma">Goreclaw, Terror of Qal Sisma</span></li>
           <li><span class="autocard" data-card="Nessian Hornbeetle">Nessian Hornbeetle</span></li>
+          <li><span class="autocard" data-card="Goreclaw, Terror of Qal Sisma">Goreclaw, Terror of Qal Sisma</span></li>
           <li><span class="autocard" data-card="Challenger Troll">Challenger Troll</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/W.svg" alt="{W}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Majestic Heliopterus">Majestic Heliopterus</span></li>
-          <li><span class="autocard" data-card="Dragon's Disciple">Dragon's Disciple</span></li>
           <li><span class="autocard" data-card="Imperial Lancer">Imperial Lancer</span></li>
+          <li><span class="autocard" data-card="Dragon&#x27;s Disciple">Dragon&#x27;s Disciple</span></li>
+          <li><span class="autocard" data-card="Majestic Heliopterus">Majestic Heliopterus</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
           <li><span class="autocard" data-card="Itzquinth, Firstborn of Gishath">Itzquinth, Firstborn of Gishath</span></li>
           <li><span class="autocard" data-card="Atzocan Seer">Atzocan Seer</span></li>
-          <li><span class="autocard" data-card="Sky Terror">Sky Terror</span></li>
+          <li><span class="autocard" data-card="Regal Leosaur">Regal Leosaur</span></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 9. BRG: Undead, Morbid & Leaving the Graveyard -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -578,47 +587,49 @@
           <img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}">
           <img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}">
         </span>
-        <span>Undead, Morbid &amp; Leaving the Graveyard (2/2 Zombie Tokens)</span>
+        <span>Morbid &amp; Sacrifice (Creatures Dying &amp; Devour)</span>
       </h2>
-      <span class="theme-note">Vanilla 2/2 tokens are Black Zombies (Undead) • Rewards creatures dying &amp; cards leaving graveyard</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Death-Priest of Myrkul">Death-Priest of Myrkul</span></li>
-          <li><span class="autocard" data-card="Tormod, the Desecrator">Tormod, the Desecrator</span></li>
-          <li><span class="autocard" data-card="Undead Augur">Undead Augur</span></li>
+          <li><span class="autocard" data-card="Zulaport Cutthroat">Zulaport Cutthroat</span></li>
+          <li><span class="autocard" data-card="Gravelighter">Gravelighter</span></li>
+          <li><span class="autocard" data-card="Morkrut Banshee">Morkrut Banshee</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/R.svg" alt="{R}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Garrison Excavator">Garrison Excavator</span></li>
-          <li><span class="autocard" data-card="Brimstone Volley">Brimstone Volley</span></li>
           <li><span class="autocard" data-card="Slumbering Cerberus">Slumbering Cerberus</span></li>
+          <li><span class="autocard" data-card="Brimstone Volley">Brimstone Volley</span></li>
+          <li><span class="autocard" data-card="Havoc Jester">Havoc Jester</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Attuned Hunter">Attuned Hunter</span></li>
-          <li><span class="autocard" data-card="Splinterfright">Splinterfright</span></li>
-          <li><span class="autocard" data-card="Undercity Upheaval">Undercity Upheaval</span></li>
+          <li><span class="autocard" data-card="Fungal Rebirth">Fungal Rebirth</span></li>
+          <li><span class="autocard" data-card="Lumberknot">Lumberknot</span></li>
+          <li><span class="autocard" data-card="Skullmulcher">Skullmulcher</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Garna, Bloodfist of Keld">Garna, Bloodfist of Keld</span></li>
+          <li><span class="autocard" data-card="Mayhem Devil">Mayhem Devil</span></li>
           <li><span class="autocard" data-card="Host of the Hereafter">Host of the Hereafter</span></li>
-          <li><span class="autocard" data-card="Wildfire Wickerfolk">Wildfire Wickerfolk</span></li>
+          <li><span class="autocard" data-card="Rulik Mons, Warren Chief">Rulik Mons, Warren Chief</span></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- 10. BGU: ETB Value (Self-Bounce, Ninjutsu & Recursion) -->
   <div class="theme-card">
     <div class="theme-header">
       <h2 class="theme-title">
@@ -629,39 +640,42 @@
         </span>
         <span>ETB Value (Self-Bounce, Ninjutsu &amp; Recursion)</span>
       </h2>
-      <span class="theme-note">Rebuying ETBs via BLB Frogs, Ninjas &amp; Gravedigger loops • Keeps ETB abuse out of R</span>
     </div>
+
     <div class="skeleton-grid">
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/B.svg" alt="{B}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Graveshifter">Graveshifter</span></li>
           <li><span class="autocard" data-card="Dokuchi Silencer">Dokuchi Silencer</span></li>
+          <li><span class="autocard" data-card="Graveshifter">Graveshifter</span></li>
           <li><span class="autocard" data-card="Young Necromancer">Young Necromancer</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/G.svg" alt="{G}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Eternal Witness">Eternal Witness</span></li>
           <li><span class="autocard" data-card="Three Tree Scribe">Three Tree Scribe</span></li>
+          <li><span class="autocard" data-card="Eternal Witness">Eternal Witness</span></li>
           <li><span class="autocard" data-card="Temur Sabertooth">Temur Sabertooth</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3><img class="mana-sym" src="https://svgs.scryfall.io/card-symbols/U.svg" alt="{U}"> Payoffs</h3>
         <ul class="card-list">
-          <li><span class="autocard" data-card="Long River Lurker">Long River Lurker</span></li>
-          <li><span class="autocard" data-card="Zephyr Sentinel">Zephyr Sentinel</span></li>
           <li><span class="autocard" data-card="Splash Portal">Splash Portal</span></li>
+          <li><span class="autocard" data-card="Zephyr Sentinel">Zephyr Sentinel</span></li>
+          <li><span class="autocard" data-card="Long River Lurker">Long River Lurker</span></li>
         </ul>
       </div>
+
       <div class="slot-group">
         <h3>Two-Color</h3>
         <ul class="card-list">
+          <li><span class="autocard" data-card="Honest Rutstein">Honest Rutstein</span></li>
           <li><span class="autocard" data-card="Lilysplash Mentor">Lilysplash Mentor</span></li>
           <li><span class="autocard" data-card="Ingenious Infiltrator">Ingenious Infiltrator</span></li>
-          <li><span class="autocard" data-card="Honest Rutstein">Honest Rutstein</span></li>
         </ul>
       </div>
     </div>
@@ -685,11 +699,12 @@
     }
 
     document.querySelectorAll(".autocard").forEach(el => {
-      const name = el.textContent.trim();
+      const name = el.dataset.card || el.textContent.trim();
       const localPath = `cache/images/${slugify(name)}.jpg`;
       const remoteUrl = scryfallImgUrl(name);
 
       el.addEventListener("mouseenter", (e) => {
+        // Try local cached image first (for 100% offline use); seamlessly fall back to Scryfall
         popImg.onerror = () => {
           popImg.onerror = null;
           popImg.src = remoteUrl;
