@@ -137,6 +137,8 @@ These ones are at least plausible. None are set in stone.
 - +1/+1 Counters. I don't love this one, honestly, since counters are a common bookkeeping tool across all colors. But there is plenty of support if we need it
 - Graveyard. Big graveyard (Threshold, Delirium, Fathomless Descent, deserts in the graveyard) or consuming the graveyard (Delve, Forage, Escape). Wary of this one since I think it's tedious if players have to babysit each others' graveyards. That sort of interaction can easily become tedious
 
+Some of these are big or fuzzy! Be careful not to mix conflicting sub-themes. For example, BG Forage (which wants to eat the graveyard) would not fit under the same umbrella as RG Delirium (which wants to make the graveyard big). 
+
 ### Theme Skeleton
 
 In order for a theme to be viable, we need:
