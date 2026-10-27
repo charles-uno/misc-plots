@@ -140,6 +140,8 @@ For example, for UBR, we have a discard theme. Our skeleton could look like:
 - R payoffs: [[Marauding Mako]], [[Fiery Temper]], [[Raging Goblinoids]]
 - Two-color payoffs: [[Terminal Agony]], [[Lazotep Chancellor]] (also relevant to Zombies), [[Izzet Charm]]
 
+Notably, we are not married to any card in particular! If a card in here plays into an off-color theme awkwardly, we can swap it out.
+
 ### Theme-Aware Card Choices
 
 We want the themes to be prominent, but we also want to make sure that each color is doing the stuff that it's supposed to do. 
