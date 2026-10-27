@@ -17,13 +17,13 @@ The cube is mostly uncommons, but not stictly. Sometimes we'll include a common 
 
 ### Cube Size
 
-360 cards. We may drop it to 270 if we have trouble fillin pods. Definitely no bigger
+360 cards. We may drop it to 270 if we have trouble filling pods. Definitely no bigger
 
 ### Hard Limitations
 
 MTG is a big game with decades of expansions (and baggage). We are mindful about what we include. Right now that looks like:
 
-- Creatures, lands, instants, and sorceries. No noncreature nonland permanents (equipment, sagas, planeswalkers, etc). This eliminates the minigame: "do I need to maindeck [[Disenchant]] in this format?"
+- Creatures, lands, instants, and sorceries. No noncreature nonland permanents (equipment, sagas, planeswalkers, etc)
 - Charge counters on lands, +1/+1 counters on creatures. No other counters
 - No searching libraries. It slows down games too much. This includes basic lands
 - No double-faced cards. Bad for draft logistics
@@ -36,7 +36,13 @@ We may tweak this over time. But for the moment, these are hard rules.
 
 Open question: what about clues, treasures, and food tokens? I'm inclined against them, but could be swayed
 
-## Power Creep
+### Counterplay
+
+[[Disenchant]] effects are typically not worth main-decking in Limited, but once in a while you'll get blown out by an artifact or enchantment that you can't interact with. This, to me, is bad tension. We avoid this issue entirely via blanket exclusion of noncreature artifacts and noncreature enchantments. 
+
+On a similar note, we need to make sure to include appropriate interaction for the plays that *are* available. If it's possible to go wide, we need sweepers. If it's possible to go big, we need removal that can hit big creatures. If lands are important, we need a (non-oppressive) way to interact with them. If graveyard homework is a theme, we need a way to interact with that too.
+
+### Power Creep
 
 The power level of creatures in MTG has consistently increased over the years. Most uncommon creatures printed 5+ years ago are no longer suitable for the cube. They've just fallen too far behind compared to recent sets. 
 
@@ -108,8 +114,9 @@ These ones are likely, but not set in stone:
 - Zombies, Knights, or some other type that uses 2/2 tokens
 - Dinosaurs or some other type that uses 3/3 tokens 
 - +1/+1 Counters
-- ETB value. Blink or graveyard nonsense
+- ETB value. Blink or recursion
 - Spellslinger. Prowess or heroic, probably not both
+- Graveyard. Big graveyard (Threshold, Delirium, Fathomless Descent) or consuming the graveyard (Delve, Forage, Escape). Generally try to steer clear of this since graveyard interaction is often tedious
 
 ### Theme Skeleton
 
@@ -127,13 +134,11 @@ For example, for UBR, we have a discard theme. Our skeleton could look like:
 
 ## Fixing
 
-I expect tri-lands provide the bulk of the fixing. With ten of them in a 360-card cube, they should be pretty visible. We'll likely also have a few mana dorks. Maybe a few one-off lands too. 
+Each theme is three colors. However, we are *not* trying to push players into three-color decks. The reason for the three-color themes is to muddy the waters and ensure that two-color decks don't get repetitive. 
 
-Each theme is three colors, but I expect that most decks will play only two (or two plus a splash). A similar vibe to a "real" Limited format. 
+Number-wise, we're targeting about as much fixing as BLB or ONE. These are formats where decks typically stuck to two colors. 
 
-If you want to play the multicolor deck, you'll need to prioritize tri-lands highly. 
-
-If we are *really* worried about the fixing, I could see swapping out the tri-lands for two cycles of duals. Potentially the KHM and DMU cycles (respectively [[Glacial Floodplain]], [[Idyllic Beachfront]]). The downside there is that some duals will be duds in a given draft. Tri-lands are almost never duds since each one covers three different guilds. 
+The tentative plan is to include ten tri-lands, five Vivid lands, and a few one-off mana dorks and five-color lands. 
 
 ## Scryfall Usage
 
