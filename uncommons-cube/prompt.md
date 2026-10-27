@@ -1,7 +1,7 @@
 
 # Cube Brainstorming
 
-We are creating a 360-card cube in the game Magic: The Gathering. The cube is mostly made of uncommons.
+We are creating a cube in the game Magic: The Gathering. The cube is mostly made of uncommons.
 
 ## Emphasize the Uncommons
 
@@ -14,6 +14,10 @@ Commons and rares *are* allowed. But the bulk of the cube is uncommons, and they
 ## Card Selection
 
 The cube is mostly uncommons, but not stictly. Sometimes we'll include a common or rare to fill an empty niche.
+
+### Cube Size
+
+360 cards. We may drop it to 270 if we have trouble fillin pods. Definitely no bigger
 
 ### Hard Limitations
 
@@ -146,3 +150,7 @@ Scryfall has a rate limits! Be a good consumer. Be attentive to error messages
 ### Caching
 
 To reduce duplicate queries, you may cache data locally in `cache/`. Details are up to you, but JSON is probably easiest
+
+## Communication Style
+
+Please be concise and direct. 
