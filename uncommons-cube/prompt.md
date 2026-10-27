@@ -1,7 +1,7 @@
 
 # Cube Brainstorming
 
-We are creating a cube in the game Magic: The Gathering. The cube is mostly made of uncommons.
+We are creating a 360-card cube in the game Magic: The Gathering. The cube is mostly made of uncommons.
 
 ## Emphasize the Uncommons
 
@@ -19,15 +19,18 @@ The cube is mostly uncommons, but not stictly. Sometimes we'll include a common 
 
 MTG is a big game with decades of expansions (and baggage). We are mindful about what we include. Right now that looks like:
 
-- Creatures, lands, instants, and sorceries. No equipment, planeswalkers, etc
+- Creatures, lands, instants, and sorceries. No noncreature nonland permanents (equipment, sagas, planeswalkers, etc). This eliminates the minigame: "do I need to maindeck [[Disenchant]] in this format?"
 - Charge counters on lands, +1/+1 counters on creatures. No other counters
-- No searching libraries. It slows down games too much
+- No searching libraries. It slows down games too much. This includes basic lands
 - No double-faced cards. Bad for draft logistics
-- No control or timeout effects. Easy to accidentally switch cards between decks
+- No control effects. No effects that exile your card on my side of the table (eg [[Fiend Hunter]]). Easy to accidentally switch cards between decks
 - No external minigames: monarch, dungeons, speed, etc
 - Maximum of ~6 different types of token (see house rules)
+- No joke sets or gimmicks (stickers, contraptions, etc)
 
-We may tweak this over time. In particular, I could see coming back for equipment. But for the moment, these are hard rules. 
+We may tweak this over time. But for the moment, these are hard rules. 
+
+Open question: what about clues, treasures, and food tokens? I'm inclined against them, but could be swayed
 
 ## Power Creep
 
@@ -45,12 +48,12 @@ We stick to subtypes. Otherwise it's a *big* can of worms.
 
 We consolidate tokens based on size:
 
-- All vanilla 1/1 tokens are Goblins
-- All vanilla 2/2 tokens are Zombies
-- All vanilla 3/3 tokens are Dinosaurs
-- All 1/1 flying tokens are Thopters
+- All vanilla 1/1 tokens are red Goblins
+- All vanilla 2/2 tokens are black Zombies
+- All vanilla 3/3 tokens are green Dinosaurs
+- All 1/1 flying tokens are blue Thopters
 
-These types are not set in stone. The important thing is that they are all the same. For example, if convenient, we could say that all vanilla 1/1 tokens are Elves instead. 
+These types are not set in stone. The important thing is that they are all the same. For example, if convenient, we could say that all vanilla 1/1 tokens are green Elves instead. 
 
 Open question: do we treat Amass 1 like a 1/1 token, Amass 2 like a 2/2 token, etc? Or do we use the Army token as printed? We could go either way based on what better lines up with the themes (eg, whether +1/+1 counters are on-theme for these colors)
 
@@ -78,7 +81,7 @@ This is relevant for a handful of cards, most notably domain cards like [[Tribal
 
 In an ordinary set, you typically see a theme for each two-color combination (eg UR Spellslinger). Two-color themes can get repetitive in a cube due to the fixed card pool. They can be doubly repetitive in an uncommons cube, since uncommons are so good at emphasizing themes. 
 
-To keep things interesting, we instead use overlapping three-color themes. A given UR deck may pull from the URW, URB, and/or URG themes. 
+To keep things interesting, we instead use ten overlapping three-color themes. One for each shard, one for each wedge. A given UR deck may pull from the URW, URB, and/or URG themes. 
 
 The themes themselves are also "fuzzier" than you would see in an ordinary set. For example, in OTJ, there are several payoffs for controlling a creature with power 4 or greater. In TDM, there were payoffs for beholding a dragon. Here, those would likely be clumped into the same theme. 
 
@@ -108,15 +111,25 @@ These ones are likely, but not set in stone:
 
 In order for a theme to be viable, we need:
 
-- Three payoffs in each color that pull a drafter into thse theme
-- At least one enabler or payoff in each two-color combination
+- Three payoffs in each color that pull a drafter into this theme specifically. These should *not* overlap between themes.
+- At least one enabler or payoff in each two-color combination. These *may* overlap between themes.
 
 For example, for UBR, we have a discard theme. Our skeleton could look like:
 
 - U payoffs: [[Scrounging Skyray]], [[Circular Logic]], [[Ominous Sphinx]]
 - B payoffs: [[Asylum Visitor]], [[Gisa's Bidding]], [[Big Game Hunter]]
 - R payoffs: [[Marauding Mako]], [[Fiery Temper]], [[Raging Goblinoids]]
-- Multicolor payoffs: [[Terminal Agony]], [[Lazotep Chancellor]], [[Izzet Charm]]
+- Two-color payoffs: [[Terminal Agony]], [[Lazotep Chancellor]] (also relevant to Zombies), [[Izzet Charm]]
+
+## Fixing
+
+I expect tri-lands provide the bulk of the fixing. With ten of them in a 360-card cube, they should be pretty visible. We'll likely also have a few mana dorks. Maybe a few one-off lands too. 
+
+Each theme is three colors, but I expect that most decks will play only two (or two plus a splash). A similar vibe to a "real" Limited format. 
+
+If you want to play the multicolor deck, you'll need to prioritize tri-lands highly. 
+
+If we are *really* worried about the fixing, I could see swapping out the tri-lands for two cycles of duals. Potentially the KHM and DMU cycles (respectively [[Glacial Floodplain]], [[Idyllic Beachfront]]). The downside there is that some duals will be duds in a given draft. Tri-lands are almost never duds since each one covers three different guilds. 
 
 ## Scryfall Usage
 
@@ -130,3 +143,6 @@ Query syntax docs: https://scryfall.com/docs/syntax
 
 Scryfall has a rate limits! Be a good consumer. Be attentive to error messages
 
+### Caching
+
+To reduce duplicate queries, you may cache data locally in `cache/`. Details are up to you, but JSON is probably easiest
