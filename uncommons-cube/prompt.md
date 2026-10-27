@@ -116,14 +116,15 @@ These ones are likely, but not set in stone:
 - Thopters, Spirits, or some other type that uses 1/1 flying tokens
 - Fatties: Dinosaurs, Dragons, Ferocious
 - Little guys. Power/MV 2 or less. Possibly focused on nontoken creatures to be distinct from Goblins
-- +1/+1 Counters
 - ETB value. Blink or recursion
 - Raid, Bloodthirst, Morbid, and/or sacrifice
 - Tap/untap shenanigans. Convoke, Saddle, Web-slinging and/or tapping their stuff
 - Spellslinger. Prowess and/or Heroic/Repartee/crimes
-- Graveyard. Big graveyard (Threshold, Delirium, Fathomless Descent, deserts in the graveyard) or consuming the graveyard (Delve, Forage, Escape). Wary of this one since I think it's tedious if players have to babysit each others' graveyards. That sort of interaction can easily become tedious
 - Flash, playing on an opponent's turn
 - Drawing extra cards
+- Big mana value spells. Might get squished together with Vivid
+- +1/+1 Counters. I don't love this one, honestly, since counters are a common bookkeeping tool across all colors. But there is plenty of support if we need it
+- Graveyard. Big graveyard (Threshold, Delirium, Fathomless Descent, deserts in the graveyard) or consuming the graveyard (Delve, Forage, Escape). Wary of this one since I think it's tedious if players have to babysit each others' graveyards. That sort of interaction can easily become tedious
 
 ### Theme Skeleton
 
