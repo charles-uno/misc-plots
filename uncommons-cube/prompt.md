@@ -3,13 +3,23 @@
 
 We are creating a cube in the game Magic: The Gathering. The cube is mostly made of uncommons.
 
-## Emphasize the Uncommons
+## The Big Picture
+
+### Emphasize the Uncommons
 
 Uncommons are the most satisfying part of a booster draft. They're in the sweet spot between power and complexity. They're the enablers and payoffs for the set's featured themes and synergies. When a draft goes well, and all the pieces of your deck fit together perfectly, it's the uncommons that really shine. 
 
 This cube leans into that feeling. No bombs that steal a game solo. No forgettable filler. Every card is a role-player that invites you to build your deck around it. There are a million different ways to connect the dots. 
 
 Commons and rares *are* allowed. But the bulk of the cube is uncommons, and they set the vibe.
+
+### Fixing
+
+Each theme is three colors. However, we are *not* trying to push players into three-color decks. The reason for the three-color themes is to muddy the waters and ensure that two-color decks don't get repetitive. 
+
+Number-wise, we're targeting about as much fixing as BLB or ONE. These are formats where decks typically stuck to two colors. 
+
+The tentative plan is to include ten tri-lands, five Vivid lands, and a few one-off mana dorks and five-color lands. 
 
 ## Card Selection
 
@@ -173,14 +183,6 @@ Here are a few of the constraints I have run into. These are not hard limits, bu
 - W really likes to do 1/1 tokens and +1/+1 counters
 - U really likes to do stuff with noncreature spells. We lose a lot of fun U cards if our spellslinger theme is RGW Heroic
 
-## Fixing
-
-Each theme is three colors. However, we are *not* trying to push players into three-color decks. The reason for the three-color themes is to muddy the waters and ensure that two-color decks don't get repetitive. 
-
-Number-wise, we're targeting about as much fixing as BLB or ONE. These are formats where decks typically stuck to two colors. 
-
-The tentative plan is to include ten tri-lands, five Vivid lands, and a few one-off mana dorks and five-color lands. 
-
 ## Scryfall Usage
 
 Scryfall is a took for searching existing MTG cards. 
@@ -188,6 +190,8 @@ Scryfall is a took for searching existing MTG cards.
 API docs: https://scryfall.com/docs/api
 
 Query syntax docs: https://scryfall.com/docs/syntax
+
+Bulk data access: https://scryfall.com/docs/api/bulk-data
 
 ### Rate Limiting
 
