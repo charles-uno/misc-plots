@@ -56,6 +56,7 @@ These ones are at least plausible. None are set in stone.
 - Spellslinger. Prowess and/or Heroic/Repartee/crimes
 - Flash, playing on an opponent's turn
 - Drawing extra cards
+- Legendary creatures
 - Big mana value spells. Might get squished together with Vivid
 - +1/+1 Counters. I don't love this one, honestly, since counters are a common bookkeeping tool across all colors. But there is plenty of support if we need it
 - Graveyard. Wary of this one since I think it's tedious if players have to babysit each others' graveyards

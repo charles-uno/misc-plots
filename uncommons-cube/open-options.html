@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTG Uncommons Cube — Open Triad Options Stress-Test</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --border: #d8dce3;
+      --text: #1c2026;
+      --muted: #5c6470;
+      --accent: #2d5be3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 24px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .theme-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
+    .theme-title {
+      padding: 12px 18px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      background: #eef1f6;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .color-column {
+      padding: 14px 16px 18px;
+      border-right: 1px solid var(--border);
+    }
+
+    .color-column:last-child {
+      border-right: none;
+    }
+
+    .color-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .color-W { background: #fdf6d8; color: #6b5600; border: 1px solid #e6d89c; }
+    .color-U { background: #dcebfa; color: #0f4c81; border: 1px solid #aacbef; }
+    .color-B { background: #e3dfe8; color: #2d2536; border: 1px solid #bdb5c7; }
+    .color-R { background: #fadcd6; color: #8a2511; border: 1px solid #f0b1a4; }
+    .color-G { background: #d9f0df; color: #195c2d; border: 1px solid #a7d9b4; }
+    .color-2C { background: #f3e8c8; color: #5c4308; border: 1px solid #dbc48a; }
+
+    .card-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card-link {
+      padding: 5px 8px;
+      margin: 2px -8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.92rem;
+      color: var(--accent);
+      transition: background 0.12s ease;
+      user-select: none;
+    }
+
+    .card-link:hover {
+      background: #eef3fd;
+      text-decoration: underline;
+    }
+
+    #card-preview {
+      position: fixed;
+      z-index: 1000;
+      pointer-events: none;
+      display: none;
+      width: 260px;
+      border-radius: 13px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+      background: #111;
+      overflow: hidden;
+    }
+
+    #card-preview img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    #card-preview .status {
+      padding: 16px;
+      color: #fff;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .color-column:nth-child(2) {
+        border-right: none;
+      }
+      .color-column:nth-child(1),
+      .color-column:nth-child(2) {
+        border-bottom: 1px solid var(--border);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MTG Uncommons Cube — Open Triad Options Stress-Test</h1>
+    <p class="subtitle">12-card skeletons for all 13 open candidates across RGW, RWB, BRG, and GWU. Hover over any card name to preview it from Scryfall. Note: for BRG Option C, <em>Caustic Exhale</em> (MV=1) is also a great fit alongside <em>Nighthowl Pursuer</em> if two 1-drops are desired.</p>
+
+<h2 style="margin: 28px 0 12px; font-size: 1.35rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">RGW Open Options</h2>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RGW Option A: Go Wide (1/1 Tokens, Convoke &amp; Team Pump)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Holds up cleanly. Every color has deep token generation and team-wide payoffs across the curve, though RG&#x27;s two-color signpost slot leans on Pack Tactics (Targ Nar) rather than pure token text.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Battle Cry Goblin">Battle Cry Goblin</li>
+            <li class="card-link" data-card-name="General Kreat, the Boltbringer">General Kreat, the Boltbringer</li>
+            <li class="card-link" data-card-name="Stoke the Flames">Stoke the Flames</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Get a Leg Up">Get a Leg Up</li>
+            <li class="card-link" data-card-name="Imperious Perfect">Imperious Perfect</li>
+            <li class="card-link" data-card-name="Overrun">Overrun</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Starry-Eyed Skyrider">Starry-Eyed Skyrider</li>
+            <li class="card-link" data-card-name="Goldnight Commander">Goldnight Commander</li>
+            <li class="card-link" data-card-name="Cloudgoat Ranger">Cloudgoat Ranger</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Targ Nar, Demon-Fang Gnoll">Targ Nar, Demon-Fang Gnoll</li>
+            <li class="card-link" data-card-name="Queen Allenal of Ruadach">Queen Allenal of Ruadach</li>
+            <li class="card-link" data-card-name="Heroic Reinforcements">Heroic Reinforcements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RGW Option B: Tap/Untap Shenanigans (Saddle, Survival &amp; Convoke)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Very cohesive thanks to OTJ/DFT Mounts, DSK Survivors, and EOE tap triggers. Red&#x27;s tap payoffs are mostly Mounts/Pilots, so it plays like an aggressive creature-combo deck.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Gila Courser">Gila Courser</li>
+            <li class="card-link" data-card-name="Reckless Velocitaur">Reckless Velocitaur</li>
+            <li class="card-link" data-card-name="Dracosaur Auxiliary">Dracosaur Auxiliary</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Hemosymbic Mite">Hemosymbic Mite</li>
+            <li class="card-link" data-card-name="Rambling Possum">Rambling Possum</li>
+            <li class="card-link" data-card-name="Autarch Mammoth">Autarch Mammoth</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Canyon Vaulter">Canyon Vaulter</li>
+            <li class="card-link" data-card-name="Savior of the Small">Savior of the Small</li>
+            <li class="card-link" data-card-name="Dawnstrike Vanguard">Dawnstrike Vanguard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Radha, Coalition Warlord">Radha, Coalition Warlord</li>
+            <li class="card-link" data-card-name="Shrewd Storyteller">Shrewd Storyteller</li>
+            <li class="card-link" data-card-name="Sami, Ship&#x27;s Engineer">Sami, Ship&#x27;s Engineer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RGW Option C: Dragons &amp; Behemoths (Dinosaurs / Dragons / Power 4+)</span>
+        <span style="background:#ffedd5;color:#9a3412;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">SHAKY</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Strains in White and RW. Even with Kinjalli&#x27;s Caller and Osseous Exhale, White mostly wants to destroy power 4+ creatures rather than reward you for controlling them, and RW lacks an uncommon payoff that rewards big creatures/Dragons/Dinosaurs (Swathcutter Giant / Relentless Raptor are just standalone bodies).
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Otepec Huntmaster">Otepec Huntmaster</li>
+            <li class="card-link" data-card-name="Firespitter Whelp">Firespitter Whelp</li>
+            <li class="card-link" data-card-name="Bolt Bend">Bolt Bend</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nasty Little Rabbit">Nasty Little Rabbit</li>
+            <li class="card-link" data-card-name="Goreclaw, Terror of Qal Sisma">Goreclaw, Terror of Qal Sisma</li>
+            <li class="card-link" data-card-name="Ghalta the Unstoppable">Ghalta the Unstoppable</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Kinjalli&#x27;s Caller">Kinjalli&#x27;s Caller <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Osseous Exhale">Osseous Exhale <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Majestic Heliopterus">Majestic Heliopterus</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Ruby, Daring Tracker">Ruby, Daring Tracker</li>
+            <li class="card-link" data-card-name="Atzocan Seer">Atzocan Seer</li>
+            <li class="card-link" data-card-name="Swathcutter Giant">Swathcutter Giant</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<h2 style="margin: 28px 0 12px; font-size: 1.35rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">RWB Open Options</h2>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RWB Option A: Little Guys (Power ≤ 2 Matter &amp; MV ≤ 3 Recursion)</span>
+        <span style="background:#fef9c3;color:#854d0e;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">MODERATE</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        White and WB/RW are fantastic (Arabella, Wispdrinker Vampire, Scout for Survivors), but mono-Red and mono-Black are thin on true uncommon payoffs: Red mostly grants unblockability to power ≤ 2, and Black&#x27;s MV ≤ 3 text is mostly reanimation or removal rather than ongoing engines.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Sneaking Guide">Sneaking Guide <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Irreverent Gremlin">Irreverent Gremlin</li>
+            <li class="card-link" data-card-name="Subira, Tulzidi Caravanner">Subira, Tulzidi Caravanner</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Helping Hand">Helping Hand</li>
+            <li class="card-link" data-card-name="Neighborhood Guardian">Neighborhood Guardian</li>
+            <li class="card-link" data-card-name="Scout for Survivors">Scout for Survivors</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Unearth">Unearth <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Slimy Dualleech">Slimy Dualleech</li>
+            <li class="card-link" data-card-name="No One Left Behind">No One Left Behind</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Arabella, Abandoned Doll">Arabella, Abandoned Doll</li>
+            <li class="card-link" data-card-name="Wispdrinker Vampire">Wispdrinker Vampire</li>
+            <li class="card-link" data-card-name="Balduvian Atrocity">Balduvian Atrocity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RWB Option B: Goblins / Fey Kindred (Goblin + Kithkin + Elf + Faerie + Dwarf)</span>
+        <span style="background:#fee2e2;color:#991b1b;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">FALLS APART</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Splits along the seams. Even if you batch Goblins, Kithkin, Elves, Faeries, and Dwarves into &#x27;Fey&#x27; (or treat all 1/1 tokens as Goblins), WB has zero Fey-kindred signposts (Baron Bertram Graywater only cares about tokens generally) and the cards read like three separate Lorwyn tribes.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Goblin Negotiation">Goblin Negotiation</li>
+            <li class="card-link" data-card-name="General Kreat, the Boltbringer">General Kreat, the Boltbringer</li>
+            <li class="card-link" data-card-name="Volley Veteran">Volley Veteran</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Kinsbaile Aspirant">Kinsbaile Aspirant</li>
+            <li class="card-link" data-card-name="Wizened Cenn">Wizened Cenn</li>
+            <li class="card-link" data-card-name="Cloudgoat Ranger">Cloudgoat Ranger</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Mudbutton Cursetosser">Mudbutton Cursetosser</li>
+            <li class="card-link" data-card-name="Miara, Thorn of the Glade">Miara, Thorn of the Glade</li>
+            <li class="card-link" data-card-name="Marsh Flitter">Marsh Flitter</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Frontline Rush">Frontline Rush</li>
+            <li class="card-link" data-card-name="Baron Bertram Graywater">Baron Bertram Graywater</li>
+            <li class="card-link" data-card-name="Boggart Cursecrafter">Boggart Cursecrafter</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RWB Option C: Sacrifice &amp; Aristocrats (1/1 Fodder &amp; Death Triggers)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Rock-solid and deep in all three colors and all three guild pairs, especially with TDM&#x27;s Mobilize mechanics bridging attacking tokens and end-step sacrifice triggers.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Rob the Archives">Rob the Archives</li>
+            <li class="card-link" data-card-name="Gut, True Soul Zealot">Gut, True Soul Zealot</li>
+            <li class="card-link" data-card-name="Skirsdag Cultist">Skirsdag Cultist</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Duty Beyond Death">Duty Beyond Death</li>
+            <li class="card-link" data-card-name="Ministrant of Obligation">Ministrant of Obligation</li>
+            <li class="card-link" data-card-name="Faramir, Field Commander">Faramir, Field Commander</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Zulaport Cutthroat">Zulaport Cutthroat</li>
+            <li class="card-link" data-card-name="Gravelighter">Gravelighter</li>
+            <li class="card-link" data-card-name="Venerated Stormsinger">Venerated Stormsinger</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Flamewright">Flamewright</li>
+            <li class="card-link" data-card-name="Hardened Tactician">Hardened Tactician</li>
+            <li class="card-link" data-card-name="Garna, Bloodfist of Keld">Garna, Bloodfist of Keld</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RWB Option D: Undead Kindred (Vampires, Zombies, Skeletons &amp; Spirits)</span>
+        <span style="background:#fef9c3;color:#854d0e;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">MODERATE</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        WB (Legion Lieutenant) and BR (Stromkirk Captain) are great Vampire lords, and RW has Spirit lords (Quintorius), but unless you batch Vampires + Zombies + Spirits + Skeletons as &#x27;Undead&#x27;, the three pairs pull toward different creature types (Vampires in WB/BR vs. Spirits in RW).
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Insolent Neonate">Insolent Neonate <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Rakish Heir">Rakish Heir</li>
+            <li class="card-link" data-card-name="Dreadhorde Twins">Dreadhorde Twins</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Duskborne Skymarcher">Duskborne Skymarcher</li>
+            <li class="card-link" data-card-name="Unconventional Tactics">Unconventional Tactics</li>
+            <li class="card-link" data-card-name="Mausoleum Guard">Mausoleum Guard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Indulgent Aristocrat">Indulgent Aristocrat</li>
+            <li class="card-link" data-card-name="Archghoul of Thraben">Archghoul of Thraben</li>
+            <li class="card-link" data-card-name="Bloodline Necromancer">Bloodline Necromancer</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Quintorius, Field Historian">Quintorius, Field Historian</li>
+            <li class="card-link" data-card-name="Legion Lieutenant">Legion Lieutenant</li>
+            <li class="card-link" data-card-name="Stromkirk Captain">Stromkirk Captain</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>RWB Option E: Warriors &amp; Fighters Kindred (Warriors, Knights &amp; Soldiers)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Surprisingly clean! All three two-color signposts literally say &#x27;Warriors&#x27; (Kargan Warleader, Chief of the Edge, Rushblade Commander), and TDM&#x27;s Mobilize creates 1/1 red Warrior tokens in all three colors. If you batch Warriors/Soldiers/Knights as &#x27;Fighters&#x27;, it gets even deeper.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Goma Fada Vanguard">Goma Fada Vanguard</li>
+            <li class="card-link" data-card-name="Zurgo&#x27;s Vanguard">Zurgo&#x27;s Vanguard</li>
+            <li class="card-link" data-card-name="Iraxxa, Empress of Mars">Iraxxa, Empress of Mars</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Resolute Reinforcements">Resolute Reinforcements</li>
+            <li class="card-link" data-card-name="Dalkovan Packbeasts">Dalkovan Packbeasts</li>
+            <li class="card-link" data-card-name="Okoye, Dora Milaje Leader">Okoye, Dora Milaje Leader</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Blood-Chin Rager">Blood-Chin Rager</li>
+            <li class="card-link" data-card-name="Belle of the Brawl">Belle of the Brawl</li>
+            <li class="card-link" data-card-name="Thrasher Brute">Thrasher Brute</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Kargan Warleader">Kargan Warleader</li>
+            <li class="card-link" data-card-name="Chief of the Edge">Chief of the Edge</li>
+            <li class="card-link" data-card-name="Rushblade Commander">Rushblade Commander</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<h2 style="margin: 28px 0 12px; font-size: 1.35rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">BRG Open Options</h2>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>BRG Option A: Stocked Graveyard (Delirium, Descend &amp; Threshold)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Every card wants your graveyard to stay full and never exiles from it. Supported heavily by LCI (Descend), DSK (Delirium), and MH2/MH3.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Osseous Sticktwister">Osseous Sticktwister</li>
+            <li class="card-link" data-card-name="Stinging Cave Crawler">Stinging Cave Crawler</li>
+            <li class="card-link" data-card-name="Chupacabra Echo">Chupacabra Echo</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Dragon&#x27;s Rage Channeler">Dragon&#x27;s Rage Channeler</li>
+            <li class="card-link" data-card-name="Gibbering Fiend">Gibbering Fiend</li>
+            <li class="card-link" data-card-name="Fledgling Dragon">Fledgling Dragon</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Patchwork Beastie">Patchwork Beastie</li>
+            <li class="card-link" data-card-name="Coati Scavenger">Coati Scavenger</li>
+            <li class="card-link" data-card-name="Wickerfolk Thresher">Wickerfolk Thresher</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Zoyowa Lava-Tongue">Zoyowa Lava-Tongue</li>
+            <li class="card-link" data-card-name="Akawalli, the Seething Tower">Akawalli, the Seething Tower</li>
+            <li class="card-link" data-card-name="Wildfire Wickerfolk">Wildfire Wickerfolk</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>BRG Option B: Morbid &amp; Sacrifice</span>
+        <span style="background:#ffedd5;color:#9a3412;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">SHAKY</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        B, R, BR, and BG are overflowing with morbid/sacrifice payoffs, but RG has a glaring hole at uncommon: Gruul almost never gets creature-sacrifice or morbid signposts, forcing you to dip into a rare (Gimli, Mournful Avenger) or an old common (Gorger Wurm).
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nested Shambler">Nested Shambler <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Morbid Opportunist">Morbid Opportunist</li>
+            <li class="card-link" data-card-name="Syr Konrad, the Grim">Syr Konrad, the Grim</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Thud">Thud</li>
+            <li class="card-link" data-card-name="Snowslope Hunter">Snowslope Hunter</li>
+            <li class="card-link" data-card-name="Diversion Specialist">Diversion Specialist</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Meltstrider Eulogist">Meltstrider Eulogist</li>
+            <li class="card-link" data-card-name="Lumberknot">Lumberknot</li>
+            <li class="card-link" data-card-name="Needletooth Pack">Needletooth Pack</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Judith, the Scourge Diva">Judith, the Scourge Diva</li>
+            <li class="card-link" data-card-name="Wardens of the Cycle">Wardens of the Cycle</li>
+            <li class="card-link" data-card-name="Gimli, Mournful Avenger">Gimli, Mournful Avenger <span style="font-size:0.7rem;color:#6b7280;">(R)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>BRG Option C: Ferocious, Dragons &amp; Behemoths (Power 4+ Matters)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Works much better in BRG than RGW! HOB gives Black and BG legitimate Ferocious cards (Nighthowl Pursuer, Ravening Warg, The Chief Warg), TDM gives Black Caustic Exhale, DFT gives Kalakscion (a 3-mana 7/2 &#x27;Behemoth&#x27; / honorary Dragon), and BR has Dragon signposts like Swift Warkite / Bladewing the Risen.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nighthowl Pursuer">Nighthowl Pursuer</li>
+            <li class="card-link" data-card-name="Ravening Warg">Ravening Warg <span style="font-size:0.7rem;color:#6b7280;">(C)</span></li>
+            <li class="card-link" data-card-name="Kalakscion, Hunger Tyrant">Kalakscion, Hunger Tyrant</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Tiger-Dillo">Tiger-Dillo</li>
+            <li class="card-link" data-card-name="Firespitter Whelp">Firespitter Whelp</li>
+            <li class="card-link" data-card-name="Bolt Bend">Bolt Bend</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nasty Little Rabbit">Nasty Little Rabbit</li>
+            <li class="card-link" data-card-name="Goreclaw, Terror of Qal Sisma">Goreclaw, Terror of Qal Sisma</li>
+            <li class="card-link" data-card-name="Wilderland Scrounger">Wilderland Scrounger</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Swift Warkite">Swift Warkite</li>
+            <li class="card-link" data-card-name="The Chief Warg">The Chief Warg</li>
+            <li class="card-link" data-card-name="Thrakkus the Butcher">Thrakkus the Butcher</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<h2 style="margin: 28px 0 12px; font-size: 1.35rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 6px;">GWU Open Options</h2>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>GWU Option A: Tap/Untap Shenanigans (Becomes Tapped, Convoke &amp; Untappers)</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Fits like a glove. Blue brings Gran-Gran (TLA), Mechan Navigator (EOE), and Pestered Wellguard (ECL), WU has Captain America, Living Legend (MSH), GW has Shrewd Storyteller (DSK), and GU has Kiora&#x27;s Follower / Bounding Krasis to untap your tap-triggers repeatedly.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Hemosymbic Mite">Hemosymbic Mite</li>
+            <li class="card-link" data-card-name="Supportive Parents">Supportive Parents</li>
+            <li class="card-link" data-card-name="Autarch Mammoth">Autarch Mammoth</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Wanderbrine Trapper">Wanderbrine Trapper</li>
+            <li class="card-link" data-card-name="Protective Response">Protective Response</li>
+            <li class="card-link" data-card-name="Dawnstrike Vanguard">Dawnstrike Vanguard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Gran-Gran">Gran-Gran</li>
+            <li class="card-link" data-card-name="Mechan Navigator">Mechan Navigator</li>
+            <li class="card-link" data-card-name="Pestered Wellguard">Pestered Wellguard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Shrewd Storyteller">Shrewd Storyteller</li>
+            <li class="card-link" data-card-name="Captain America, Living Legend">Captain America, Living Legend</li>
+            <li class="card-link" data-card-name="Kiora&#x27;s Follower">Kiora&#x27;s Follower</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <span>GWU Option B: +1/+1 Counters &amp; Proliferate</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 10px;border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.04em;">STRONG</span>
+      </div>
+      <div style="padding:10px 18px;font-size:0.88rem;color:#374151;background:#f8fafc;border-bottom:1px solid #e5e7eb;">
+        Also bullet-proof. Every color has multiple proliferate engines and +1/+1 counter payoffs across distinct mana values, and all three guild pairs have premier signposts.
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Wildwood Scourge">Wildwood Scourge</li>
+            <li class="card-link" data-card-name="Evolution Sage">Evolution Sage</li>
+            <li class="card-link" data-card-name="Michelangelo, Mutant BFF">Michelangelo, Mutant BFF</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Metastatic Evangel">Metastatic Evangel</li>
+            <li class="card-link" data-card-name="Abzan Falconer">Abzan Falconer</li>
+            <li class="card-link" data-card-name="Dr. McCoy, Surly Surgeon">Dr. McCoy, Surly Surgeon</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Thrummingbird">Thrummingbird</li>
+            <li class="card-link" data-card-name="Flux Channeler">Flux Channeler</li>
+            <li class="card-link" data-card-name="Tezzeret&#x27;s Gambit">Tezzeret&#x27;s Gambit</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Botanical Brawler">Botanical Brawler</li>
+            <li class="card-link" data-card-name="Plumecreed Mentor">Plumecreed Mentor</li>
+            <li class="card-link" data-card-name="Sharktocrab">Sharktocrab</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="card-preview" role="tooltip" aria-hidden="true">
+    <div class="status">Loading…</div>
+    <img alt="" />
+  </div>
+
+  <script>
+    (() => {
+      const preview = document.getElementById('card-preview');
+      const img = preview.querySelector('img');
+      const status = preview.querySelector('.status');
+      const imageCache = new Map();
+      let activeCard = null;
+
+      function scryfallImageUrl(cardName) {
+        const params = new URLSearchParams({
+          exact: cardName,
+          format: 'image',
+          version: 'normal',
+        });
+        return `https://api.scryfall.com/cards/named?${params.toString()}`;
+      }
+
+      function positionPreview(event) {
+        const pad = 18;
+        const rect = preview.getBoundingClientRect();
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        let x = event.clientX + pad;
+        let y = event.clientY + pad;
+
+        if (x + rect.width + pad > vw) {
+          x = event.clientX - rect.width - pad;
+        }
+        if (y + rect.height + pad > vh) {
+          y = Math.max(pad, vh - rect.height - pad);
+        }
+
+        preview.style.left = `${x}px`;
+        preview.style.top = `${y}px`;
+      }
+
+      function showCard(cardName, event) {
+        activeCard = cardName;
+        preview.style.display = 'block';
+        preview.setAttribute('aria-hidden', 'false');
+
+        const url = scryfallImageUrl(cardName);
+
+        if (imageCache.get(cardName) === 'loaded') {
+          status.style.display = 'none';
+          img.style.display = 'block';
+          img.src = url;
+          positionPreview(event);
+          return;
+        }
+
+        img.style.display = 'none';
+        status.style.display = 'block';
+        status.textContent = 'Loading…';
+        positionPreview(event);
+
+        const loader = new Image();
+        loader.onload = () => {
+          imageCache.set(cardName, 'loaded');
+          if (activeCard !== cardName) return;
+          img.src = url;
+          status.style.display = 'none';
+          img.style.display = 'block';
+        };
+        loader.onerror = () => {
+          imageCache.set(cardName, 'error');
+          if (activeCard !== cardName) return;
+          status.textContent = `Could not load "${cardName}"`;
+        };
+        loader.src = url;
+      }
+
+      function hideCard() {
+        activeCard = null;
+        preview.style.display = 'none';
+        preview.setAttribute('aria-hidden', 'true');
+      }
+
+      document.querySelectorAll('.card-link').forEach((el) => {
+        const name = (el.dataset.cardName || el.textContent).trim();
+        el.addEventListener('mouseenter', (e) => showCard(name, e));
+        el.addEventListener('mousemove', positionPreview);
+        el.addEventListener('mouseleave', hideCard);
+      });
+    })();
+  </script>
+</body>
+</html>
