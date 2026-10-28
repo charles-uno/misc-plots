@@ -36,6 +36,7 @@ MTG is a big game with decades of expansions (and baggage). We are mindful about
 - No prepare or omens. Too easy to confuse with adventures
 - No retrace. Repetitive gameplay
 - Universes Beyond cards *are* allowed
+- No morph, manifest, or other face-down cards on the battlefield
 
 We may tweak this over time. But for the moment, these are hard rules. 
 
