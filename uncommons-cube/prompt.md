@@ -208,6 +208,21 @@ To reduce duplicate queries, you may cache data locally in `cache/`. Details are
 
 Please be concise and direct. 
 
+### Theme Ordering
+
+When listing all ten themes, default to this order:
+
+- WUB
+- WBG
+- BRG
+- BGU
+- GWU
+- GUR
+- UBR
+- URW
+- RGW
+- RWB
+
 ### HTML Demos
 
 Sometimes I will ask you to output a bunch of data at once -- for example, a configuration of ten themes with a skeleton for each. That's a lot, especially when it includes cards I'm not familiar with!
