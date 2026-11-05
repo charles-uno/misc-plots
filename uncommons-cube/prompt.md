@@ -139,6 +139,8 @@ Open question: what about clues, treasures, etc? I'm inclined against them, but 
 
 On a similar note, we need to make sure to include appropriate interaction for the plays that *are* available. If it's possible to go wide, we need sweepers. If it's possible to go big, we need removal that can hit big creatures. If lands are important, we need a (non-oppressive) way to interact with them. If graveyard homework is a theme, we need a way to interact with that too.
 
+We can also note: conditional interaction is more interesting than unconditional interaction. In a cube with a significant number of artifact creatures, [[Go for the Throat]] is just a more interesting card than [[Fell]]
+
 ### Power Creep
 
 The power level of creatures in MTG has consistently increased over the years. Most uncommon creatures printed 5+ years ago are no longer suitable for the cube. They've just fallen too far behind compared to recent sets. 
