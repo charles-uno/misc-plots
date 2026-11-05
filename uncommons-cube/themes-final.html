@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTG Uncommons Cube — Full 10-Theme Skeleton</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --border: #d8dce3;
+      --text: #1c2026;
+      --muted: #5c6470;
+      --accent: #2d5be3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 24px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .theme-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
+    .theme-title {
+      padding: 12px 18px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      background: #eef1f6;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .color-column {
+      padding: 14px 16px 18px;
+      border-right: 1px solid var(--border);
+    }
+
+    .color-column:last-child {
+      border-right: none;
+    }
+
+    .color-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .color-W { background: #fdf6d8; color: #6b5600; border: 1px solid #e6d89c; }
+    .color-U { background: #dcebfa; color: #0f4c81; border: 1px solid #aacbef; }
+    .color-B { background: #e3dfe8; color: #2d2536; border: 1px solid #bdb5c7; }
+    .color-R { background: #fadcd6; color: #8a2511; border: 1px solid #f0b1a4; }
+    .color-G { background: #d9f0df; color: #195c2d; border: 1px solid #a7d9b4; }
+    .color-2C { background: #f3e8c8; color: #5c4308; border: 1px solid #dbc48a; }
+
+    .card-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card-link {
+      padding: 5px 8px;
+      margin: 2px -8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.92rem;
+      color: var(--accent);
+      transition: background 0.12s ease;
+      user-select: none;
+    }
+
+    .card-link:hover {
+      background: #eef3fd;
+      text-decoration: underline;
+    }
+
+    #card-preview {
+      position: fixed;
+      z-index: 1000;
+      pointer-events: none;
+      display: none;
+      width: 260px;
+      border-radius: 13px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+      background: #111;
+      overflow: hidden;
+    }
+
+    #card-preview img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    #card-preview .status {
+      padding: 16px;
+      color: #fff;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .color-column:nth-child(2) {
+        border-right: none;
+      }
+      .color-column:nth-child(1),
+      .color-column:nth-child(2) {
+        border-bottom: 1px solid var(--border);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MTG Uncommons Cube — Full 10-Theme Skeleton</h1>
+    <p class="subtitle">120 unique payoffs across all 10 shard and wedge themes (ordered WUB, WBG, BRG, BGU, GWU, GUR, UBR, URW, RGW, RWB). Hover over any card name to preview it from Scryfall.</p>
+
+    <section class="theme-section">
+      <div class="theme-title">WUB — Thopters &amp; Artifact Creatures (Affinity)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Ingenious Smith">Ingenious Smith</li>
+            <li class="card-link" data-card-name="Losheel, Clockwork Scholar">Losheel, Clockwork Scholar</li>
+            <li class="card-link" data-card-name="Plated Onslaught">Plated Onslaught</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Donatello, Way with Machines">Donatello, Way with Machines</li>
+            <li class="card-link" data-card-name="Whirler Rogue">Whirler Rogue</li>
+            <li class="card-link" data-card-name="Memory Guardian">Memory Guardian</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Collective Drone">Collective Drone</li>
+            <li class="card-link" data-card-name="Armix, Filigree Thrasher">Armix, Filigree Thrasher</li>
+            <li class="card-link" data-card-name="Monoist Circuit-Feeder">Monoist Circuit-Feeder</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Tidus, Blitzball Star">Tidus, Blitzball Star</li>
+            <li class="card-link" data-card-name="Haunt the Network">Haunt the Network</li>
+            <li class="card-link" data-card-name="Locutus, the One Who Speaks">Locutus, the One Who Speaks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">WBG — Lifegain &amp; Drain</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Ajani&#x27;s Pridemate">Ajani&#x27;s Pridemate</li>
+            <li class="card-link" data-card-name="MJ, Rising Star">MJ, Rising Star</li>
+            <li class="card-link" data-card-name="Attended Healer">Attended Healer</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Starscape Cleric">Starscape Cleric</li>
+            <li class="card-link" data-card-name="Bloodthirsty Aerialist">Bloodthirsty Aerialist</li>
+            <li class="card-link" data-card-name="Vampire Scrivener">Vampire Scrivener</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Tigra, Feline Fury">Tigra, Feline Fury</li>
+            <li class="card-link" data-card-name="Thornfist Striker">Thornfist Striker</li>
+            <li class="card-link" data-card-name="Titanbones, Towering Heart">Titanbones, Towering Heart</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Elas il-Kor, Sadistic Pilgrim">Elas il-Kor, Sadistic Pilgrim</li>
+            <li class="card-link" data-card-name="Dina, Soul Steeper">Dina, Soul Steeper</li>
+            <li class="card-link" data-card-name="Trelasarra, Moon Dancer">Trelasarra, Moon Dancer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">BRG — Dragons, Behemoths &amp; Ferocious (Power 4+ Matters)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nighthowl Pursuer">Nighthowl Pursuer</li>
+            <li class="card-link" data-card-name="Foul-Tongue Invocation">Foul-Tongue Invocation</li>
+            <li class="card-link" data-card-name="Fearsome Awakening">Fearsome Awakening</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Tiger-Dillo">Tiger-Dillo</li>
+            <li class="card-link" data-card-name="Firespitter Whelp">Firespitter Whelp</li>
+            <li class="card-link" data-card-name="Bolt Bend">Bolt Bend</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nasty Little Rabbit">Nasty Little Rabbit</li>
+            <li class="card-link" data-card-name="Goreclaw, Terror of Qal Sisma">Goreclaw, Terror of Qal Sisma</li>
+            <li class="card-link" data-card-name="Wilderland Scrounger">Wilderland Scrounger</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Bladewing the Risen">Bladewing the Risen</li>
+            <li class="card-link" data-card-name="The Chief Warg">The Chief Warg</li>
+            <li class="card-link" data-card-name="Thrakkus the Butcher">Thrakkus the Butcher</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">BGU — ETB Value (Blink, Recursion &amp; Ninjas)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Dokuchi Silencer">Dokuchi Silencer</li>
+            <li class="card-link" data-card-name="Shredder&#x27;s Technique">Shredder&#x27;s Technique</li>
+            <li class="card-link" data-card-name="Tormod, the Desecrator">Tormod, the Desecrator</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Three Tree Scribe">Three Tree Scribe</li>
+            <li class="card-link" data-card-name="Attuned Hunter">Attuned Hunter</li>
+            <li class="card-link" data-card-name="Temur Sabertooth">Temur Sabertooth</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Splash Portal">Splash Portal</li>
+            <li class="card-link" data-card-name="Zephyr Sentinel">Zephyr Sentinel</li>
+            <li class="card-link" data-card-name="Imperial Cosmographer">Imperial Cosmographer</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Honest Rutstein">Honest Rutstein</li>
+            <li class="card-link" data-card-name="Lilysplash Mentor">Lilysplash Mentor</li>
+            <li class="card-link" data-card-name="Ingenious Infiltrator">Ingenious Infiltrator</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">GWU — Tap/Untap Shenanigans (Becomes Tapped, Survival &amp; Untappers)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Hemosymbic Mite">Hemosymbic Mite</li>
+            <li class="card-link" data-card-name="Traveling Botanist">Traveling Botanist</li>
+            <li class="card-link" data-card-name="Rootwise Survivor">Rootwise Survivor</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Sunstar Chaplain">Sunstar Chaplain</li>
+            <li class="card-link" data-card-name="Savior of the Small">Savior of the Small</li>
+            <li class="card-link" data-card-name="Dawnstrike Vanguard">Dawnstrike Vanguard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Gran-Gran">Gran-Gran</li>
+            <li class="card-link" data-card-name="Mechan Navigator">Mechan Navigator</li>
+            <li class="card-link" data-card-name="Pestered Wellguard">Pestered Wellguard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Shrewd Storyteller">Shrewd Storyteller</li>
+            <li class="card-link" data-card-name="Captain America, Living Legend">Captain America, Living Legend</li>
+            <li class="card-link" data-card-name="Kiora&#x27;s Follower">Kiora&#x27;s Follower</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">GUR — Multicolor &amp; Primordials (Domain / Converge / Vivid)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nishoba Brawler">Nishoba Brawler</li>
+            <li class="card-link" data-card-name="Luminollusk">Luminollusk</li>
+            <li class="card-link" data-card-name="Prismabasher">Prismabasher</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Sweep the Skies">Sweep the Skies</li>
+            <li class="card-link" data-card-name="Allied Strategies">Allied Strategies</li>
+            <li class="card-link" data-card-name="Shinestriker">Shinestriker</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Tribal Flames">Tribal Flames</li>
+            <li class="card-link" data-card-name="Squawkroaster">Squawkroaster</li>
+            <li class="card-link" data-card-name="Archaic&#x27;s Agony">Archaic&#x27;s Agony</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Risen Reef">Risen Reef</li>
+            <li class="card-link" data-card-name="Twinflame Travelers">Twinflame Travelers</li>
+            <li class="card-link" data-card-name="Wandertale Mentor">Wandertale Mentor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">UBR — Discard &amp; Looting (Madness / Mayhem / Cycling)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Scrounging Skyray">Scrounging Skyray</li>
+            <li class="card-link" data-card-name="Circular Logic">Circular Logic</li>
+            <li class="card-link" data-card-name="Teo, Spirited Glider">Teo, Spirited Glider</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Asylum Visitor">Asylum Visitor</li>
+            <li class="card-link" data-card-name="Big Game Hunter">Big Game Hunter</li>
+            <li class="card-link" data-card-name="Gisa&#x27;s Bidding">Gisa&#x27;s Bidding</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Marauding Mako">Marauding Mako</li>
+            <li class="card-link" data-card-name="Fiery Temper">Fiery Temper</li>
+            <li class="card-link" data-card-name="Raging Goblinoids">Raging Goblinoids</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Lazotep Chancellor">Lazotep Chancellor</li>
+            <li class="card-link" data-card-name="Glacial Dragonhunt">Glacial Dragonhunt</li>
+            <li class="card-link" data-card-name="Terminal Agony">Terminal Agony</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">URW — Spellslinger &amp; Second Spell (Prowess / Flurry)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-U">U</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Muse Seeker">Muse Seeker</li>
+            <li class="card-link" data-card-name="Wingblade Disciple">Wingblade Disciple</li>
+            <li class="card-link" data-card-name="Eddymurk Crab">Eddymurk Crab</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Coruscation Mage">Coruscation Mage</li>
+            <li class="card-link" data-card-name="Guttersnipe">Guttersnipe</li>
+            <li class="card-link" data-card-name="Longshot, Rebel Bowman">Longshot, Rebel Bowman</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Monk of the Open Hand">Monk of the Open Hand</li>
+            <li class="card-link" data-card-name="Clarion Spirit">Clarion Spirit</li>
+            <li class="card-link" data-card-name="Sunstar Lightsmith">Sunstar Lightsmith</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Balmor, Battlemage Captain">Balmor, Battlemage Captain</li>
+            <li class="card-link" data-card-name="Cori Mountain Stalwart">Cori Mountain Stalwart</li>
+            <li class="card-link" data-card-name="Raff, Weatherlight Stalwart">Raff, Weatherlight Stalwart</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">RGW — Go Wide (1/1 Tokens &amp; Team Pump)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Battle Cry Goblin">Battle Cry Goblin</li>
+            <li class="card-link" data-card-name="General Kreat, the Boltbringer">General Kreat, the Boltbringer</li>
+            <li class="card-link" data-card-name="Stoke the Flames">Stoke the Flames</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Get a Leg Up">Get a Leg Up</li>
+            <li class="card-link" data-card-name="Woodland Champion">Woodland Champion</li>
+            <li class="card-link" data-card-name="Overrun">Overrun</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Pride of Conquerors">Pride of Conquerors</li>
+            <li class="card-link" data-card-name="Starry-Eyed Skyrider">Starry-Eyed Skyrider</li>
+            <li class="card-link" data-card-name="Goldnight Commander">Goldnight Commander</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Targ Nar, Demon-Fang Gnoll">Targ Nar, Demon-Fang Gnoll</li>
+            <li class="card-link" data-card-name="Queen Allenal of Ruadach">Queen Allenal of Ruadach</li>
+            <li class="card-link" data-card-name="Heroic Reinforcements">Heroic Reinforcements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">RWB — Sacrifice &amp; Aristocrats (Mobilize &amp; Death Triggers)</div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Blood Aspirant">Blood Aspirant</li>
+            <li class="card-link" data-card-name="Snowslope Hunter">Snowslope Hunter</li>
+            <li class="card-link" data-card-name="Skirsdag Cultist">Skirsdag Cultist</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Duty Beyond Death">Duty Beyond Death</li>
+            <li class="card-link" data-card-name="Rayblade Trooper">Rayblade Trooper</li>
+            <li class="card-link" data-card-name="Odric&#x27;s Outrider">Odric&#x27;s Outrider</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Zulaport Cutthroat">Zulaport Cutthroat</li>
+            <li class="card-link" data-card-name="Gravelighter">Gravelighter</li>
+            <li class="card-link" data-card-name="Venerated Stormsinger">Venerated Stormsinger</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Brion Stoutarm">Brion Stoutarm</li>
+            <li class="card-link" data-card-name="Hardened Tactician">Hardened Tactician</li>
+            <li class="card-link" data-card-name="Garna, Bloodfist of Keld">Garna, Bloodfist of Keld</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="card-preview" role="tooltip" aria-hidden="true">
+    <div class="status">Loading…</div>
+    <img alt="" />
+  </div>
+
+  <script>
+    (() => {
+      const preview = document.getElementById('card-preview');
+      const img = preview.querySelector('img');
+      const status = preview.querySelector('.status');
+      const imageCache = new Map();
+      let activeCard = null;
+
+      function scryfallImageUrl(cardName) {
+        const params = new URLSearchParams({
+          exact: cardName,
+          format: 'image',
+          version: 'normal',
+        });
+        return `https://api.scryfall.com/cards/named?${params.toString()}`;
+      }
+
+      function positionPreview(event) {
+        const pad = 18;
+        const rect = preview.getBoundingClientRect();
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        let x = event.clientX + pad;
+        let y = event.clientY + pad;
+
+        if (x + rect.width + pad > vw) {
+          x = event.clientX - rect.width - pad;
+        }
+        if (y + rect.height + pad > vh) {
+          y = Math.max(pad, vh - rect.height - pad);
+        }
+
+        preview.style.left = `${x}px`;
+        preview.style.top = `${y}px`;
+      }
+
+      function showCard(cardName, event) {
+        activeCard = cardName;
+        preview.style.display = 'block';
+        preview.setAttribute('aria-hidden', 'false');
+
+        const url = scryfallImageUrl(cardName);
+
+        if (imageCache.get(cardName) === 'loaded') {
+          status.style.display = 'none';
+          img.style.display = 'block';
+          img.src = url;
+          positionPreview(event);
+          return;
+        }
+
+        img.style.display = 'none';
+        status.style.display = 'block';
+        status.textContent = 'Loading…';
+        positionPreview(event);
+
+        const loader = new Image();
+        loader.onload = () => {
+          imageCache.set(cardName, 'loaded');
+          if (activeCard !== cardName) return;
+          img.src = url;
+          status.style.display = 'none';
+          img.style.display = 'block';
+        };
+        loader.onerror = () => {
+          imageCache.set(cardName, 'error');
+          if (activeCard !== cardName) return;
+          status.textContent = `Could not load "${cardName}"`;
+        };
+        loader.src = url;
+      }
+
+      function hideCard() {
+        activeCard = null;
+        preview.style.display = 'none';
+        preview.setAttribute('aria-hidden', 'true');
+      }
+
+      document.querySelectorAll('.card-link').forEach((el) => {
+        const name = (el.dataset.cardName || el.textContent).trim();
+        el.addEventListener('mouseenter', (e) => showCard(name, e));
+        el.addEventListener('mousemove', positionPreview);
+        el.addEventListener('mouseleave', hideCard);
+      });
+    })();
+  </script>
+</body>
+</html>

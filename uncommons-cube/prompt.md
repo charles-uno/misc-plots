@@ -81,8 +81,6 @@ Notably, we are not married to any card in particular! If a card in here plays i
 
 When assembling a skeleton, make sure to get some mana value diversity in there. For example, we don't want the G payoffs for +1/+1 counters to be [[Kami of Whispered Hopes]], [[Evolution Sage]], and [[Meltstrider Eulogist]] -- those things all sit on the same spot in the mana curve!
 
-
-
 ### Theme-Aware Card Choices
 
 We want the themes to be prominent, but we also want to make sure that each color is doing the stuff that it's supposed to do. 
@@ -108,24 +106,28 @@ The cube is mostly uncommons. Any card that has ever been printed at uncommon is
 
 The rarity constraint is *not* strict. We may include commons here and there to patch a hole. Rares are likewise allowed, provided they match the vibe in terms of power level and complexity.
 
+### Universes Beyond
+
+Universes Beyond *are* allowed
+
 ### Hard Limitations
 
 MTG is a big game with decades of expansions (and baggage). We are mindful about what we include and exclude. Right now that looks like:
 
-- Creatures, lands, instants, and sorceries. No noncreature nonland permanents (equipment, sagas, planeswalkers, etc)
+- Creatures, lands, instants, and sorceries. No noncreature nonland permanents (equipment, sagas, planeswalkers, etc). Enchantment creatures *are* allowed, but their enchantment type is irrelevant
 - Charge counters on lands, +1/+1 counters on creatures. No other counters
 - No searching libraries. It slows down games too much. This includes basic lands
 - No double-faced cards. Bad for draft logistics
 - No control effects. No effects that exile your card on my side of the table (eg [[Fiend Hunter]]). Easy to accidentally switch cards between decks
 - No external minigames: monarch, dungeons, speed, etc
 - Maximum of ~6 different types of token (see house rules)
-- No morph, manifest, or other face-down cards on the battlefield
 - No joke sets or gimmicks (stickers, contraptions, etc)
+- No unmarked game state that persists past end of turn: soulbond, renown, etc. We might make an exception for exhaust, which is marked with +1/+1 counters
 - No mutate
 - No regenerate or protection
 - No prepare or omens. Too easy to confuse with adventures
 - No retrace. Repetitive gameplay
-- Universes Beyond cards *are* allowed
+- Manifest and manifest dread are allowed. No other face-down cards on the battlefield
 
 We may tweak this over time. But for the moment, these are hard rules. 
 
@@ -144,6 +146,12 @@ The power level of creatures in MTG has consistently increased over the years. M
 This is not a hard rule. There are some old uncommons that were *extremely* overpowered at the time, which now are appropriately powerful.
 
 The goal of the cube is for everything to be in the same ballpark in terms of power level. Some cards will always be better or worse. But we do not want any bombs that will run away with the game on their own, and we do not want any rarely-playable filler.
+
+### Trinket Text
+
+Sometimes a card is good overall, but also does stuff we don't care about. For example, [[Spikeshell Harrier]] is still good even if we ignore the part about reducing speed. 
+
+This is fine. We can ignore the trinket text or irrelevant parasitic mechanics. In some cases we may even sharpie it out to avoid the confusion. 
 
 ## House Rules
 
