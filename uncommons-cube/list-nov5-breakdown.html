@@ -1,0 +1,1316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>list-nov5.txt — 10-Theme Payoff & Enabler Breakdown</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --border: #d8dce3;
+      --text: #1c2026;
+      --muted: #5c6470;
+      --accent: #2d5be3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 24px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    .subtitle {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .theme-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 22px;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+    .theme-title {
+      padding: 12px 18px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      background: #eef1f6;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .theme-badges {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2d5be3;
+      background: #e3ecfc;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .theme-stats {
+      padding: 8px 18px;
+      background: #fafbfc;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .color-column {
+      padding: 14px 16px 18px;
+      border-right: 1px solid var(--border);
+    }
+    .color-column:last-child { border-right: none; }
+    .color-header {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 4px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .color-W { background: #fdf6d8; color: #6b5600; border: 1px solid #e6d89c; }
+    .color-U { background: #dcebfa; color: #0f4c81; border: 1px solid #aacbef; }
+    .color-B { background: #e3dfe8; color: #2d2536; border: 1px solid #bdb5c7; }
+    .color-R { background: #fadcd6; color: #8a2511; border: 1px solid #f0b1a4; }
+    .color-G { background: #d9f0df; color: #195c2d; border: 1px solid #a7d9b4; }
+    .color-2C { background: #f3e8c8; color: #5c4308; border: 1px solid #dbc48a; }
+    .role-header {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #1c2026;
+      margin: 6px 0 4px;
+      padding-bottom: 2px;
+      border-bottom: 1px dashed #e1e4ea;
+    }
+    .enabler-header {
+      margin-top: 12px;
+      color: #5c6470;
+    }
+    .card-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .card-link {
+      padding: 4px 8px;
+      margin: 1px -8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      color: var(--accent);
+      transition: background 0.12s ease;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-link:hover {
+      background: #eef3fd;
+      text-decoration: underline;
+    }
+    .mv-badge {
+      display: inline-block;
+      min-width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #4a525d;
+      background: #eaedf2;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .ci-tag {
+      font-size: 0.72rem;
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .both-tag {
+      font-size: 0.75rem;
+      color: #d97706;
+      margin-left: auto;
+    }
+    .empty-note {
+      font-size: 0.82rem;
+      color: #9ca3af;
+      font-style: italic;
+      padding: 2px 0;
+    }
+    #card-preview {
+      position: fixed;
+      z-index: 1000;
+      pointer-events: none;
+      display: none;
+      width: 260px;
+      border-radius: 13px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+      background: #111;
+      overflow: hidden;
+    }
+    #card-preview img { display: block; width: 100%; height: auto; }
+    #card-preview .status {
+      padding: 16px;
+      color: #fff;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .columns { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>list-nov5.txt — 10-Theme Payoff & Enabler Breakdown</h1>
+    <p class="subtitle">Full breakdown of the 333-card Nov 5 list across all 10 triad themes in default order (WUB, WBG, BRG, BGU, GWU, GUR, UBR, URW, RGW, RWB). Hover any card to preview from Scryfall.</p>
+
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>WUB — Thopters &amp; Artifact Creatures (Affinity / Artifacts Matter)</span>
+        <span class="theme-badges">16 Payoffs · 45 Enablers (47 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> B: 5, U: 5, W: 5, UW: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> B: 13, C: 4, U: 12, W: 10, BU: 1, BW: 1, UW: 3, BGRUW: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>2</b> · MV2: <b>2</b> · MV3: <b>4</b> · MV4: <b>4</b> · MV5: <b>1</b> · MV6+: <b>3</b></div>
+        <div><strong>Theme Curve (All 47):</strong> MV1: <b>4</b> · MV2: <b>14</b> · MV3: <b>12</b> · MV4: <b>8</b> · MV5: <b>3</b> · MV6+: <b>6</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-W">W (5P / 10E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Command Subadjunct"><span class="mv-badge">1</span> Command Subadjunct <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Mandible Justiciar"><span class="mv-badge">2</span> Mandible Justiciar <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Paladin Danse, Steel Maverick"><span class="mv-badge">3</span> Paladin Danse, Steel Maverick <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Guidelight Synergist"><span class="mv-badge">4</span> Guidelight Synergist <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Plated Onslaught"><span class="mv-badge">5</span> Plated Onslaught</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Market Gnome"><span class="mv-badge">1</span> Market Gnome</li>
+            <li class="card-link" data-card-name="Attentive Sunscribe"><span class="mv-badge">2</span> Attentive Sunscribe</li>
+            <li class="card-link" data-card-name="Sundial, Dawn Tyrant"><span class="mv-badge">2</span> Sundial, Dawn Tyrant</li>
+            <li class="card-link" data-card-name="Hologram Janeway"><span class="mv-badge">3</span> Hologram Janeway</li>
+            <li class="card-link" data-card-name="Kirtar&#x27;s Wrath"><span class="mv-badge">6</span> Kirtar&#x27;s Wrath</li>
+            <li class="card-link" data-card-name="Triplicate Spirits"><span class="mv-badge">6</span> Triplicate Spirits</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U (5P / 12E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Rescue, Pepper Potts"><span class="mv-badge">2</span> Rescue, Pepper Potts <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Iron Lad, Diverging Destiny"><span class="mv-badge">3</span> Iron Lad, Diverging Destiny <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Thirst for Knowledge"><span class="mv-badge">3</span> Thirst for Knowledge</li>
+            <li class="card-link" data-card-name="Whirler Rogue"><span class="mv-badge">4</span> Whirler Rogue <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Valkyrie Aerial Unit"><span class="mv-badge">7</span> Valkyrie Aerial Unit <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+8 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Corridor Monitor"><span class="mv-badge">2</span> Corridor Monitor</li>
+            <li class="card-link" data-card-name="Sweep the Skies"><span class="mv-badge">2</span> Sweep the Skies</li>
+            <li class="card-link" data-card-name="Etherium Spinner"><span class="mv-badge">3</span> Etherium Spinner</li>
+            <li class="card-link" data-card-name="Launch Mishap"><span class="mv-badge">3</span> Launch Mishap</li>
+            <li class="card-link" data-card-name="Rune-Sealed Wall"><span class="mv-badge">3</span> Rune-Sealed Wall</li>
+            <li class="card-link" data-card-name="Wingblade Disciple"><span class="mv-badge">3</span> Wingblade Disciple</li>
+            <li class="card-link" data-card-name="Traxos, Academy Guardian"><span class="mv-badge">4</span> Traxos, Academy Guardian</li>
+            <li class="card-link" data-card-name="Spikeshell Harrier"><span class="mv-badge">5</span> Spikeshell Harrier</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B (5P / 13E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Etherium Pteramander"><span class="mv-badge">1</span> Etherium Pteramander <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Armix, Filigree Thrasher"><span class="mv-badge">3</span> Armix, Filigree Thrasher <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Arcbound Condor"><span class="mv-badge">4</span> Arcbound Condor <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Pactdoll Terror"><span class="mv-badge">4</span> Pactdoll Terror <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Monoist Circuit-Feeder"><span class="mv-badge">6</span> Monoist Circuit-Feeder <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+8 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Monoist Sentry"><span class="mv-badge">1</span> Monoist Sentry</li>
+            <li class="card-link" data-card-name="Ashnod&#x27;s Harvester"><span class="mv-badge">2</span> Ashnod&#x27;s Harvester</li>
+            <li class="card-link" data-card-name="MACH-1, Swooping Scoundrel"><span class="mv-badge">2</span> MACH-1, Swooping Scoundrel</li>
+            <li class="card-link" data-card-name="Osseous Sticktwister"><span class="mv-badge">2</span> Osseous Sticktwister</li>
+            <li class="card-link" data-card-name="Wretched Doll"><span class="mv-badge">2</span> Wretched Doll</li>
+            <li class="card-link" data-card-name="Flayed One"><span class="mv-badge">3</span> Flayed One</li>
+            <li class="card-link" data-card-name="Haunted Dead"><span class="mv-badge">4</span> Haunted Dead</li>
+            <li class="card-link" data-card-name="Voidforged Titan"><span class="mv-badge">5</span> Voidforged Titan</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (1P / 10E)</div>
+          <div class="role-header">Payoffs (1)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Ethersworn Sphinx"><span class="mv-badge">9</span> Ethersworn Sphinx <span class="ci-tag">[UW]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+9 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Afterthought Sentry"><span class="mv-badge">2</span> Afterthought Sentry <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Baleful Strix"><span class="mv-badge">2</span> Baleful Strix <span class="ci-tag">[BU]</span></li>
+            <li class="card-link" data-card-name="Containment Construct"><span class="mv-badge">2</span> Containment Construct <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Station Monitor"><span class="mv-badge">2</span> Station Monitor <span class="ci-tag">[UW]</span></li>
+            <li class="card-link" data-card-name="Lingering Souls"><span class="mv-badge">3</span> Lingering Souls <span class="ci-tag">[BW]</span></li>
+            <li class="card-link" data-card-name="Shuri, Vibranium Technologist"><span class="mv-badge">3</span> Shuri, Vibranium Technologist <span class="ci-tag">[UW]</span></li>
+            <li class="card-link" data-card-name="H.E.R.B.I.E. Scout Unit"><span class="mv-badge">4</span> H.E.R.B.I.E. Scout Unit <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Traxos, Scourge Eternal"><span class="mv-badge">4</span> Traxos, Scourge Eternal <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Sphinx of the Guildpact"><span class="mv-badge">7</span> Sphinx of the Guildpact <span class="ci-tag">[BGRUW]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>WBG — Lifegain &amp; Drain</span>
+        <span class="theme-badges">15 Payoffs · 38 Enablers (49 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> B: 4, G: 4, W: 5, BW: 1, GW: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> B: 11, G: 8, W: 14, BG: 2, BW: 2, GW: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>2</b> · MV2: <b>4</b> · MV3: <b>4</b> · MV4: <b>3</b> · MV5: <b>1</b> · MV6+: <b>1</b></div>
+        <div><strong>Theme Curve (All 49):</strong> MV1: <b>9</b> · MV2: <b>16</b> · MV3: <b>9</b> · MV4: <b>9</b> · MV5: <b>2</b> · MV6+: <b>4</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-W">W (5P / 14E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Ajani&#x27;s Pridemate"><span class="mv-badge">2</span> Ajani&#x27;s Pridemate</li>
+            <li class="card-link" data-card-name="Angel of Vitality"><span class="mv-badge">3</span> Angel of Vitality</li>
+            <li class="card-link" data-card-name="Doctor Jane Foster"><span class="mv-badge">4</span> Doctor Jane Foster</li>
+            <li class="card-link" data-card-name="Star Charter"><span class="mv-badge">4</span> Star Charter</li>
+            <li class="card-link" data-card-name="Glorious Enforcer"><span class="mv-badge">7</span> Glorious Enforcer <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+13 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Enter the Avatar State"><span class="mv-badge">1</span> Enter the Avatar State</li>
+            <li class="card-link" data-card-name="Joust Through"><span class="mv-badge">1</span> Joust Through</li>
+            <li class="card-link" data-card-name="Mardu Woe-Reaper"><span class="mv-badge">1</span> Mardu Woe-Reaper</li>
+            <li class="card-link" data-card-name="Market Gnome"><span class="mv-badge">1</span> Market Gnome</li>
+            <li class="card-link" data-card-name="Ruin-Lurker Bat"><span class="mv-badge">1</span> Ruin-Lurker Bat</li>
+            <li class="card-link" data-card-name="Battle Menu"><span class="mv-badge">2</span> Battle Menu</li>
+            <li class="card-link" data-card-name="Distinguished Conjurer"><span class="mv-badge">2</span> Distinguished Conjurer</li>
+            <li class="card-link" data-card-name="Mandible Justiciar"><span class="mv-badge">2</span> Mandible Justiciar</li>
+            <li class="card-link" data-card-name="Paladin Danse, Steel Maverick"><span class="mv-badge">3</span> Paladin Danse, Steel Maverick</li>
+            <li class="card-link" data-card-name="Spider-UK"><span class="mv-badge">4</span> Spider-UK</li>
+            <li class="card-link" data-card-name="Katara, Heroic Healer"><span class="mv-badge">5</span> Katara, Heroic Healer</li>
+            <li class="card-link" data-card-name="Bounding Felidar"><span class="mv-badge">6</span> Bounding Felidar</li>
+            <li class="card-link" data-card-name="Dawnstrike Vanguard"><span class="mv-badge">6</span> Dawnstrike Vanguard</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B (4P / 11E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nightmare&#x27;s Thirst"><span class="mv-badge">1</span> Nightmare&#x27;s Thirst <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="MACH-1, Swooping Scoundrel"><span class="mv-badge">2</span> MACH-1, Swooping Scoundrel</li>
+            <li class="card-link" data-card-name="Bloodthirsty Aerialist"><span class="mv-badge">3</span> Bloodthirsty Aerialist</li>
+            <li class="card-link" data-card-name="Foolish Fate"><span class="mv-badge">3</span> Foolish Fate</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+10 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Dissection Practice"><span class="mv-badge">1</span> Dissection Practice</li>
+            <li class="card-link" data-card-name="Cabal Initiate"><span class="mv-badge">2</span> Cabal Initiate</li>
+            <li class="card-link" data-card-name="Mire Triton"><span class="mv-badge">2</span> Mire Triton</li>
+            <li class="card-link" data-card-name="Osseous Sticktwister"><span class="mv-badge">2</span> Osseous Sticktwister</li>
+            <li class="card-link" data-card-name="Ravening Warg"><span class="mv-badge">2</span> Ravening Warg</li>
+            <li class="card-link" data-card-name="Flayed One"><span class="mv-badge">3</span> Flayed One</li>
+            <li class="card-link" data-card-name="Foul-Tongue Invocation"><span class="mv-badge">3</span> Foul-Tongue Invocation</li>
+            <li class="card-link" data-card-name="Pactdoll Terror"><span class="mv-badge">4</span> Pactdoll Terror</li>
+            <li class="card-link" data-card-name="Sanguinary Priest"><span class="mv-badge">4</span> Sanguinary Priest</li>
+            <li class="card-link" data-card-name="Thrasher Brute"><span class="mv-badge">4</span> Thrasher Brute</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G (4P / 8E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Fortifying Draught"><span class="mv-badge">1</span> Fortifying Draught <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Tigra, Feline Fury"><span class="mv-badge">2</span> Tigra, Feline Fury</li>
+            <li class="card-link" data-card-name="Thornfist Striker"><span class="mv-badge">3</span> Thornfist Striker</li>
+            <li class="card-link" data-card-name="Titanbones, Towering Heart"><span class="mv-badge">4</span> Titanbones, Towering Heart <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Virulent Emissary"><span class="mv-badge">1</span> Virulent Emissary</li>
+            <li class="card-link" data-card-name="Devouring Tendrils"><span class="mv-badge">2</span> Devouring Tendrils</li>
+            <li class="card-link" data-card-name="Eumidian Terrabotanist"><span class="mv-badge">2</span> Eumidian Terrabotanist</li>
+            <li class="card-link" data-card-name="Scout the City"><span class="mv-badge">2</span> Scout the City</li>
+            <li class="card-link" data-card-name="Luminollusk"><span class="mv-badge">4</span> Luminollusk</li>
+            <li class="card-link" data-card-name="Snarl Song"><span class="mv-badge">6</span> Snarl Song</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (2P / 5E)</div>
+          <div class="role-header">Payoffs (2)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Trelasarra, Moon Dancer"><span class="mv-badge">2</span> Trelasarra, Moon Dancer <span class="ci-tag">[GW]</span></li>
+            <li class="card-link" data-card-name="Starseer Mentor"><span class="mv-badge">5</span> Starseer Mentor <span class="ci-tag">[BW]</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+5 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Elas il-Kor, Sadistic Pilgrim"><span class="mv-badge">2</span> Elas il-Kor, Sadistic Pilgrim <span class="ci-tag">[BW]</span></li>
+            <li class="card-link" data-card-name="Wakandan Tusker"><span class="mv-badge">2</span> Wakandan Tusker <span class="ci-tag">[GW]</span></li>
+            <li class="card-link" data-card-name="Denethor, Ruling Steward"><span class="mv-badge">3</span> Denethor, Ruling Steward <span class="ci-tag">[BW]</span></li>
+            <li class="card-link" data-card-name="Leyline Prowler"><span class="mv-badge">3</span> Leyline Prowler <span class="ci-tag">[BG]</span></li>
+            <li class="card-link" data-card-name="Atlas, Sizable Stooge"><span class="mv-badge">4</span> Atlas, Sizable Stooge <span class="ci-tag">[BG]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>BRG — Dragons, Behemoths &amp; Ferocious (Power 4+)</span>
+        <span class="theme-badges">23 Payoffs · 43 Enablers (58 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> B: 5, G: 6, R: 8, BG: 1, BR: 1, GR: 2 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> B: 9, C: 1, G: 16, R: 13, BG: 1, BR: 1, GR: 2</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>5</b> · MV2: <b>4</b> · MV3: <b>6</b> · MV4: <b>4</b> · MV5: <b>2</b> · MV6+: <b>2</b></div>
+        <div><strong>Theme Curve (All 58):</strong> MV1: <b>8</b> · MV2: <b>6</b> · MV3: <b>11</b> · MV4: <b>13</b> · MV5: <b>8</b> · MV6+: <b>12</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B (5P / 9E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Caustic Exhale"><span class="mv-badge">1</span> Caustic Exhale</li>
+            <li class="card-link" data-card-name="Nighthowl Pursuer"><span class="mv-badge">1</span> Nighthowl Pursuer</li>
+            <li class="card-link" data-card-name="Ravening Warg"><span class="mv-badge">2</span> Ravening Warg</li>
+            <li class="card-link" data-card-name="Foul-Tongue Invocation"><span class="mv-badge">3</span> Foul-Tongue Invocation</li>
+            <li class="card-link" data-card-name="Fearsome Awakening"><span class="mv-badge">5</span> Fearsome Awakening</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+9 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Monoist Sentry"><span class="mv-badge">1</span> Monoist Sentry</li>
+            <li class="card-link" data-card-name="Grim Wanderer"><span class="mv-badge">2</span> Grim Wanderer</li>
+            <li class="card-link" data-card-name="Flayed One"><span class="mv-badge">3</span> Flayed One</li>
+            <li class="card-link" data-card-name="Kalakscion, Hunger Tyrant"><span class="mv-badge">3</span> Kalakscion, Hunger Tyrant</li>
+            <li class="card-link" data-card-name="Thrasher Brute"><span class="mv-badge">4</span> Thrasher Brute</li>
+            <li class="card-link" data-card-name="Voidforged Titan"><span class="mv-badge">5</span> Voidforged Titan</li>
+            <li class="card-link" data-card-name="Dreadhound"><span class="mv-badge">6</span> Dreadhound</li>
+            <li class="card-link" data-card-name="Black Dragon"><span class="mv-badge">7</span> Black Dragon</li>
+            <li class="card-link" data-card-name="Huskburster Swarm"><span class="mv-badge">8</span> Huskburster Swarm</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R (8P / 13E)</div>
+          <div class="role-header">Payoffs (8)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Channeled Dragonfire"><span class="mv-badge">1</span> Channeled Dragonfire</li>
+            <li class="card-link" data-card-name="Triumphant Chomp"><span class="mv-badge">1</span> Triumphant Chomp</li>
+            <li class="card-link" data-card-name="Boundary Lands Ranger"><span class="mv-badge">2</span> Boundary Lands Ranger</li>
+            <li class="card-link" data-card-name="Tiger-Dillo"><span class="mv-badge">2</span> Tiger-Dillo <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Dinosaur Stampede"><span class="mv-badge">3</span> Dinosaur Stampede</li>
+            <li class="card-link" data-card-name="Firespitter Whelp"><span class="mv-badge">3</span> Firespitter Whelp <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Kolaghan Warmonger"><span class="mv-badge">3</span> Kolaghan Warmonger</li>
+            <li class="card-link" data-card-name="Bolt Bend"><span class="mv-badge">4</span> Bolt Bend</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+11 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Intrepid Ace"><span class="mv-badge">1</span> Intrepid Ace</li>
+            <li class="card-link" data-card-name="Tyrox, Saurid Tyrant"><span class="mv-badge">2</span> Tyrox, Saurid Tyrant</li>
+            <li class="card-link" data-card-name="Gila Courser"><span class="mv-badge">3</span> Gila Courser</li>
+            <li class="card-link" data-card-name="Bonded Horncrest"><span class="mv-badge">4</span> Bonded Horncrest</li>
+            <li class="card-link" data-card-name="Glóin the Mighty // Easy Pickings"><span class="mv-badge">4</span> Glóin the Mighty // Easy Pickings</li>
+            <li class="card-link" data-card-name="Memorial Team Leader"><span class="mv-badge">4</span> Memorial Team Leader</li>
+            <li class="card-link" data-card-name="Raging Goblinoids"><span class="mv-badge">5</span> Raging Goblinoids</li>
+            <li class="card-link" data-card-name="Vaultguard Trooper"><span class="mv-badge">5</span> Vaultguard Trooper</li>
+            <li class="card-link" data-card-name="Dracosaur Auxiliary"><span class="mv-badge">6</span> Dracosaur Auxiliary</li>
+            <li class="card-link" data-card-name="Rorix Bladewing"><span class="mv-badge">6</span> Rorix Bladewing</li>
+            <li class="card-link" data-card-name="Territorial Bruntar"><span class="mv-badge">6</span> Territorial Bruntar</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G (6P / 16E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nasty Little Rabbit"><span class="mv-badge">1</span> Nasty Little Rabbit</li>
+            <li class="card-link" data-card-name="Drover of the Mighty"><span class="mv-badge">2</span> Drover of the Mighty</li>
+            <li class="card-link" data-card-name="Owlbear Shepherd"><span class="mv-badge">3</span> Owlbear Shepherd</li>
+            <li class="card-link" data-card-name="Savage Stomp"><span class="mv-badge">3</span> Savage Stomp</li>
+            <li class="card-link" data-card-name="Surrak, the Hunt Caller"><span class="mv-badge">4</span> Surrak, the Hunt Caller <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Earthshaker Dreadmaw"><span class="mv-badge">6</span> Earthshaker Dreadmaw <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+14 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Patchwork Beastie"><span class="mv-badge">1</span> Patchwork Beastie</li>
+            <li class="card-link" data-card-name="Call of the Herd"><span class="mv-badge">3</span> Call of the Herd</li>
+            <li class="card-link" data-card-name="Splinterfright"><span class="mv-badge">3</span> Splinterfright</li>
+            <li class="card-link" data-card-name="Elvish Regrower"><span class="mv-badge">4</span> Elvish Regrower</li>
+            <li class="card-link" data-card-name="Hazard of the Dunes"><span class="mv-badge">4</span> Hazard of the Dunes</li>
+            <li class="card-link" data-card-name="Temur Sabertooth"><span class="mv-badge">4</span> Temur Sabertooth</li>
+            <li class="card-link" data-card-name="Titanbones, Towering Heart"><span class="mv-badge">4</span> Titanbones, Towering Heart</li>
+            <li class="card-link" data-card-name="Needletooth Pack"><span class="mv-badge">5</span> Needletooth Pack</li>
+            <li class="card-link" data-card-name="Terrian, World Tyrant"><span class="mv-badge">5</span> Terrian, World Tyrant</li>
+            <li class="card-link" data-card-name="Territory Culler"><span class="mv-badge">5</span> Territory Culler</li>
+            <li class="card-link" data-card-name="Autarch Mammoth"><span class="mv-badge">6</span> Autarch Mammoth</li>
+            <li class="card-link" data-card-name="Hologram Stalker"><span class="mv-badge">6</span> Hologram Stalker</li>
+            <li class="card-link" data-card-name="Lashwhip Predator"><span class="mv-badge">6</span> Lashwhip Predator</li>
+            <li class="card-link" data-card-name="Prismabasher"><span class="mv-badge">6</span> Prismabasher</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (4P / 5E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Atlas, Sizable Stooge"><span class="mv-badge">4</span> Atlas, Sizable Stooge <span class="ci-tag">[BG]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Strider, Ranger of the North"><span class="mv-badge">4</span> Strider, Ranger of the North <span class="ci-tag">[GR]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Thrakkus the Butcher"><span class="mv-badge">5</span> Thrakkus the Butcher <span class="ci-tag">[GR]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Bladewing the Risen"><span class="mv-badge">7</span> Bladewing the Risen <span class="ci-tag">[BR]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+1 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Traxos, Scourge Eternal"><span class="mv-badge">4</span> Traxos, Scourge Eternal <span class="ci-tag">[C]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>BGU — Stocked Graveyard (Threshold, Delirium, Undergrowth &amp; Leaves-GY)</span>
+        <span class="theme-badges">24 Payoffs · 43 Enablers (52 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> B: 5, G: 9, U: 6, BG: 1, BU: 2, GU: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> B: 11, G: 13, U: 13, BG: 3, BU: 2, GU: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>2</b> · MV2: <b>7</b> · MV3: <b>8</b> · MV4: <b>1</b> · MV5: <b>1</b> · MV6+: <b>5</b></div>
+        <div><strong>Theme Curve (All 52):</strong> MV1: <b>8</b> · MV2: <b>17</b> · MV3: <b>14</b> · MV4: <b>5</b> · MV5: <b>2</b> · MV6+: <b>6</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-B">B (5P / 11E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Cabal Initiate"><span class="mv-badge">2</span> Cabal Initiate</li>
+            <li class="card-link" data-card-name="Osseous Sticktwister"><span class="mv-badge">2</span> Osseous Sticktwister</li>
+            <li class="card-link" data-card-name="Graveblade Marauder"><span class="mv-badge">3</span> Graveblade Marauder</li>
+            <li class="card-link" data-card-name="Dreadhound"><span class="mv-badge">6</span> Dreadhound <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Huskburster Swarm"><span class="mv-badge">8</span> Huskburster Swarm</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+10 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Stitcher&#x27;s Supplier"><span class="mv-badge">1</span> Stitcher&#x27;s Supplier</li>
+            <li class="card-link" data-card-name="Test of Loyalty"><span class="mv-badge">1</span> Test of Loyalty</li>
+            <li class="card-link" data-card-name="MACH-1, Swooping Scoundrel"><span class="mv-badge">2</span> MACH-1, Swooping Scoundrel</li>
+            <li class="card-link" data-card-name="Mire Triton"><span class="mv-badge">2</span> Mire Triton</li>
+            <li class="card-link" data-card-name="Umbral Collar Zealot"><span class="mv-badge">2</span> Umbral Collar Zealot</li>
+            <li class="card-link" data-card-name="Wretched Doll"><span class="mv-badge">2</span> Wretched Doll</li>
+            <li class="card-link" data-card-name="Flayed One"><span class="mv-badge">3</span> Flayed One</li>
+            <li class="card-link" data-card-name="Nightblade Brigade"><span class="mv-badge">3</span> Nightblade Brigade</li>
+            <li class="card-link" data-card-name="Gathering of Darkness"><span class="mv-badge">4</span> Gathering of Darkness</li>
+            <li class="card-link" data-card-name="Gathering of Darkness"><span class="mv-badge">4</span> Gathering of Darkness</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G (9P / 13E)</div>
+          <div class="role-header">Payoffs (9)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Patchwork Beastie"><span class="mv-badge">1</span> Patchwork Beastie <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Kraul Harpooner"><span class="mv-badge">2</span> Kraul Harpooner</li>
+            <li class="card-link" data-card-name="Stubborn Burrowfiend"><span class="mv-badge">2</span> Stubborn Burrowfiend <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Coati Scavenger"><span class="mv-badge">3</span> Coati Scavenger</li>
+            <li class="card-link" data-card-name="Splinterfright"><span class="mv-badge">3</span> Splinterfright <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Undercity Upheaval"><span class="mv-badge">3</span> Undercity Upheaval</li>
+            <li class="card-link" data-card-name="Grizzly Fate"><span class="mv-badge">5</span> Grizzly Fate</li>
+            <li class="card-link" data-card-name="Hologram Stalker"><span class="mv-badge">6</span> Hologram Stalker <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Ghoultree"><span class="mv-badge">8</span> Ghoultree</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+9 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Cenote Scout"><span class="mv-badge">1</span> Cenote Scout</li>
+            <li class="card-link" data-card-name="Molt Tender"><span class="mv-badge">1</span> Molt Tender</li>
+            <li class="card-link" data-card-name="Marwyn, the Preserver"><span class="mv-badge">2</span> Marwyn, the Preserver</li>
+            <li class="card-link" data-card-name="Marwyn, the Preserver"><span class="mv-badge">2</span> Marwyn, the Preserver</li>
+            <li class="card-link" data-card-name="Peerless Recycling"><span class="mv-badge">2</span> Peerless Recycling</li>
+            <li class="card-link" data-card-name="Scout the City"><span class="mv-badge">2</span> Scout the City</li>
+            <li class="card-link" data-card-name="Elvish Regrower"><span class="mv-badge">4</span> Elvish Regrower</li>
+            <li class="card-link" data-card-name="Rite of Renewal"><span class="mv-badge">4</span> Rite of Renewal</li>
+            <li class="card-link" data-card-name="Territory Culler"><span class="mv-badge">5</span> Territory Culler</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U (6P / 13E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Yuriko, Hope from the Shadows"><span class="mv-badge">1</span> Yuriko, Hope from the Shadows <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Master&#x27;s Councillors"><span class="mv-badge">2</span> Master&#x27;s Councillors <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Shoreline Looter"><span class="mv-badge">2</span> Shoreline Looter <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Cephalid Inkmage"><span class="mv-badge">3</span> Cephalid Inkmage <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Mindwhisker"><span class="mv-badge">3</span> Mindwhisker <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Daring Waverider"><span class="mv-badge">6</span> Daring Waverider</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+8 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Cobbled Lancer"><span class="mv-badge">1</span> Cobbled Lancer</li>
+            <li class="card-link" data-card-name="Hypnotic Grifter"><span class="mv-badge">1</span> Hypnotic Grifter</li>
+            <li class="card-link" data-card-name="Test of Priorities"><span class="mv-badge">2</span> Test of Priorities</li>
+            <li class="card-link" data-card-name="Confounding Riddle"><span class="mv-badge">3</span> Confounding Riddle</li>
+            <li class="card-link" data-card-name="Fear of Impostors"><span class="mv-badge">3</span> Fear of Impostors</li>
+            <li class="card-link" data-card-name="Rune-Sealed Wall"><span class="mv-badge">3</span> Rune-Sealed Wall</li>
+            <li class="card-link" data-card-name="Chemister&#x27;s Insight"><span class="mv-badge">4</span> Chemister&#x27;s Insight</li>
+            <li class="card-link" data-card-name="Valkyrie Aerial Unit"><span class="mv-badge">7</span> Valkyrie Aerial Unit</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (4P / 6E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Vilespawn Spider"><span class="mv-badge">2</span> Vilespawn Spider <span class="ci-tag">[GU]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Dreadwing Scavenger"><span class="mv-badge">3</span> Dreadwing Scavenger <span class="ci-tag">[BU]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Vash, Freelance Archaeologist"><span class="mv-badge">3</span> Vash, Freelance Archaeologist <span class="ci-tag">[BG]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Recursive Recruitment"><span class="mv-badge">4</span> Recursive Recruitment <span class="ci-tag">[BU]</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+3 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Skull Prophet"><span class="mv-badge">2</span> Skull Prophet <span class="ci-tag">[BG]</span></li>
+            <li class="card-link" data-card-name="Theorix Charm"><span class="mv-badge">2</span> Theorix Charm <span class="ci-tag">[BU]</span></li>
+            <li class="card-link" data-card-name="Primal Witchstalker"><span class="mv-badge">3</span> Primal Witchstalker <span class="ci-tag">[BG]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>GWU — Blink, Self-Bounce &amp; ETB / Leaves-Battlefield Value</span>
+        <span class="theme-badges">19 Payoffs · 36 Enablers (55 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> G: 3, U: 6, W: 8, GU: 1, UW: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> C: 3, G: 8, U: 12, W: 10, GU: 1, GW: 1, UW: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>1</b> · MV2: <b>6</b> · MV3: <b>5</b> · MV4: <b>6</b> · MV5: <b>1</b> · MV6+: <b>0</b></div>
+        <div><strong>Theme Curve (All 55):</strong> MV1: <b>3</b> · MV2: <b>12</b> · MV3: <b>12</b> · MV4: <b>14</b> · MV5: <b>6</b> · MV6+: <b>8</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-G">G (3P / 8E)</div>
+          <div class="role-header">Payoffs (3)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Three Tree Scribe"><span class="mv-badge">2</span> Three Tree Scribe</li>
+            <li class="card-link" data-card-name="Rambling Possum"><span class="mv-badge">3</span> Rambling Possum</li>
+            <li class="card-link" data-card-name="Temur Sabertooth"><span class="mv-badge">4</span> Temur Sabertooth</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+8 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Cenote Scout"><span class="mv-badge">1</span> Cenote Scout</li>
+            <li class="card-link" data-card-name="Clifftop Lookout"><span class="mv-badge">3</span> Clifftop Lookout</li>
+            <li class="card-link" data-card-name="Coati Scavenger"><span class="mv-badge">3</span> Coati Scavenger</li>
+            <li class="card-link" data-card-name="Elvish Regrower"><span class="mv-badge">4</span> Elvish Regrower</li>
+            <li class="card-link" data-card-name="Luminollusk"><span class="mv-badge">4</span> Luminollusk</li>
+            <li class="card-link" data-card-name="Autarch Mammoth"><span class="mv-badge">6</span> Autarch Mammoth</li>
+            <li class="card-link" data-card-name="Earthshaker Dreadmaw"><span class="mv-badge">6</span> Earthshaker Dreadmaw</li>
+            <li class="card-link" data-card-name="Prismabasher"><span class="mv-badge">6</span> Prismabasher</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W (8P / 10E)</div>
+          <div class="role-header">Payoffs (8)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Distinguished Conjurer"><span class="mv-badge">2</span> Distinguished Conjurer</li>
+            <li class="card-link" data-card-name="Shepherd of the Flock // Usher to Safety"><span class="mv-badge">2</span> Shepherd of the Flock // Usher to Safety</li>
+            <li class="card-link" data-card-name="Sunpearl Kirin"><span class="mv-badge">2</span> Sunpearl Kirin</li>
+            <li class="card-link" data-card-name="That&#x27;s Rough Buddy"><span class="mv-badge">2</span> That&#x27;s Rough Buddy</li>
+            <li class="card-link" data-card-name="Stonecloaker"><span class="mv-badge">3</span> Stonecloaker</li>
+            <li class="card-link" data-card-name="Against All Odds"><span class="mv-badge">4</span> Against All Odds</li>
+            <li class="card-link" data-card-name="Lulu, Loyal Hollyphant"><span class="mv-badge">4</span> Lulu, Loyal Hollyphant</li>
+            <li class="card-link" data-card-name="Spider-UK"><span class="mv-badge">4</span> Spider-UK</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+10 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Resolute Reinforcements"><span class="mv-badge">2</span> Resolute Reinforcements</li>
+            <li class="card-link" data-card-name="Wall of Omens"><span class="mv-badge">2</span> Wall of Omens</li>
+            <li class="card-link" data-card-name="Kinjalli&#x27;s Dawnrunner"><span class="mv-badge">3</span> Kinjalli&#x27;s Dawnrunner</li>
+            <li class="card-link" data-card-name="Doctor Jane Foster"><span class="mv-badge">4</span> Doctor Jane Foster</li>
+            <li class="card-link" data-card-name="Goldnight Commander"><span class="mv-badge">4</span> Goldnight Commander</li>
+            <li class="card-link" data-card-name="Okoye, Dora Milaje Leader"><span class="mv-badge">4</span> Okoye, Dora Milaje Leader</li>
+            <li class="card-link" data-card-name="Star Charter"><span class="mv-badge">4</span> Star Charter</li>
+            <li class="card-link" data-card-name="Githzerai Monk"><span class="mv-badge">5</span> Githzerai Monk</li>
+            <li class="card-link" data-card-name="Katara, Heroic Healer"><span class="mv-badge">5</span> Katara, Heroic Healer</li>
+            <li class="card-link" data-card-name="Malamet War Scribe"><span class="mv-badge">5</span> Malamet War Scribe</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U (6P / 12E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Nephalia Smuggler"><span class="mv-badge">1</span> Nephalia Smuggler</li>
+            <li class="card-link" data-card-name="Rescue, Pepper Potts"><span class="mv-badge">2</span> Rescue, Pepper Potts</li>
+            <li class="card-link" data-card-name="Imperial Cosmographer"><span class="mv-badge">3</span> Imperial Cosmographer</li>
+            <li class="card-link" data-card-name="Rimekin Recluse"><span class="mv-badge">3</span> Rimekin Recluse</li>
+            <li class="card-link" data-card-name="Meneldor, Swift Savior"><span class="mv-badge">4</span> Meneldor, Swift Savior</li>
+            <li class="card-link" data-card-name="Biblioplex Kraken"><span class="mv-badge">5</span> Biblioplex Kraken</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+12 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Boomerang Basics"><span class="mv-badge">1</span> Boomerang Basics</li>
+            <li class="card-link" data-card-name="Corridor Monitor"><span class="mv-badge">2</span> Corridor Monitor</li>
+            <li class="card-link" data-card-name="Get Out"><span class="mv-badge">2</span> Get Out</li>
+            <li class="card-link" data-card-name="Recalibrate"><span class="mv-badge">2</span> Recalibrate</li>
+            <li class="card-link" data-card-name="Test of Priorities"><span class="mv-badge">2</span> Test of Priorities</li>
+            <li class="card-link" data-card-name="Fear of Impostors"><span class="mv-badge">3</span> Fear of Impostors</li>
+            <li class="card-link" data-card-name="Whirler Rogue"><span class="mv-badge">4</span> Whirler Rogue</li>
+            <li class="card-link" data-card-name="Spikeshell Harrier"><span class="mv-badge">5</span> Spikeshell Harrier</li>
+            <li class="card-link" data-card-name="This Town Ain&#x27;t Big Enough"><span class="mv-badge">5</span> This Town Ain&#x27;t Big Enough</li>
+            <li class="card-link" data-card-name="Daring Waverider"><span class="mv-badge">6</span> Daring Waverider</li>
+            <li class="card-link" data-card-name="Lake-town Mariners // Gone Fishing"><span class="mv-badge">6</span> Lake-town Mariners // Gone Fishing</li>
+            <li class="card-link" data-card-name="Shinestriker"><span class="mv-badge">6</span> Shinestriker</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (2P / 6E)</div>
+          <div class="role-header">Payoffs (2)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Soulherder"><span class="mv-badge">3</span> Soulherder <span class="ci-tag">[UW]</span></li>
+            <li class="card-link" data-card-name="Lilysplash Mentor"><span class="mv-badge">4</span> Lilysplash Mentor <span class="ci-tag">[GU]</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Paradox Surveyor"><span class="mv-badge">3</span> Paradox Surveyor <span class="ci-tag">[GU]</span></li>
+            <li class="card-link" data-card-name="Shuri, Vibranium Technologist"><span class="mv-badge">3</span> Shuri, Vibranium Technologist <span class="ci-tag">[UW]</span></li>
+            <li class="card-link" data-card-name="Woodland Acolyte // Mend the Wilds"><span class="mv-badge">3</span> Woodland Acolyte // Mend the Wilds <span class="ci-tag">[GW]</span></li>
+            <li class="card-link" data-card-name="H.E.R.B.I.E. Scout Unit"><span class="mv-badge">4</span> H.E.R.B.I.E. Scout Unit <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Sundering Archaic"><span class="mv-badge">6</span> Sundering Archaic <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Transcendent Archaic"><span class="mv-badge">7</span> Transcendent Archaic <span class="ci-tag">[C]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>GUR — Multicolor, Landfall &amp; Big MV (Domain, Converge, Vivid, Landfall &amp; MV 4+)</span>
+        <span class="theme-badges">27 Payoffs · 35 Enablers (58 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> C: 2, G: 6, R: 5, U: 8, GR: 2, GU: 2, RU: 2 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> C: 3, G: 13, R: 6, U: 9, GR: 1, GU: 2, BGRUW: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>0</b> · MV2: <b>6</b> · MV3: <b>6</b> · MV4: <b>6</b> · MV5: <b>2</b> · MV6+: <b>7</b></div>
+        <div><strong>Theme Curve (All 58):</strong> MV1: <b>6</b> · MV2: <b>13</b> · MV3: <b>10</b> · MV4: <b>13</b> · MV5: <b>5</b> · MV6+: <b>11</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-G">G (6P / 13E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Eumidian Terrabotanist"><span class="mv-badge">2</span> Eumidian Terrabotanist</li>
+            <li class="card-link" data-card-name="Emil, Vastlands Roamer"><span class="mv-badge">3</span> Emil, Vastlands Roamer</li>
+            <li class="card-link" data-card-name="Luminollusk"><span class="mv-badge">4</span> Luminollusk</li>
+            <li class="card-link" data-card-name="Territory Culler"><span class="mv-badge">5</span> Territory Culler</li>
+            <li class="card-link" data-card-name="Prismabasher"><span class="mv-badge">6</span> Prismabasher</li>
+            <li class="card-link" data-card-name="Snarl Song"><span class="mv-badge">6</span> Snarl Song</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+13 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Adventurous Impulse"><span class="mv-badge">1</span> Adventurous Impulse</li>
+            <li class="card-link" data-card-name="Cenote Scout"><span class="mv-badge">1</span> Cenote Scout</li>
+            <li class="card-link" data-card-name="Molt Tender"><span class="mv-badge">1</span> Molt Tender</li>
+            <li class="card-link" data-card-name="Drover of the Mighty"><span class="mv-badge">2</span> Drover of the Mighty</li>
+            <li class="card-link" data-card-name="Explore"><span class="mv-badge">2</span> Explore</li>
+            <li class="card-link" data-card-name="House Cartographer"><span class="mv-badge">2</span> House Cartographer</li>
+            <li class="card-link" data-card-name="Marwyn, the Preserver"><span class="mv-badge">2</span> Marwyn, the Preserver</li>
+            <li class="card-link" data-card-name="Marwyn, the Preserver"><span class="mv-badge">2</span> Marwyn, the Preserver</li>
+            <li class="card-link" data-card-name="White Tiger, Amulet Keeper"><span class="mv-badge">2</span> White Tiger, Amulet Keeper</li>
+            <li class="card-link" data-card-name="Clifftop Lookout"><span class="mv-badge">3</span> Clifftop Lookout</li>
+            <li class="card-link" data-card-name="Supportive Parents"><span class="mv-badge">3</span> Supportive Parents</li>
+            <li class="card-link" data-card-name="Zimone&#x27;s Experiment"><span class="mv-badge">4</span> Zimone&#x27;s Experiment</li>
+            <li class="card-link" data-card-name="Lashwhip Predator"><span class="mv-badge">6</span> Lashwhip Predator</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-U">U (8P / 9E)</div>
+          <div class="role-header">Payoffs (8)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Evasive Action"><span class="mv-badge">2</span> Evasive Action</li>
+            <li class="card-link" data-card-name="Muse Seeker"><span class="mv-badge">2</span> Muse Seeker</li>
+            <li class="card-link" data-card-name="Sweep the Skies"><span class="mv-badge">2</span> Sweep the Skies <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Elven Raft-Steerer"><span class="mv-badge">3</span> Elven Raft-Steerer</li>
+            <li class="card-link" data-card-name="Etherium Spinner"><span class="mv-badge">3</span> Etherium Spinner</li>
+            <li class="card-link" data-card-name="Tanufel Rimespeaker"><span class="mv-badge">4</span> Tanufel Rimespeaker</li>
+            <li class="card-link" data-card-name="Shinestriker"><span class="mv-badge">6</span> Shinestriker</li>
+            <li class="card-link" data-card-name="Cloak and Phaser"><span class="mv-badge">9</span> Cloak and Phaser <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+7 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Omen Hawker"><span class="mv-badge">1</span> Omen Hawker</li>
+            <li class="card-link" data-card-name="Swat Away"><span class="mv-badge">4</span> Swat Away</li>
+            <li class="card-link" data-card-name="Traxos, Academy Guardian"><span class="mv-badge">4</span> Traxos, Academy Guardian</li>
+            <li class="card-link" data-card-name="Gigastorm Titan"><span class="mv-badge">5</span> Gigastorm Titan</li>
+            <li class="card-link" data-card-name="This Town Ain&#x27;t Big Enough"><span class="mv-badge">5</span> This Town Ain&#x27;t Big Enough</li>
+            <li class="card-link" data-card-name="Lake-town Mariners // Gone Fishing"><span class="mv-badge">6</span> Lake-town Mariners // Gone Fishing</li>
+            <li class="card-link" data-card-name="Valkyrie Aerial Unit"><span class="mv-badge">7</span> Valkyrie Aerial Unit</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R (5P / 6E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Thunderdrum Soloist"><span class="mv-badge">2</span> Thunderdrum Soloist</li>
+            <li class="card-link" data-card-name="Tribal Flames"><span class="mv-badge">2</span> Tribal Flames</li>
+            <li class="card-link" data-card-name="Superior Foes of Spider-Man"><span class="mv-badge">3</span> Superior Foes of Spider-Man</li>
+            <li class="card-link" data-card-name="Squawkroaster"><span class="mv-badge">4</span> Squawkroaster</li>
+            <li class="card-link" data-card-name="Territorial Bruntar"><span class="mv-badge">6</span> Territorial Bruntar</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Channeled Dragonfire"><span class="mv-badge">1</span> Channeled Dragonfire</li>
+            <li class="card-link" data-card-name="Fire Magic"><span class="mv-badge">1</span> Fire Magic</li>
+            <li class="card-link" data-card-name="Bolt Bend"><span class="mv-badge">4</span> Bolt Bend</li>
+            <li class="card-link" data-card-name="Stoke the Flames"><span class="mv-badge">4</span> Stoke the Flames</li>
+            <li class="card-link" data-card-name="Witchstalker Frenzy"><span class="mv-badge">4</span> Witchstalker Frenzy</li>
+            <li class="card-link" data-card-name="Winter, Team Player"><span class="mv-badge">5</span> Winter, Team Player</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (8P / 7E)</div>
+          <div class="role-header">Payoffs (8)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Flaring Cinder"><span class="mv-badge">3</span> Flaring Cinder <span class="ci-tag">[RU]</span></li>
+            <li class="card-link" data-card-name="Paradox Surveyor"><span class="mv-badge">3</span> Paradox Surveyor <span class="ci-tag">[GU]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Radha, Coalition Warlord"><span class="mv-badge">4</span> Radha, Coalition Warlord <span class="ci-tag">[GR]</span></li>
+            <li class="card-link" data-card-name="Spectacular Skywhale"><span class="mv-badge">4</span> Spectacular Skywhale <span class="ci-tag">[RU]</span></li>
+            <li class="card-link" data-card-name="Strider, Ranger of the North"><span class="mv-badge">4</span> Strider, Ranger of the North <span class="ci-tag">[GR]</span></li>
+            <li class="card-link" data-card-name="Glister Bairn"><span class="mv-badge">5</span> Glister Bairn <span class="ci-tag">[GU]</span></li>
+            <li class="card-link" data-card-name="Sundering Archaic"><span class="mv-badge">6</span> Sundering Archaic <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Transcendent Archaic"><span class="mv-badge">7</span> Transcendent Archaic <span class="ci-tag">[C]</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Energybending"><span class="mv-badge">2</span> Energybending <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Skyserpent Seeker"><span class="mv-badge">2</span> Skyserpent Seeker <span class="ci-tag">[GU]</span></li>
+            <li class="card-link" data-card-name="Definitely Not a Turtle"><span class="mv-badge">3</span> Definitely Not a Turtle <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Wreck and Rebuild"><span class="mv-badge">3</span> Wreck and Rebuild <span class="ci-tag">[GR]</span></li>
+            <li class="card-link" data-card-name="H.E.R.B.I.E. Scout Unit"><span class="mv-badge">4</span> H.E.R.B.I.E. Scout Unit <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Sphinx of the Guildpact"><span class="mv-badge">7</span> Sphinx of the Guildpact <span class="ci-tag">[BGRUW]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>UBR — Discard &amp; Looting (Madness, Mayhem, Cycling &amp; Jump-Start)</span>
+        <span class="theme-badges">21 Payoffs · 29 Enablers (44 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> B: 5, C: 1, R: 6, U: 6, BR: 2, BU: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> B: 7, R: 9, U: 8, BR: 2, BU: 1, RU: 2</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>3</b> · MV2: <b>7</b> · MV3: <b>3</b> · MV4: <b>6</b> · MV5: <b>2</b> · MV6+: <b>0</b></div>
+        <div><strong>Theme Curve (All 44):</strong> MV1: <b>8</b> · MV2: <b>14</b> · MV3: <b>10</b> · MV4: <b>7</b> · MV5: <b>3</b> · MV6+: <b>2</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-U">U (6P / 8E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Obsessive Search"><span class="mv-badge">1</span> Obsessive Search</li>
+            <li class="card-link" data-card-name="Recalibrate"><span class="mv-badge">2</span> Recalibrate</li>
+            <li class="card-link" data-card-name="Scrounging Skyray"><span class="mv-badge">2</span> Scrounging Skyray <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Circular Logic"><span class="mv-badge">3</span> Circular Logic</li>
+            <li class="card-link" data-card-name="Teo, Spirited Glider"><span class="mv-badge">4</span> Teo, Spirited Glider <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Ominous Sphinx"><span class="mv-badge">5</span> Ominous Sphinx</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Hypnotic Grifter"><span class="mv-badge">1</span> Hypnotic Grifter</li>
+            <li class="card-link" data-card-name="Muse Seeker"><span class="mv-badge">2</span> Muse Seeker</li>
+            <li class="card-link" data-card-name="Shoreline Looter"><span class="mv-badge">2</span> Shoreline Looter</li>
+            <li class="card-link" data-card-name="Thirst for Knowledge"><span class="mv-badge">3</span> Thirst for Knowledge</li>
+            <li class="card-link" data-card-name="Chemister&#x27;s Insight"><span class="mv-badge">4</span> Chemister&#x27;s Insight</li>
+            <li class="card-link" data-card-name="Cloak and Phaser"><span class="mv-badge">9</span> Cloak and Phaser</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B (5P / 7E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Asylum Visitor"><span class="mv-badge">2</span> Asylum Visitor</li>
+            <li class="card-link" data-card-name="Sandman&#x27;s Quicksand"><span class="mv-badge">3</span> Sandman&#x27;s Quicksand</li>
+            <li class="card-link" data-card-name="Gisa&#x27;s Bidding"><span class="mv-badge">4</span> Gisa&#x27;s Bidding</li>
+            <li class="card-link" data-card-name="Haunted Dead"><span class="mv-badge">4</span> Haunted Dead <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Sadistic Slash"><span class="mv-badge">4</span> Sadistic Slash</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+6 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Bone Shards"><span class="mv-badge">1</span> Bone Shards</li>
+            <li class="card-link" data-card-name="Intimidation Tactics"><span class="mv-badge">1</span> Intimidation Tactics</li>
+            <li class="card-link" data-card-name="Bitter Triumph"><span class="mv-badge">2</span> Bitter Triumph</li>
+            <li class="card-link" data-card-name="Cabal Initiate"><span class="mv-badge">2</span> Cabal Initiate</li>
+            <li class="card-link" data-card-name="Iron-Shield Elf"><span class="mv-badge">2</span> Iron-Shield Elf</li>
+            <li class="card-link" data-card-name="Armix, Filigree Thrasher"><span class="mv-badge">3</span> Armix, Filigree Thrasher</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R (6P / 9E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Blazing Rootwalla"><span class="mv-badge">1</span> Blazing Rootwalla</li>
+            <li class="card-link" data-card-name="Marauding Mako"><span class="mv-badge">1</span> Marauding Mako <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Hobgoblin, Mantled Marauder"><span class="mv-badge">2</span> Hobgoblin, Mantled Marauder</li>
+            <li class="card-link" data-card-name="Mad Ratter"><span class="mv-badge">4</span> Mad Ratter</li>
+            <li class="card-link" data-card-name="Violent Eruption"><span class="mv-badge">4</span> Violent Eruption</li>
+            <li class="card-link" data-card-name="Raging Goblinoids"><span class="mv-badge">5</span> Raging Goblinoids</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+8 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Greasewrench Goblin"><span class="mv-badge">1</span> Greasewrench Goblin</li>
+            <li class="card-link" data-card-name="Lightning Axe"><span class="mv-badge">1</span> Lightning Axe</li>
+            <li class="card-link" data-card-name="Boundary Lands Ranger"><span class="mv-badge">2</span> Boundary Lands Ranger</li>
+            <li class="card-link" data-card-name="Goblin Lore"><span class="mv-badge">2</span> Goblin Lore</li>
+            <li class="card-link" data-card-name="Charging Strifeknight"><span class="mv-badge">3</span> Charging Strifeknight</li>
+            <li class="card-link" data-card-name="Reckless Racer"><span class="mv-badge">3</span> Reckless Racer</li>
+            <li class="card-link" data-card-name="Vaultguard Trooper"><span class="mv-badge">5</span> Vaultguard Trooper</li>
+            <li class="card-link" data-card-name="Slice and Dice"><span class="mv-badge">6</span> Slice and Dice</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (4P / 5E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Containment Construct"><span class="mv-badge">2</span> Containment Construct <span class="ci-tag">[C]</span></li>
+            <li class="card-link" data-card-name="Lazotep Chancellor"><span class="mv-badge">2</span> Lazotep Chancellor <span class="ci-tag">[BU]</span></li>
+            <li class="card-link" data-card-name="Scarlet Spider, Kaine"><span class="mv-badge">2</span> Scarlet Spider, Kaine <span class="ci-tag">[BR]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Azra Oddsmaker"><span class="mv-badge">3</span> Azra Oddsmaker <span class="ci-tag">[BR]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+3 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Dreadwing Scavenger"><span class="mv-badge">3</span> Dreadwing Scavenger <span class="ci-tag">[BU]</span></li>
+            <li class="card-link" data-card-name="Ecstatic Electromancer"><span class="mv-badge">3</span> Ecstatic Electromancer <span class="ci-tag">[RU]</span></li>
+            <li class="card-link" data-card-name="Flaring Cinder"><span class="mv-badge">3</span> Flaring Cinder <span class="ci-tag">[RU]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>URW — Spellslinger &amp; Second Spell (Prowess / Flurry / Opus)</span>
+        <span class="theme-badges">29 Payoffs · 40 Enablers (66 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> R: 10, U: 9, W: 4, RU: 5, UW: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> C: 1, R: 15, U: 13, W: 10, RU: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>3</b> · MV2: <b>10</b> · MV3: <b>8</b> · MV4: <b>5</b> · MV5: <b>2</b> · MV6+: <b>1</b></div>
+        <div><strong>Theme Curve (All 66):</strong> MV1: <b>22</b> · MV2: <b>18</b> · MV3: <b>10</b> · MV4: <b>11</b> · MV5: <b>3</b> · MV6+: <b>2</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-U">U (9P / 13E)</div>
+          <div class="role-header">Payoffs (9)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Pteramander"><span class="mv-badge">1</span> Pteramander</li>
+            <li class="card-link" data-card-name="Geist of Saint Thalia"><span class="mv-badge">2</span> Geist of Saint Thalia <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Muse Seeker"><span class="mv-badge">2</span> Muse Seeker</li>
+            <li class="card-link" data-card-name="Etherium Spinner"><span class="mv-badge">3</span> Etherium Spinner</li>
+            <li class="card-link" data-card-name="Wingblade Disciple"><span class="mv-badge">3</span> Wingblade Disciple</li>
+            <li class="card-link" data-card-name="Tanufel Rimespeaker"><span class="mv-badge">4</span> Tanufel Rimespeaker</li>
+            <li class="card-link" data-card-name="Traxos, Academy Guardian"><span class="mv-badge">4</span> Traxos, Academy Guardian</li>
+            <li class="card-link" data-card-name="Gigastorm Titan"><span class="mv-badge">5</span> Gigastorm Titan</li>
+            <li class="card-link" data-card-name="Daring Waverider"><span class="mv-badge">6</span> Daring Waverider</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+12 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Boomerang Basics"><span class="mv-badge">1</span> Boomerang Basics</li>
+            <li class="card-link" data-card-name="Distortion Strike"><span class="mv-badge">1</span> Distortion Strike</li>
+            <li class="card-link" data-card-name="Miscast"><span class="mv-badge">1</span> Miscast</li>
+            <li class="card-link" data-card-name="Obsessive Search"><span class="mv-badge">1</span> Obsessive Search</li>
+            <li class="card-link" data-card-name="Rapid Hybridization"><span class="mv-badge">1</span> Rapid Hybridization</li>
+            <li class="card-link" data-card-name="Spell Snare"><span class="mv-badge">1</span> Spell Snare</li>
+            <li class="card-link" data-card-name="Stern Scolding"><span class="mv-badge">1</span> Stern Scolding</li>
+            <li class="card-link" data-card-name="Recalibrate"><span class="mv-badge">2</span> Recalibrate</li>
+            <li class="card-link" data-card-name="Test of Priorities"><span class="mv-badge">2</span> Test of Priorities</li>
+            <li class="card-link" data-card-name="Donatello&#x27;s Technique"><span class="mv-badge">3</span> Donatello&#x27;s Technique</li>
+            <li class="card-link" data-card-name="This Town Ain&#x27;t Big Enough"><span class="mv-badge">5</span> This Town Ain&#x27;t Big Enough</li>
+            <li class="card-link" data-card-name="Lake-town Mariners // Gone Fishing"><span class="mv-badge">6</span> Lake-town Mariners // Gone Fishing</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-R">R (10P / 15E)</div>
+          <div class="role-header">Payoffs (10)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Monastery Swiftspear"><span class="mv-badge">1</span> Monastery Swiftspear</li>
+            <li class="card-link" data-card-name="Electrostatic Infantry"><span class="mv-badge">2</span> Electrostatic Infantry</li>
+            <li class="card-link" data-card-name="Thermo-Alchemist"><span class="mv-badge">2</span> Thermo-Alchemist</li>
+            <li class="card-link" data-card-name="Thunderdrum Soloist"><span class="mv-badge">2</span> Thunderdrum Soloist</li>
+            <li class="card-link" data-card-name="Young Pyromancer"><span class="mv-badge">2</span> Young Pyromancer</li>
+            <li class="card-link" data-card-name="Firespitter Whelp"><span class="mv-badge">3</span> Firespitter Whelp</li>
+            <li class="card-link" data-card-name="Reckless Bushwhacker"><span class="mv-badge">3</span> Reckless Bushwhacker <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Superior Foes of Spider-Man"><span class="mv-badge">3</span> Superior Foes of Spider-Man</li>
+            <li class="card-link" data-card-name="Living Lightning"><span class="mv-badge">4</span> Living Lightning</li>
+            <li class="card-link" data-card-name="Winter, Team Player"><span class="mv-badge">5</span> Winter, Team Player</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+14 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Channeled Dragonfire"><span class="mv-badge">1</span> Channeled Dragonfire</li>
+            <li class="card-link" data-card-name="Fire Magic"><span class="mv-badge">1</span> Fire Magic</li>
+            <li class="card-link" data-card-name="Impolite Entrance"><span class="mv-badge">1</span> Impolite Entrance</li>
+            <li class="card-link" data-card-name="Lightning Axe"><span class="mv-badge">1</span> Lightning Axe</li>
+            <li class="card-link" data-card-name="Reckless Rage"><span class="mv-badge">1</span> Reckless Rage</li>
+            <li class="card-link" data-card-name="Triumphant Chomp"><span class="mv-badge">1</span> Triumphant Chomp</li>
+            <li class="card-link" data-card-name="Invigorated Rampage"><span class="mv-badge">2</span> Invigorated Rampage</li>
+            <li class="card-link" data-card-name="Team Tactics"><span class="mv-badge">2</span> Team Tactics</li>
+            <li class="card-link" data-card-name="Staggershock"><span class="mv-badge">3</span> Staggershock</li>
+            <li class="card-link" data-card-name="Bolt Bend"><span class="mv-badge">4</span> Bolt Bend</li>
+            <li class="card-link" data-card-name="Geological Appraiser"><span class="mv-badge">4</span> Geological Appraiser</li>
+            <li class="card-link" data-card-name="Glóin the Mighty // Easy Pickings"><span class="mv-badge">4</span> Glóin the Mighty // Easy Pickings</li>
+            <li class="card-link" data-card-name="Memorial Team Leader"><span class="mv-badge">4</span> Memorial Team Leader</li>
+            <li class="card-link" data-card-name="Stoke the Flames"><span class="mv-badge">4</span> Stoke the Flames</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W (4P / 10E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Monk of the Open Hand"><span class="mv-badge">1</span> Monk of the Open Hand</li>
+            <li class="card-link" data-card-name="Seeker of the Way"><span class="mv-badge">2</span> Seeker of the Way</li>
+            <li class="card-link" data-card-name="Quake, Agent of S.H.I.E.L.D."><span class="mv-badge">3</span> Quake, Agent of S.H.I.E.L.D.</li>
+            <li class="card-link" data-card-name="Sunstar Lightsmith"><span class="mv-badge">4</span> Sunstar Lightsmith</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+10 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Cheeky House-Mouse // Squeak By"><span class="mv-badge">1</span> Cheeky House-Mouse // Squeak By</li>
+            <li class="card-link" data-card-name="Defiant Strike"><span class="mv-badge">1</span> Defiant Strike</li>
+            <li class="card-link" data-card-name="Enter the Avatar State"><span class="mv-badge">1</span> Enter the Avatar State</li>
+            <li class="card-link" data-card-name="Prismatic Ending"><span class="mv-badge">1</span> Prismatic Ending</li>
+            <li class="card-link" data-card-name="Purify the Grave"><span class="mv-badge">1</span> Purify the Grave</li>
+            <li class="card-link" data-card-name="Unwanted Remake"><span class="mv-badge">1</span> Unwanted Remake</li>
+            <li class="card-link" data-card-name="Shepherd of the Flock // Usher to Safety"><span class="mv-badge">2</span> Shepherd of the Flock // Usher to Safety</li>
+            <li class="card-link" data-card-name="That&#x27;s Rough Buddy"><span class="mv-badge">2</span> That&#x27;s Rough Buddy</li>
+            <li class="card-link" data-card-name="To Arms!"><span class="mv-badge">2</span> To Arms!</li>
+            <li class="card-link" data-card-name="Great Teacher&#x27;s Decree"><span class="mv-badge">4</span> Great Teacher&#x27;s Decree</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (6P / 2E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Slick Sequence"><span class="mv-badge">2</span> Slick Sequence <span class="ci-tag">[RU]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Sprite Dragon"><span class="mv-badge">2</span> Sprite Dragon <span class="ci-tag">[RU]</span></li>
+            <li class="card-link" data-card-name="Station Monitor"><span class="mv-badge">2</span> Station Monitor <span class="ci-tag">[UW]</span></li>
+            <li class="card-link" data-card-name="Ecstatic Electromancer"><span class="mv-badge">3</span> Ecstatic Electromancer <span class="ci-tag">[RU]</span></li>
+            <li class="card-link" data-card-name="Flaring Cinder"><span class="mv-badge">3</span> Flaring Cinder <span class="ci-tag">[RU]</span></li>
+            <li class="card-link" data-card-name="Spectacular Skywhale"><span class="mv-badge">4</span> Spectacular Skywhale <span class="ci-tag">[RU]</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+1 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Energybending"><span class="mv-badge">2</span> Energybending <span class="ci-tag">[C]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>RGW — Tap/Untap Shenanigans (Becomes Tapped, Survival, Saddle, Convoke &amp; Teamwork)</span>
+        <span class="theme-badges">22 Payoffs · 33 Enablers (44 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> G: 7, R: 5, W: 6, GR: 1, GW: 2, RW: 1 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> G: 11, R: 7, W: 13, GW: 1, RW: 1</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>1</b> · MV2: <b>5</b> · MV3: <b>6</b> · MV4: <b>4</b> · MV5: <b>2</b> · MV6+: <b>4</b></div>
+        <div><strong>Theme Curve (All 44):</strong> MV1: <b>7</b> · MV2: <b>12</b> · MV3: <b>11</b> · MV4: <b>6</b> · MV5: <b>3</b> · MV6+: <b>5</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R (5P / 7E)</div>
+          <div class="role-header">Payoffs (5)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Gila Courser"><span class="mv-badge">3</span> Gila Courser <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Reckless Racer"><span class="mv-badge">3</span> Reckless Racer</li>
+            <li class="card-link" data-card-name="Spireside Infiltrator"><span class="mv-badge">3</span> Spireside Infiltrator</li>
+            <li class="card-link" data-card-name="Vaultguard Trooper"><span class="mv-badge">5</span> Vaultguard Trooper</li>
+            <li class="card-link" data-card-name="Dracosaur Auxiliary"><span class="mv-badge">6</span> Dracosaur Auxiliary <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+5 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Channeled Dragonfire"><span class="mv-badge">1</span> Channeled Dragonfire</li>
+            <li class="card-link" data-card-name="Intrepid Ace"><span class="mv-badge">1</span> Intrepid Ace</li>
+            <li class="card-link" data-card-name="Team Tactics"><span class="mv-badge">2</span> Team Tactics</li>
+            <li class="card-link" data-card-name="Stoke the Flames"><span class="mv-badge">4</span> Stoke the Flames</li>
+            <li class="card-link" data-card-name="Winter, Team Player"><span class="mv-badge">5</span> Winter, Team Player</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-G">G (7P / 11E)</div>
+          <div class="role-header">Payoffs (7)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Hemosymbic Mite"><span class="mv-badge">1</span> Hemosymbic Mite</li>
+            <li class="card-link" data-card-name="Bramblesnap"><span class="mv-badge">2</span> Bramblesnap <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="House Cartographer"><span class="mv-badge">2</span> House Cartographer</li>
+            <li class="card-link" data-card-name="Stubborn Burrowfiend"><span class="mv-badge">2</span> Stubborn Burrowfiend <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Defiant Survivor"><span class="mv-badge">3</span> Defiant Survivor</li>
+            <li class="card-link" data-card-name="Rambling Possum"><span class="mv-badge">3</span> Rambling Possum <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Autarch Mammoth"><span class="mv-badge">6</span> Autarch Mammoth <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+7 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Coordinated Clobbering"><span class="mv-badge">1</span> Coordinated Clobbering</li>
+            <li class="card-link" data-card-name="Molt Tender"><span class="mv-badge">1</span> Molt Tender</li>
+            <li class="card-link" data-card-name="Drover of the Mighty"><span class="mv-badge">2</span> Drover of the Mighty</li>
+            <li class="card-link" data-card-name="Synchronized Charge"><span class="mv-badge">2</span> Synchronized Charge</li>
+            <li class="card-link" data-card-name="Emil, Vastlands Roamer"><span class="mv-badge">3</span> Emil, Vastlands Roamer</li>
+            <li class="card-link" data-card-name="Supportive Parents"><span class="mv-badge">3</span> Supportive Parents</li>
+            <li class="card-link" data-card-name="Storm the Seedcore"><span class="mv-badge">4</span> Storm the Seedcore</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W (6P / 13E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Attentive Sunscribe"><span class="mv-badge">2</span> Attentive Sunscribe</li>
+            <li class="card-link" data-card-name="Lulu, Loyal Hollyphant"><span class="mv-badge">4</span> Lulu, Loyal Hollyphant <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Spider-UK"><span class="mv-badge">4</span> Spider-UK <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Unswerving Sloth"><span class="mv-badge">5</span> Unswerving Sloth <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Bounding Felidar"><span class="mv-badge">6</span> Bounding Felidar <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Dawnstrike Vanguard"><span class="mv-badge">6</span> Dawnstrike Vanguard</li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+9 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Spurnmage Advocate"><span class="mv-badge">1</span> Spurnmage Advocate</li>
+            <li class="card-link" data-card-name="Wanderbrine Trapper"><span class="mv-badge">1</span> Wanderbrine Trapper</li>
+            <li class="card-link" data-card-name="Group Project"><span class="mv-badge">2</span> Group Project</li>
+            <li class="card-link" data-card-name="To Arms!"><span class="mv-badge">2</span> To Arms!</li>
+            <li class="card-link" data-card-name="Water Tribe Rallier"><span class="mv-badge">2</span> Water Tribe Rallier</li>
+            <li class="card-link" data-card-name="Leo&#x27;s Guidance"><span class="mv-badge">3</span> Leo&#x27;s Guidance</li>
+            <li class="card-link" data-card-name="Protective Response"><span class="mv-badge">3</span> Protective Response</li>
+            <li class="card-link" data-card-name="Quake, Agent of S.H.I.E.L.D."><span class="mv-badge">3</span> Quake, Agent of S.H.I.E.L.D.</li>
+            <li class="card-link" data-card-name="Triplicate Spirits"><span class="mv-badge">6</span> Triplicate Spirits</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (4P / 2E)</div>
+          <div class="role-header">Payoffs (4)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Wakandan Tusker"><span class="mv-badge">2</span> Wakandan Tusker <span class="ci-tag">[GW]</span></li>
+            <li class="card-link" data-card-name="Veteran Beastrider"><span class="mv-badge">3</span> Veteran Beastrider <span class="ci-tag">[GW]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Radha, Coalition Warlord"><span class="mv-badge">4</span> Radha, Coalition Warlord <span class="ci-tag">[GR]</span></li>
+            <li class="card-link" data-card-name="Sami, Ship&#x27;s Engineer"><span class="mv-badge">4</span> Sami, Ship&#x27;s Engineer <span class="ci-tag">[RW]</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+1 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Worf, Honor-Bound Warrior"><span class="mv-badge">2</span> Worf, Honor-Bound Warrior <span class="ci-tag">[RW]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="theme-section">
+      <div class="theme-title">
+        <span>RWB — Go-Wide Fighters (Warriors, Soldiers, Knights, 1/1 Tokens &amp; Aristocrats)</span>
+        <span class="theme-badges">31 Payoffs · 62 Enablers (71 unique nonland cards)</span>
+      </div>
+      <div class="theme-stats">
+        <div><strong>Payoff Colors:</strong> B: 6, R: 7, W: 12, BR: 1, BW: 3, RW: 2 &nbsp;|&nbsp; <strong>Enabler Colors:</strong> B: 18, R: 14, W: 23, BR: 1, BW: 3, RW: 3</div>
+        <div><strong>Payoff Curve:</strong> MV1: <b>3</b> · MV2: <b>8</b> · MV3: <b>7</b> · MV4: <b>8</b> · MV5: <b>4</b> · MV6+: <b>1</b></div>
+        <div><strong>Theme Curve (All 71):</strong> MV1: <b>8</b> · MV2: <b>20</b> · MV3: <b>18</b> · MV4: <b>15</b> · MV5: <b>6</b> · MV6+: <b>4</b></div>
+      </div>
+      <div class="columns">
+        <div class="color-column">
+          <div class="color-header color-R">R (7P / 14E)</div>
+          <div class="role-header">Payoffs (7)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Freedom Fighter Recruit"><span class="mv-badge">2</span> Freedom Fighter Recruit</li>
+            <li class="card-link" data-card-name="Dinosaur Stampede"><span class="mv-badge">3</span> Dinosaur Stampede</li>
+            <li class="card-link" data-card-name="Reckless Bushwhacker"><span class="mv-badge">3</span> Reckless Bushwhacker <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Zurgo&#x27;s Vanguard"><span class="mv-badge">3</span> Zurgo&#x27;s Vanguard <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Memorial Team Leader"><span class="mv-badge">4</span> Memorial Team Leader <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Witchstalker Frenzy"><span class="mv-badge">4</span> Witchstalker Frenzy</li>
+            <li class="card-link" data-card-name="Winter, Team Player"><span class="mv-badge">5</span> Winter, Team Player <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+10 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Betrayer&#x27;s Bargain"><span class="mv-badge">2</span> Betrayer&#x27;s Bargain</li>
+            <li class="card-link" data-card-name="Tyrox, Saurid Tyrant"><span class="mv-badge">2</span> Tyrox, Saurid Tyrant</li>
+            <li class="card-link" data-card-name="Young Pyromancer"><span class="mv-badge">2</span> Young Pyromancer</li>
+            <li class="card-link" data-card-name="Charging Strifeknight"><span class="mv-badge">3</span> Charging Strifeknight</li>
+            <li class="card-link" data-card-name="Hordeling Outburst"><span class="mv-badge">3</span> Hordeling Outburst</li>
+            <li class="card-link" data-card-name="Kolaghan Warmonger"><span class="mv-badge">3</span> Kolaghan Warmonger</li>
+            <li class="card-link" data-card-name="Snowslope Hunter"><span class="mv-badge">3</span> Snowslope Hunter</li>
+            <li class="card-link" data-card-name="Glóin the Mighty // Easy Pickings"><span class="mv-badge">4</span> Glóin the Mighty // Easy Pickings</li>
+            <li class="card-link" data-card-name="Mad Ratter"><span class="mv-badge">4</span> Mad Ratter</li>
+            <li class="card-link" data-card-name="Vaultguard Trooper"><span class="mv-badge">5</span> Vaultguard Trooper</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-W">W (12P / 23E)</div>
+          <div class="role-header">Payoffs (12)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Mardu Woe-Reaper"><span class="mv-badge">1</span> Mardu Woe-Reaper <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Venerable Knight"><span class="mv-badge">1</span> Venerable Knight <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Water Tribe Rallier"><span class="mv-badge">2</span> Water Tribe Rallier <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Hologram Janeway"><span class="mv-badge">3</span> Hologram Janeway</li>
+            <li class="card-link" data-card-name="Goldnight Commander"><span class="mv-badge">4</span> Goldnight Commander <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Great Teacher&#x27;s Decree"><span class="mv-badge">4</span> Great Teacher&#x27;s Decree</li>
+            <li class="card-link" data-card-name="Okoye, Dora Milaje Leader"><span class="mv-badge">4</span> Okoye, Dora Milaje Leader <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Spider-UK"><span class="mv-badge">4</span> Spider-UK</li>
+            <li class="card-link" data-card-name="Katara, Heroic Healer"><span class="mv-badge">5</span> Katara, Heroic Healer <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Malamet War Scribe"><span class="mv-badge">5</span> Malamet War Scribe <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Syr Alin, the Lion&#x27;s Claw"><span class="mv-badge">5</span> Syr Alin, the Lion&#x27;s Claw <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="The Crystal&#x27;s Chosen"><span class="mv-badge">7</span> The Crystal&#x27;s Chosen <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+14 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Market Gnome"><span class="mv-badge">1</span> Market Gnome</li>
+            <li class="card-link" data-card-name="Usher of the Fallen"><span class="mv-badge">1</span> Usher of the Fallen</li>
+            <li class="card-link" data-card-name="Ajani&#x27;s Pridemate"><span class="mv-badge">2</span> Ajani&#x27;s Pridemate</li>
+            <li class="card-link" data-card-name="Battle Menu"><span class="mv-badge">2</span> Battle Menu</li>
+            <li class="card-link" data-card-name="Group Project"><span class="mv-badge">2</span> Group Project</li>
+            <li class="card-link" data-card-name="Resolute Reinforcements"><span class="mv-badge">2</span> Resolute Reinforcements</li>
+            <li class="card-link" data-card-name="Seeker of the Way"><span class="mv-badge">2</span> Seeker of the Way</li>
+            <li class="card-link" data-card-name="Dalkovan Packbeasts"><span class="mv-badge">3</span> Dalkovan Packbeasts</li>
+            <li class="card-link" data-card-name="Dewdrop Cure"><span class="mv-badge">3</span> Dewdrop Cure</li>
+            <li class="card-link" data-card-name="Paladin Danse, Steel Maverick"><span class="mv-badge">3</span> Paladin Danse, Steel Maverick</li>
+            <li class="card-link" data-card-name="Destined Confrontation"><span class="mv-badge">4</span> Destined Confrontation</li>
+            <li class="card-link" data-card-name="Dawnstrike Vanguard"><span class="mv-badge">6</span> Dawnstrike Vanguard</li>
+            <li class="card-link" data-card-name="Kirtar&#x27;s Wrath"><span class="mv-badge">6</span> Kirtar&#x27;s Wrath</li>
+            <li class="card-link" data-card-name="Triplicate Spirits"><span class="mv-badge">6</span> Triplicate Spirits</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-B">B (6P / 18E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Carrion Feeder"><span class="mv-badge">1</span> Carrion Feeder <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Blood-Chin Rager"><span class="mv-badge">2</span> Blood-Chin Rager <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Grim Wanderer"><span class="mv-badge">2</span> Grim Wanderer</li>
+            <li class="card-link" data-card-name="Belle of the Brawl"><span class="mv-badge">3</span> Belle of the Brawl <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Sanguinary Priest"><span class="mv-badge">4</span> Sanguinary Priest</li>
+            <li class="card-link" data-card-name="Thrasher Brute"><span class="mv-badge">4</span> Thrasher Brute <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+14 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Bone Shards"><span class="mv-badge">1</span> Bone Shards</li>
+            <li class="card-link" data-card-name="Scorn-Blade Berserker"><span class="mv-badge">1</span> Scorn-Blade Berserker</li>
+            <li class="card-link" data-card-name="Village Rites"><span class="mv-badge">1</span> Village Rites</li>
+            <li class="card-link" data-card-name="Iron-Shield Elf"><span class="mv-badge">2</span> Iron-Shield Elf</li>
+            <li class="card-link" data-card-name="Plumb the Forbidden"><span class="mv-badge">2</span> Plumb the Forbidden</li>
+            <li class="card-link" data-card-name="Umbral Collar Zealot"><span class="mv-badge">2</span> Umbral Collar Zealot</li>
+            <li class="card-link" data-card-name="Bleeding Edge"><span class="mv-badge">3</span> Bleeding Edge</li>
+            <li class="card-link" data-card-name="Graveblade Marauder"><span class="mv-badge">3</span> Graveblade Marauder</li>
+            <li class="card-link" data-card-name="Nightblade Brigade"><span class="mv-badge">3</span> Nightblade Brigade</li>
+            <li class="card-link" data-card-name="Barter in Blood"><span class="mv-badge">4</span> Barter in Blood</li>
+            <li class="card-link" data-card-name="Gathering of Darkness"><span class="mv-badge">4</span> Gathering of Darkness</li>
+            <li class="card-link" data-card-name="Haunted Dead"><span class="mv-badge">4</span> Haunted Dead</li>
+            <li class="card-link" data-card-name="Salt Road Skirmish"><span class="mv-badge">4</span> Salt Road Skirmish</li>
+            <li class="card-link" data-card-name="Voidforged Titan"><span class="mv-badge">5</span> Voidforged Titan</li>
+          </ul>
+        </div>
+        <div class="color-column">
+          <div class="color-header color-2C">2C & C (6P / 7E)</div>
+          <div class="role-header">Payoffs (6)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Chief of the Edge"><span class="mv-badge">2</span> Chief of the Edge <span class="ci-tag">[BW]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Elas il-Kor, Sadistic Pilgrim"><span class="mv-badge">2</span> Elas il-Kor, Sadistic Pilgrim <span class="ci-tag">[BW]</span></li>
+            <li class="card-link" data-card-name="Rushblade Commander"><span class="mv-badge">2</span> Rushblade Commander <span class="ci-tag">[BR]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Worf, Honor-Bound Warrior"><span class="mv-badge">2</span> Worf, Honor-Bound Warrior <span class="ci-tag">[RW]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Denethor, Ruling Steward"><span class="mv-badge">3</span> Denethor, Ruling Steward <span class="ci-tag">[BW]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+            <li class="card-link" data-card-name="Kargan Warleader"><span class="mv-badge">3</span> Kargan Warleader <span class="ci-tag">[RW]</span> <span class="both-tag" title="Both Payoff and Enabler in this theme">★</span></li>
+          </ul>
+          <div class="role-header enabler-header">Enablers (+2 unique)</div>
+          <ul class="card-list">
+            <li class="card-link" data-card-name="Skyknight Vanguard"><span class="mv-badge">2</span> Skyknight Vanguard <span class="ci-tag">[RW]</span></li>
+            <li class="card-link" data-card-name="Lingering Souls"><span class="mv-badge">3</span> Lingering Souls <span class="ci-tag">[BW]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="card-preview" role="tooltip" aria-hidden="true">
+    <div class="status">Loading…</div>
+    <img alt="" />
+  </div>
+
+  <script>
+    (() => {
+      const preview = document.getElementById('card-preview');
+      const img = preview.querySelector('img');
+      const status = preview.querySelector('.status');
+      const imageCache = new Map();
+      let activeCard = null;
+
+      function scryfallImageUrl(cardName) {
+        const params = new URLSearchParams({
+          exact: cardName,
+          format: 'image',
+          version: 'normal',
+        });
+        return `https://api.scryfall.com/cards/named?${params.toString()}`;
+      }
+
+      function positionPreview(event) {
+        const pad = 18;
+        const rect = preview.getBoundingClientRect();
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        let x = event.clientX + pad;
+        let y = event.clientY + pad;
+        if (x + rect.width + pad > vw) x = event.clientX - rect.width - pad;
+        if (y + rect.height + pad > vh) y = Math.max(pad, vh - rect.height - pad);
+        preview.style.left = `${x}px`;
+        preview.style.top = `${y}px`;
+      }
+
+      function showCard(cardName, event) {
+        activeCard = cardName;
+        preview.style.display = 'block';
+        preview.setAttribute('aria-hidden', 'false');
+        const url = scryfallImageUrl(cardName);
+        if (imageCache.get(cardName) === 'loaded') {
+          status.style.display = 'none';
+          img.style.display = 'block';
+          img.src = url;
+          positionPreview(event);
+          return;
+        }
+        img.style.display = 'none';
+        status.style.display = 'block';
+        status.textContent = 'Loading…';
+        positionPreview(event);
+        const loader = new Image();
+        loader.onload = () => {
+          imageCache.set(cardName, 'loaded');
+          if (activeCard !== cardName) return;
+          img.src = url;
+          status.style.display = 'none';
+          img.style.display = 'block';
+        };
+        loader.onerror = () => {
+          imageCache.set(cardName, 'error');
+          if (activeCard !== cardName) return;
+          status.textContent = `Could not load "${cardName}"`;
+        };
+        loader.src = url;
+      }
+
+      function hideCard() {
+        activeCard = null;
+        preview.style.display = 'none';
+        preview.setAttribute('aria-hidden', 'true');
+      }
+
+      document.querySelectorAll('.card-link').forEach((el) => {
+        const name = (el.dataset.cardName || el.textContent).trim();
+        el.addEventListener('mouseenter', (e) => showCard(name, e));
+        el.addEventListener('mousemove', positionPreview);
+        el.addEventListener('mouseleave', hideCard);
+      });
+    })();
+  </script>
+</body>
+</html>

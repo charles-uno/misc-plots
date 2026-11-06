@@ -1,0 +1,372 @@
+Vivid Meadow
+Vivid Creek
+Vivid Marsh
+Vivid Crag
+Vivid Grove
+Arcane Sanctum
+Crumbling Necropolis
+Savage Lands
+Jungle Shrine
+Seaside Citadel
+Mystic Monastery
+Opulent Palace
+Nomad Outpost
+Frontier Bivouac
+Sandsteppe Citadel
+Containment Construct
+Sphinx of the Guildpact
+Sundering Archaic
+Transcendent Archaic
+Command Subadjunct
+To Arms!
+Monk of the Open Hand
+Sundial, Dawn Tyrant
+Cheeky House-Mouse
+Wanderbrine Trapper
+Defiant Strike
+Enter the Avatar State
+Unwanted Remake
+Ajani's Pridemate
+Seeker of the Way
+Water Tribe Rallier
+That's Rough Buddy
+Distinguished Conjurer
+Sunpearl Kirin
+Battle Menu
+Group Project
+Angel of Vitality
+Paladin Danse, Steel Maverick
+Quake, Agent of S.H.I.E.L.D.
+Dewdrop Cure
+Leo's Guidance
+Protective Response
+Skywhaler's Shot
+Goldnight Commander
+Guidelight Synergist
+Star Charter
+Lulu, Loyal Hollyphant
+Sunstar Lightsmith
+Bounding Felidar
+Dawnstrike Vanguard
+Unswerving Sloth
+Glorious Enforcer
+Syr Alin, the Lion's Claw
+Plated Onslaught
+The Crystal's Chosen
+Doctor Jane Foster
+Okoye, Dora Milaje Leader
+Githzerai Monk
+Destined Confrontation
+Great Teacher's Decree
+Katara, Heroic Healer
+Prismatic Ending
+Malamet War Scribe
+Shepherd of the Flock
+Dalkovan Packbeasts
+Kinjalli's Dawnrunner
+Resolute Reinforcements
+Hypnotic Grifter
+Nephalia Smuggler
+Pteramander
+Boomerang Basics
+Distortion Strike
+Miscast
+Obsessive Search
+Rapid Hybridization
+Stern Scolding
+Spell Snare
+Shoreline Looter
+Corridor Monitor
+Geist of Saint Thalia
+Muse Seeker
+Rescue, Pepper Potts
+Scrounging Skyray
+Evasive Action
+Get Out
+Recalibrate
+Sweep the Skies
+Test of Priorities
+Etherium Spinner
+Fear of Impostors
+Imperial Cosmographer
+Iron Lad, Diverging Destiny
+Rimekin Recluse
+Rune-Sealed Wall
+Wingblade Disciple
+Circular Logic
+Donatello's Technique
+Launch Mishap
+Thirst for Knowledge
+Ashnod's Harvester
+Stonecloaker
+Daring Waverider
+Meneldor, Swift Savior
+Sabotage Strategist
+Tanufel Rimespeaker
+Teo, Spirited Glider
+Whirler Rogue
+Traxos, Academy Guardian
+Gigastorm Titan
+Lake-Town Mariners
+Biblioplex Kraken
+Ominous Sphinx
+Shinestriker
+Spikeshell Harrier
+Swat Away
+Cloak and Phaser
+This Town Ain't Big Enough
+Etherium Pteramander
+Monoist Sentry
+Nighthowl Pursuer
+Bone Shards
+Caustic Exhale
+Defile
+Dissection Practice
+Joust Through
+Intimidation Tactics
+Nightmare's Thirst
+Village Rites
+Asylum Visitor
+Iron-Shield Elf
+Ravening Warg
+Umbral Collar Zealot
+Bile Blight
+Bitter Triumph
+Eliminate
+Go for the Throat
+Plumb the Forbidden
+Armix, Filigree Thrasher
+Bloodthirsty Aerialist
+Kalakscion, Hunger Tyrant
+Foul-Tongue Invocation
+Sandman's Quicksand
+Arcbound Condor
+Haunted Dead
+Pactdoll Terror
+Sanguinary Priest
+Barter in Blood
+Sadistic Slash
+Salt Road Skirmish
+Monoist Circuit-Feeder
+Voidforged Titan
+Fearsome Awakening
+Flayed One
+Blazing Rootwalla
+Greasewrench Goblin
+Marauding Mako
+Monastery Swiftspear
+Fire Magic
+Impolite Entrance
+Lightning Axe
+Reckless Rage
+Triumphant Chomp
+Gila Courser
+Winter, Team Player
+Vaultguard Trooper
+Dracosaur Auxiliary
+Stoke the Flames
+Sami, Ship's Engineer
+Radha, Coalition Warlord
+Spireside Infiltrator
+Reckless Racer
+Boundary Lands Ranger
+Electrostatic Infantry
+Freedom Fighter Recruit
+Hobgoblin, Mantled Marauder
+Thunderdrum Soloist
+Young Pyromancer
+Boulder Dash
+Giantfall
+Goblin Lore
+Invigorated Rampage
+Scorching Shot
+Tribal Flames
+Charging Strifeknight
+Firespitter Whelp
+Kolaghan Warmonger
+Reckless Bushwhacker
+Snowslope Hunter
+Zurgo's Vanguard
+Dinosaur Stampede
+Hordeling Outburst
+Pillage
+Staggershock
+Bonded Horncrest
+Geological Appraiser
+Gloin the Mighty
+Living Lightning
+Memorial Team Leader
+Mad Ratter
+Squawkroaster
+Bolt Bend
+Violent Eruption
+Witchstalker Frenzy
+Chief of the Edge
+Kargan Warleader
+Rushblade Commander
+Raging Goblinoids
+Rorix Bladewing
+Territorial Bruntar
+Slice and Dice
+Cenote Scout
+Hemosymbic Mite
+Molt Tender
+Nasty Little Rabbit
+Virulent Emissary
+Adventurous Impulse
+Coordinated Clobbering
+Fortifying Draught
+Bramblesnap
+Drover of the Mighty
+Eumidian Terrabotanist
+House Cartographer
+Three Tree Scribe
+Tigra, Feline Fury
+Devouring Tendrils
+Explore
+Peerless Recycling
+Scout the City
+Synchronized Charge
+Clifftop Lookout
+Defiant Survivor
+Emil, Vastlands Roamer
+Owlbear Shepherd
+Rambling Possum
+Wall of Omens
+Afterthought Sentry
+Mardu Woe-Reaper
+Stubborn Burrowfiend
+Supportive Parents
+Thornfist Striker
+Call of the Herd
+Savage Stomp
+Elvish Regrower
+Luminollusk
+Surrak, the Hunt Caller
+Temur Sabertooth
+Titanbones, Towering Heart
+Zimone's Experiment
+Troll Negotiations
+Storm the Seedcore
+Autarch Mammoth
+Earthshaker Dreadmaw
+Hologram Stalker
+Lashwhip Predator
+Prismabasher
+Terrian, World Tyrant
+Needletooth Pack
+Snarl Song
+Belle of the Brawl
+Recursive Recruitment
+Thrasher Brute
+Blood-Chin Rager
+Venerable Knight
+Usher of the Fallen
+Station Monitor
+Runic Shot
+Soulherder
+Ethersworn Sphinx
+Elas il-Kor, Sadistic Pilgrim
+Starseer Mentor
+Denethor, Ruling Steward
+Baleful Strix
+Lazotep Chancellor
+Coati Scavenger
+Cephalid Inkmage
+Dreadwing Scavenger
+Ghoultree
+Graveblade Marauder
+Huskburster Swarm
+Grizzly Fate
+Kraul Harpooner
+Osseous Sticktwister
+Patchwork Beastie
+Splinterfright
+Undercity Upheaval
+Vilespawn Spider
+Hazard of the Dunes
+Cobbled Lancer
+Chemister's Insight
+White Tiger, Amulet Keeper
+Confounding Riddle
+Dreadhound
+Black Dragon
+Gathering of Darkness
+Gisa's Bidding
+Marwyn, the Preserver
+Mire Triton
+Primal Witchstalker
+Rite of Renewal
+Skull Prophet
+Wretched Doll
+Valkyrie Aerial Unit
+Master's Councillors
+Stitcher's Supplier
+Territory Culler
+Theorix Charm
+Vash, Freelance Archaeologist
+Team Tactics
+Skyknight Vanguard
+Worf, Honor-Bound Warrior
+Channeled Dragonfire
+Thermo-Alchemist
+Bleeding Edge
+Foolish Fate
+Reckless Spite
+Energybending
+Definitely Not a Turtle
+H.E.R.B.I.E. Scout Unit
+Traxos, Scourge Eternal
+Paradox Surveyor
+Lilysplash Mentor
+Sprite Dragon
+Slick Sequence
+Ecstatic Electromancer
+Scarlet Spider, Kaine
+Bladewing the Risen
+Trelasarra, Moon Dancer
+Wakandan Tusker
+Veteran Beastrider
+Thrakkus the Butcher
+MACH-1, Swooping Scoundrel
+Nightblade Brigade
+Betrayer's Bargain
+Superior Foes of Spider-Man
+Grim Wanderer
+Tiger-Dillo
+Tyrox, Saurid Tyrant
+Skyserpent Seeker
+Glister Bairn
+Spectacular Skywhale
+Woodland Acolyte
+Azra Oddsmaker
+Atlas, Sizable Stooge
+Leyline Prowler
+Cabal Initiate
+Mindwhisker
+Carrion Feeder
+Kirtar's Wrath
+Wreck and Rebuild
+Omen Hawker
+Strider, Ranger of the North
+Lingering Souls
+Harsh Annotation
+Attentive Sunscribe
+Hologram Janeway
+Mandible Justiciar
+Market Gnome
+Triplicate Spirits
+Shuri, Vibranium Technologist
+Against All Odds
+Glorious Decay
+Test of Loyalty
+Purify the Grave
+Flaring Cinder
+Elven Raft-Steerer
+Intrepid Ace
+Ruin-Lurker Bat
+Scorn-Blade Berserker
+Yuriko, Hope from the Shadows
+Spider-UK
+Spurnmage Advocate
+
