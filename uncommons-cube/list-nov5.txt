@@ -17,7 +17,7 @@ Containment Construct
 Sphinx of the Guildpact
 Sundering Archaic
 Transcendent Archaic
-Command Subadjunct
+COMMAND SUBADJUNCT
 To Arms!
 Monk of the Open Hand
 Sundial, Dawn Tyrant
@@ -31,7 +31,6 @@ Seeker of the Way
 Water Tribe Rallier
 That's Rough Buddy
 Distinguished Conjurer
-Sunpearl Kirin
 Battle Menu
 Group Project
 Angel of Vitality
@@ -41,26 +40,21 @@ Dewdrop Cure
 Leo's Guidance
 Protective Response
 Skywhaler's Shot
-Goldnight Commander
 Guidelight Synergist
 Star Charter
-Lulu, Loyal Hollyphant
 Sunstar Lightsmith
 Bounding Felidar
-Dawnstrike Vanguard
 Unswerving Sloth
 Glorious Enforcer
-Syr Alin, the Lion's Claw
 Plated Onslaught
 The Crystal's Chosen
-Doctor Jane Foster
+DOCTOR JANE FOSTER
 Okoye, Dora Milaje Leader
 Githzerai Monk
 Destined Confrontation
 Great Teacher's Decree
 Katara, Heroic Healer
 Prismatic Ending
-Malamet War Scribe
 Shepherd of the Flock
 Dalkovan Packbeasts
 Kinjalli's Dawnrunner
@@ -113,14 +107,13 @@ Ominous Sphinx
 Shinestriker
 Spikeshell Harrier
 Swat Away
-Cloak and Phaser
+CLOAK AND PHASER
 This Town Ain't Big Enough
 Etherium Pteramander
 Monoist Sentry
 Nighthowl Pursuer
 Bone Shards
 Caustic Exhale
-Defile
 Dissection Practice
 Joust Through
 Intimidation Tactics
@@ -167,7 +160,6 @@ Dracosaur Auxiliary
 Stoke the Flames
 Sami, Ship's Engineer
 Radha, Coalition Warlord
-Spireside Infiltrator
 Reckless Racer
 Boundary Lands Ranger
 Electrostatic Infantry
@@ -203,7 +195,7 @@ Violent Eruption
 Witchstalker Frenzy
 Chief of the Edge
 Kargan Warleader
-Rushblade Commander
+RUSHBLADE COMMANDER
 Raging Goblinoids
 Rorix Bladewing
 Territorial Bruntar
@@ -250,7 +242,7 @@ Troll Negotiations
 Storm the Seedcore
 Autarch Mammoth
 Earthshaker Dreadmaw
-Hologram Stalker
+HOLOGRAM STALKER
 Lashwhip Predator
 Prismabasher
 Terrian, World Tyrant
@@ -258,7 +250,7 @@ Needletooth Pack
 Snarl Song
 Belle of the Brawl
 Recursive Recruitment
-Thrasher Brute
+THRASHER BRUTE
 Blood-Chin Rager
 Venerable Knight
 Usher of the Fallen
@@ -272,7 +264,6 @@ Denethor, Ruling Steward
 Baleful Strix
 Lazotep Chancellor
 Coati Scavenger
-Cephalid Inkmage
 Dreadwing Scavenger
 Ghoultree
 Graveblade Marauder
@@ -304,10 +295,9 @@ Master's Councillors
 Stitcher's Supplier
 Territory Culler
 Theorix Charm
-Vash, Freelance Archaeologist
+VASH, FREELANCE ARCHAEOLOGIST
 Team Tactics
-Skyknight Vanguard
-Worf, Honor-Bound Warrior
+WORF, HONOR-BOUND WARRIOR
 Channeled Dragonfire
 Thermo-Alchemist
 Bleeding Edge
@@ -328,13 +318,11 @@ Trelasarra, Moon Dancer
 Wakandan Tusker
 Veteran Beastrider
 Thrakkus the Butcher
-MACH-1, Swooping Scoundrel
+MACH-1, SWOOPING SCOUNDREL
 Nightblade Brigade
 Betrayer's Bargain
 Superior Foes of Spider-Man
-Grim Wanderer
 Tiger-Dillo
-Tyrox, Saurid Tyrant
 Skyserpent Seeker
 Glister Bairn
 Spectacular Skywhale
@@ -345,28 +333,40 @@ Leyline Prowler
 Cabal Initiate
 Mindwhisker
 Carrion Feeder
-Kirtar's Wrath
 Wreck and Rebuild
 Omen Hawker
 Strider, Ranger of the North
 Lingering Souls
 Harsh Annotation
 Attentive Sunscribe
-Hologram Janeway
+HOLOGRAM JANEWAY
 Mandible Justiciar
 Market Gnome
 Triplicate Spirits
 Shuri, Vibranium Technologist
 Against All Odds
 Glorious Decay
-Test of Loyalty
+TEST OF LOYALTY
 Purify the Grave
 Flaring Cinder
 Elven Raft-Steerer
-Intrepid Ace
-Ruin-Lurker Bat
+INTREPID ACE
 Scorn-Blade Berserker
 Yuriko, Hope from the Shadows
 Spider-UK
-Spurnmage Advocate
+Killing Wave
+Danitha, Sword of Hope
+Hero of the Nyxborn
+Thor Odinson
+Garna, Bloodfist of Keld
+Itzquinth, Firstborn of Gishath
+Spider-Man India
+Picklock Prankster
+
+
+
+
+
+
+
 
