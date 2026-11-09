@@ -202,7 +202,9 @@ This is relevant for a handful of cards, most notably domain cards like [[Tribal
 
 You may use these tools to query, filter, and evaluate cards. 
 
-To reduce duplicate queries, you may cache data locally in `cache/`. Details are up to you, but JSON is probably easiest
+To reduce duplicate queries, you may cache data locally in `data/`. Details are up to you, but JSON is probably easiest
+
+You may write scripts for data analysis. Put them in `scripts/`
 
 ### Scryfall
 
@@ -228,7 +230,17 @@ We should steer clear of anything rated A+ or A. Those cards are likely bombs th
 
 It looks like the strongest recent uncommons show up at A-/B+/B. In order to be viable, each theme probably needs a few of those.
 
-## Communication Style
+## Input and Output
+
+### Directory Layout
+
+- `prompt.md` -- this file
+- `data/` -- raw card data
+- `scripts/` -- scripts for data analysis
+- `demos/` -- dump pretty HTML output here
+- `lists/` -- full cube lists
+
+### Communication Style
 
 Please be concise and direct. 
 
@@ -251,10 +263,7 @@ When listing all ten themes, default to this order:
 
 Sometimes I will ask you to output a bunch of data at once -- for example, a configuration of ten themes with a skeleton for each. That's a lot, especially when it includes cards I'm not familiar with!
 
-For big dumps like that, please follow `template.html` for formatting. It also includes handling for autocards on hover. Do not overwrite the template -- create a new file that follows the rules.
-
-
-
+For big dumps like that, please follow `demos/template.html` for formatting. It also includes handling for autocards on hover. Do not overwrite the template -- create a new file that follows the rules.
 
 ## Playtest Notes
 
