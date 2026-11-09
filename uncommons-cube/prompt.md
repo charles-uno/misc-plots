@@ -31,13 +31,13 @@ In terms of fixing, we probably want about the same density as BLB or ONE. These
 
 The tentative plan is to include five shard lands (eg [[Seaside Citadel]]), five wedge lands (eg [[Sandsteppe Citadel]]), five vivid lands (eg [[Vivid Creek]]), and a few one-offs. 
 
-### Fixed Themes
+### Likely Themes
 
 We have a few easy ones to get us started. I like these themes, they are well-supported in recent sets, and there is no ambiguity about which triad they belong to:
 
-- WBG Lifegain
-- GUR Multicolor (Domain/Converge/Vivid)
-- UBR Discard (Madness/Mayhem)
+- WBG Lifegain -- Soul Sisters, Aristocrats
+- GUR Multicolor -- Domain, Converge, Vivid, SNW, big MV, Landfall
+- UBR Discard -- Madness, Mayhem, Marauding Mako
 
 ### Possible Themes
 
@@ -67,17 +67,17 @@ Be careful not to mix conflicting sub-themes. For example, BG Forage (which want
 
 In order for a theme to be viable, we need:
 
-- Three payoffs in each color (judged by color identity) that pull a drafter into this theme specifically. These should *not* overlap between themes.
-- At least one enabler or payoff in each two-color combination. These *may* overlap between themes.
+- Three *attractive* payoffs in each color that pull a drafter into this theme specifically. One-time payoffs count for half. These should generally not overlap between themes
+- At least one enabler or payoff in each two-color combination. These may overlap between themes
 
-For example, for UBR, we have a discard theme. Our skeleton could look like:
+For example, the WBG Lifegain skeleton could look like:
 
-- U payoffs: [[Scrounging Skyray]], [[Circular Logic]], [[Ominous Sphinx]]
-- B payoffs: [[Asylum Visitor]], [[Gisa's Bidding]], [[Big Game Hunter]]
-- R payoffs: [[Marauding Mako]], [[Fiery Temper]], [[Raging Goblinoids]]
-- Two-color payoffs: [[Terminal Agony]], [[Lazotep Chancellor]] (also relevant to Zombies), [[Izzet Charm]]
+- W: [[Ajani's Pridemate]], [[Angel of Vitality]], [[Star Charter]]
+- B: [[Bloodthirsty Aerialist]], [[Starscape Cleric]], [[Foolish Fate]], [[Nightmare's Thirst]] (the removal spells are one-time payoffs)
+- G: [[Tigra, Feline Fury]], [[Thornfist Striker]], [[Titanbones, Towering Heart]]
+- Multicolor: [[Trelasarra, Moon Dancer]], [[Elas il-Kor, Sadistic Pilgrim]], [[Dina, Soul Steeper]]
 
-Notably, we are not married to any card in particular! If a card in here plays into an off-color theme awkwardly, we can swap it out.
+Notably, we are not married to any card in particular! If a card in here looks weak, or plays into an off-color theme awkwardly, we can swap it out.
 
 When assembling a skeleton, make sure to get some mana value diversity in there. For example, we don't want the G payoffs for +1/+1 counters to be [[Kami of Whispered Hopes]], [[Evolution Sage]], and [[Meltstrider Eulogist]] -- those things all sit on the same spot in the mana curve!
 
@@ -198,7 +198,13 @@ Finally, we append the relevant basic land types to the shard and wedge tri-land
 
 This is relevant for a handful of cards, most notably domain cards like [[Tribal Flames]]
 
-## Scryfall Usage
+## External Tools
+
+You may use these tools to query, filter, and evaluate cards. 
+
+To reduce duplicate queries, you may cache data locally in `cache/`. Details are up to you, but JSON is probably easiest
+
+### Scryfall
 
 Scryfall is a tool for searching existing MTG cards. 
 
@@ -206,13 +212,21 @@ Scryfall is a tool for searching existing MTG cards.
 - Query syntax docs: https://scryfall.com/docs/syntax
 - Bulk data access: https://scryfall.com/docs/api/bulk-data
 
-### Rate Limiting
+NOTE: Scryfall has a rate limits! Be a good consumer. Be attentive to error messages
 
-Scryfall has a rate limits! Be a good consumer. Be attentive to error messages
+### 17lands
 
-### Caching
+We can use 17lands.com to eyeball power level. It provides card-by-card power rankings based on data from MTG Arena drafts. 
 
-To reduce duplicate queries, you may cache data locally in `cache/`. Details are up to you, but JSON is probably easiest
+Two big disclaimers about using this data:
+- Data comes from drafts. Cards are played only within their set. Careful with comparisons across sets.
+- Power level may depend on theme support. Cube themes are often different from draft themes. 
+- Draft environments are often skewed in terms of color. For example, red cards in MSH rank poorly red was weak in that format overall. Individual red cards may still be usable.
+- Not all cards have data! Commander sets don't get drafted, but we still have access to those cards
+
+We should steer clear of anything rated A+ or A. Those cards are likely bombs that can run away with a game on their own, independent of theme support. 
+
+It looks like the strongest recent uncommons show up at A-/B+/B. In order to be viable, each theme probably needs a few of those.
 
 ## Communication Style
 
@@ -238,3 +252,32 @@ When listing all ten themes, default to this order:
 Sometimes I will ask you to output a bunch of data at once -- for example, a configuration of ten themes with a skeleton for each. That's a lot, especially when it includes cards I'm not familiar with!
 
 For big dumps like that, please follow `template.html` for formatting. It also includes handling for autocards on hover. Do not overwrite the template -- create a new file that follows the rules.
+
+
+
+
+## Playtest Notes
+
+Here are takeaways after playing the cube.
+
+### 7 Nov 2026
+
+List: see `list-nov5.txt`
+Themes: 
+- WUB Artifacts
+- WBG Lifegain
+- BRG Dinosaurs (dragon/dino kindred)
+- BGU Graveyard
+- GWU Blink
+- GUR Multicolor
+- UBR Discard
+- URW Spellslinger
+- RGW Tap/Untap
+- RWB Go Wide (warrior/soldier/knight kindred)
+
+Takeaways:
+- Not enough discard payoffs. We probably need to be smarter about how we balance one-time payoffs (eg Madness/Mayhem) compared to ongoing payoffs
+- Power distribution too flat. There are no clear first picks to provide direction in the draft. Lots of wasted early picks, which is frustrating. We should probably add some signposts (possibly non-bomb rares) to steer early picks. 
+- Power 4+ and dragon kindred didn't mesh as well as I expected. In particular, [[Nasty Little Rabbit]] and [[Nighthowl Pursuer]] really need 4+ power by turn 3. 
+- Not sure if we have enough payoffs for tap/untap to happen
+
